@@ -40,7 +40,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/assets`,
       },
     },
 
@@ -62,7 +62,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `/assets/gatsby-icon.png`,
       },
     },
 
