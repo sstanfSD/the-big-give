@@ -8,6 +8,7 @@ import AboutRegional from "../components/About/AboutRegional"
 import History from "../components/About/History"
 import Team from "../components/About/Team"
 import FAQ from "../components/Common/FAQ"
+import Contact from "../components/About/Contact"
 
 const index = ({ data }) => {
   const SEO = data.wpPage.seo
@@ -24,6 +25,7 @@ const index = ({ data }) => {
         <History />
         <Team team={team} />
         <FAQ FAQs={FAQs} />
+        <Contact />
       </Layout>
     </>
   )
