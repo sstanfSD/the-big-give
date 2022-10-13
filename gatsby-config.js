@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
-        url: process.env.WPGRAPHQL_URL || `http://gloucester.local/graphql`,
+        url: process.env.WPGRAPHQL_URL || `http://biggive.local/graphql`,
       },
     },
 
@@ -59,8 +59,8 @@ module.exports = {
         name: `Gatsby Starter WordPress Blog`,
         short_name: `GatsbyJS & WP`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#076472`,
+        theme_color: `#076472`,
         display: `minimal-ui`,
         icon: `/assets/gatsby-icon.png`,
       },

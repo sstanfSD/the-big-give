@@ -1,0 +1,2 @@
+## Refactor participating church list the smart way by query 
+all catergories of post type and replace optinos with that query
