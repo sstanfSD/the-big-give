@@ -37,7 +37,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
   const [selected, setSelected] = useState(options[0])
 
   return (
-    <Section>
+    <Section id="resources">
       <Container>
         <Sidebar>
           <ContentContainer>

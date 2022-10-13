@@ -18,7 +18,7 @@ import { BtnPrimary } from "../../Buttons"
 
 const Team = ({ team }) => {
   return (
-    <Section>
+    <Section id="team">
       <Container>
         <TextContainer>
           <Heading>The Big Give team</Heading>

@@ -44,12 +44,20 @@ export const Dropdown = styled.ul`
   position: absolute;
   display: none;
 
-  top: 0;
+  list-style: none;
+  top: 2.4rem;
+  flex-direction: column;
+
+  background-color: var(--color-white);
+  border: solid 0.2rem var(--color-black);
 `
-export const DropdownItem = styled.li``
+export const DropdownItem = styled.li`
+  padding: 1rem;
+`
 
 export const List = styled.ul`
   display: flex;
+
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +75,7 @@ export const Item = styled.li`
   font-weight: bold;
 
   &:hover ${Dropdown} {
-    display: block;
+    display: flex;
   }
 `
 export const InternalLink = styled(Link)`

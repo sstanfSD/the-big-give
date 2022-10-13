@@ -16,7 +16,7 @@ import contact from "../../../assets/images/about/contact/contact.jpg"
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id="contact">
       <Container>
         <FormContainer>
           <TextContainer>

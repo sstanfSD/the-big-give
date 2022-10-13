@@ -35,11 +35,16 @@ const Navbar = () => {
 
         <List>
           <Item>
-            <InternalLink to="/">about</InternalLink>
+            <InternalLink to="/about">about</InternalLink>
             <Dropdown>
               <DropdownItem>
-                <InternalLink to="/">InternalLink</InternalLink>
-                <InternalLink to="/">InternalLink</InternalLink>
+                <InternalLink to="/about#history">history</InternalLink>
+              </DropdownItem>
+              <DropdownItem>
+                <InternalLink to="/about#team">team</InternalLink>
+              </DropdownItem>
+              <DropdownItem>
+                <InternalLink to="/about#contact">contact</InternalLink>
               </DropdownItem>
             </Dropdown>
           </Item>
@@ -50,6 +55,16 @@ const Navbar = () => {
           </Item>
           <Item>
             <InternalLink to="/get-involved">get involved</InternalLink>
+            <Dropdown>
+              <DropdownItem>
+                <InternalLink to="/get-involved#resources">
+                  resources
+                </InternalLink>
+              </DropdownItem>
+              <DropdownItem>
+                <InternalLink to="/get-involved#events">events</InternalLink>
+              </DropdownItem>
+            </Dropdown>
           </Item>
           <Item>
             <InternalLink to="/big-stories">big stories</InternalLink>

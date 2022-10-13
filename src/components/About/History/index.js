@@ -13,7 +13,7 @@ import Timeline from "./Timeline"
 
 const History = () => {
   return (
-    <Section>
+    <Section id="history">
       <Container>
         <TimelineContainer>
           <Timeline />

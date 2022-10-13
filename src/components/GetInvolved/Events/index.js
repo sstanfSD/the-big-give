@@ -62,7 +62,7 @@ const EventList = ({ events }) => {
   }
 
   return (
-    <Section>
+    <Section id="events">
       <Container>
         <Sidebar>
           <ContentContainer>
