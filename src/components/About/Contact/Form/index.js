@@ -88,9 +88,6 @@ const ContactForm = () => {
         <SelectLabel htmlFor="region" filled={formik.values.region}>
           Region
         </SelectLabel>
-        {formik.touched.region && formik.errors.region ? (
-          <ErrorMessage>{formik.errors.region}</ErrorMessage>
-        ) : null}
       </InputContainer>
 
       <InputContainer>
@@ -105,9 +102,6 @@ const ContactForm = () => {
           required
         />
         <Label htmlFor="city">City or Town</Label>
-        {formik.touched.city && formik.errors.city ? (
-          <ErrorMessage>{formik.errors.city}</ErrorMessage>
-        ) : null}
       </InputContainer>
 
       <InputContainer>
@@ -122,9 +116,6 @@ const ContactForm = () => {
           required
         />
         <Label htmlFor="name">Name</Label>
-        {formik.touched.name && formik.errors.name ? (
-          <ErrorMessage>{formik.errors.name}</ErrorMessage>
-        ) : null}
       </InputContainer>
 
       <InputContainer>
@@ -139,9 +130,6 @@ const ContactForm = () => {
           required
         />
         <Label htmlFor="email">Email Address</Label>
-        {formik.touched.email && formik.errors.email ? (
-          <ErrorMessage>{formik.errors.email}</ErrorMessage>
-        ) : null}
       </InputContainer>
 
       <InputContainer>
@@ -157,9 +145,6 @@ const ContactForm = () => {
           required
         />
         <Label htmlFor="message">Your message</Label>
-        {formik.touched.message && formik.errors.message ? (
-          <ErrorMessage>{formik.errors.message}</ErrorMessage>
-        ) : null}
       </InputContainer>
 
       {/* {formik.errors.message || formik.values.region === "" ? (
