@@ -59,6 +59,10 @@ export const MobileImage = styled.div`
     height: 100%;
   }
 
+  & img {
+    object-position: 50% 0%;
+  }
+
   ${media.tabport`
 display: block;
 `}

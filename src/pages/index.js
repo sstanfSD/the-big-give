@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
+import Header from "../components/Home/Header"
 import About from "../components/Home/About"
 import Steps from "../components/Home/Steps"
 import RegionalChampions from "../components/Home/RegionalChampions"
@@ -15,6 +16,7 @@ const index = ({ data }) => {
     <>
       <PageHead title={"The Big Give"} description={"Lorem Ipsum"} />
       <Layout>
+        <Header />
         <About />
         <Steps />
         <RegionalChampions champions={champions} />

@@ -17,6 +17,9 @@ html{
     margin: 0 auto;
     height:100%;
     font-family: 'Montserrat', sans-serif;
+
+    scroll-behavior: smooth;
+
 }
 
 body{
@@ -35,10 +38,12 @@ body{
 
 //FONT SIZES
 
+--font-size-headingXXL: clamp(6rem, 5vw, 8rem);
 --font-size-headingXL: clamp(3.6rem, 5vw, 5.4rem);
 --font-size-headingL: clamp(3rem, 5vw, 4.8rem);
 --font-size-headingM: clamp(2.6rem, 5vw, 4rem);
 --font-size-headingS: clamp(2rem, 5vw, 3rem);
+--font-size-headingXS: clamp(1.8rem, 5vw, 2.6rem);
 
 --font-size-bodyL: clamp(2.2rem, 3vw, 3rem);
 --font-size-bodyM: clamp(1.6rem, 3vw, 2.4rem);

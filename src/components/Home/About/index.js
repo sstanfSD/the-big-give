@@ -25,12 +25,14 @@ const About = () => {
             <StaticImage
               src={"../../../assets/images/home-about/about-bg.jpg"}
               alt="A collage of photos from Big Gives."
+              objectPosition={"50% 0%"}
             />
           </DesktopImage>
           <MobileImage>
             <StaticImage
               src={"../../../assets/images/home-about/about-bg-mobile.jpg"}
               alt="A collage of photos from Big Gives."
+              objectPosition={"0% 0%"}
             />
           </MobileImage>
         </ImageContainer>
