@@ -35,7 +35,7 @@ export const Container = styled.div`
 export const TimelineContainer = styled.div``
 
 export const TextContainer = styled.div`
-  color: var(--color-white);
+  color: var(--color-black);
   ${media.tabport`
   grid-row: 1;
   margin-bottom: 5rem

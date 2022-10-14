@@ -12,7 +12,7 @@ import {
   ImageContainer,
 } from "./ContactElements"
 
-import contact from "../../../assets/images/about/contact/contact.jpg"
+import Form from "./Form"
 
 const Contact = () => {
   return (
@@ -26,6 +26,7 @@ const Contact = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
             </Body>
           </TextContainer>
+          <Form />
         </FormContainer>
         <ImageContainer>
           <StaticImage
