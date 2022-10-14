@@ -45,6 +45,12 @@ const validate = values => {
 }
 
 const ContactForm = () => {
+  // const encode = data => {
+  //   return Object.keys(data)
+  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //     .join("&")
+  // }
+
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
   const formik = useFormik({
@@ -58,14 +64,30 @@ const ContactForm = () => {
     validate,
   })
 
-  console.log(
-    <option selected disabled value="">
-      Region
-    </option>
-  )
+  // const onSubmit = (values, submitProps) => {
+  //   formik.handleSubmit()
+  //   fetch("/about#contact", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", ...values }),
+  //   })
+  //     .then(response => {
+  //       if (!response.ok) {
+  //         throw new Error(response.status)
+  //       } else if (response.ok) {
+  //         alert("Success!")
+  //         submitProps.resetForm()
+  //       } else {
+  //         alert("Something went wrong!")
+  //       }
+
+  //       return response
+  //     })
+  //     .catch(error => alert(error))
+  // }
+
   return (
     <FormElement
-      onSubmit={formik.handleSubmit}
       name="contact"
       method="POST"
       data-netlify="true"
@@ -75,7 +97,7 @@ const ContactForm = () => {
       <InputContainer>
         <Select
           id="region"
-          name="region"
+          name="region[]"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.region}
@@ -163,9 +185,15 @@ const ContactForm = () => {
         ) : null}
       </InputContainer>
 
-      <Btn large type="submit">
-        Submit
-      </Btn>
+      {formik.errors.message || formik.values.region === "" ? (
+        <Btn large type="submit" disabled>
+          Submit
+        </Btn>
+      ) : (
+        <Btn large type="submit">
+          Submit
+        </Btn>
+      )}
     </FormElement>
   )
 }

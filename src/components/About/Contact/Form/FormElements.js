@@ -133,6 +133,10 @@ export const Label = styled.label`
     font-size: var(--font-size-bodyXS);
   }
 
+  ${TextArea} ~ & {
+    transform: translateY(0.3rem);
+  }
+
   ${TextArea}:focus ~ & {
     transform: translateY(-3rem);
     font-weight: 700;

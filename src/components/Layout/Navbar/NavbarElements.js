@@ -44,6 +44,8 @@ export const Dropdown = styled.ul`
   position: absolute;
   display: none;
 
+  z-index: 5;
+
   list-style: none;
   top: 2.4rem;
   flex-direction: column;
