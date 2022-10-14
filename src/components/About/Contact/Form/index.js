@@ -45,12 +45,6 @@ const validate = values => {
 }
 
 const ContactForm = () => {
-  // const encode = data => {
-  //   return Object.keys(data)
-  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  //     .join("&")
-  // }
-
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
   const formik = useFormik({
@@ -63,28 +57,6 @@ const ContactForm = () => {
     },
     validate,
   })
-
-  // const onSubmit = (values, submitProps) => {
-  //   formik.handleSubmit()
-  //   fetch("/about#contact", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", ...values }),
-  //   })
-  //     .then(response => {
-  //       if (!response.ok) {
-  //         throw new Error(response.status)
-  //       } else if (response.ok) {
-  //         alert("Success!")
-  //         submitProps.resetForm()
-  //       } else {
-  //         alert("Something went wrong!")
-  //       }
-
-  //       return response
-  //     })
-  //     .catch(error => alert(error))
-  // }
 
   return (
     <FormElement
@@ -102,6 +74,7 @@ const ContactForm = () => {
           onBlur={formik.handleBlur}
           value={formik.values.region}
           filled={formik.values.region}
+          required
         >
           <option selected disabled value="">
             Region
@@ -129,6 +102,7 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.city}
+          required
         />
         <Label htmlFor="city">City or Town</Label>
         {formik.touched.city && formik.errors.city ? (
@@ -145,6 +119,7 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.name}
+          required
         />
         <Label htmlFor="name">Name</Label>
         {formik.touched.name && formik.errors.name ? (
@@ -161,6 +136,7 @@ const ContactForm = () => {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.email}
+          required
         />
         <Label htmlFor="email">Email Address</Label>
         {formik.touched.email && formik.errors.email ? (
@@ -178,6 +154,7 @@ const ContactForm = () => {
           onBlur={formik.handleBlur}
           value={formik.values.message}
           rows="5"
+          required
         />
         <Label htmlFor="message">Your message</Label>
         {formik.touched.message && formik.errors.message ? (
@@ -185,15 +162,15 @@ const ContactForm = () => {
         ) : null}
       </InputContainer>
 
-      {formik.errors.message || formik.values.region === "" ? (
+      {/* {formik.errors.message || formik.values.region === "" ? (
         <Btn large type="submit" disabled>
           Submit
         </Btn>
-      ) : (
-        <Btn large type="submit">
-          Submit
-        </Btn>
-      )}
+      ) : ( */}
+      <Btn large type="submit">
+        Submit
+      </Btn>
+      {/* )} */}
     </FormElement>
   )
 }
