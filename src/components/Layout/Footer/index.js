@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import {
   FooterElement,
@@ -23,7 +24,9 @@ const Footer = () => {
         <Column>
           <List>
             <Item>
-              <ListHeading>about</ListHeading>
+              <Link to={"/about"}>
+                <ListHeading>about</ListHeading>
+              </Link>
             </Item>
             <Item>
               <ListLink to={"/participating-churches"}>
@@ -44,7 +47,9 @@ const Footer = () => {
         <Column>
           <List>
             <Item>
-              <ListHeading>get involved</ListHeading>
+              <Link to={"/get-involved"}>
+                <ListHeading>get involved</ListHeading>
+              </Link>
             </Item>
             <Item>
               <ListLink to={"/get-involved#resources"}>resources</ListLink>
@@ -60,7 +65,9 @@ const Footer = () => {
         <Column>
           <List>
             <Item>
-              <ListHeading>contact</ListHeading>
+              <Link to={"/about#contact"}>
+                <ListHeading>contact</ListHeading>
+              </Link>
             </Item>
           </List>
         </Column>
