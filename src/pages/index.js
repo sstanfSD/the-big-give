@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
+import Modal from "../components/Common/Modal"
 import Header from "../components/Home/Header"
 import About from "../components/Home/About"
 import Steps from "../components/Home/Steps"
@@ -10,17 +11,23 @@ import RegionalChampions from "../components/Home/RegionalChampions"
 import FAQ from "../components/Common/FAQ"
 import SocialMedia from "../components/Home/SocialMedia"
 
-const index = ({ data }) => {
+const Home = ({ data }) => {
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen(!open)
+  }
+
   const FAQs = data.allWpFaq
   const champions = data.allWpRegionalChampion
   return (
     <>
       <PageHead title={"The Big Give"} description={"Lorem Ipsum"} />
-      <Layout>
+      <Layout toggle={toggle}>
+        <Modal open={open} toggle={toggle} />
         <Header />
         <About />
         <Steps />
-        <RegionalChampions champions={champions} />
+        {/* <RegionalChampions champions={champions} /> */}
         <FAQ FAQs={FAQs} />
         <SocialMedia />
       </Layout>
@@ -28,7 +35,7 @@ const index = ({ data }) => {
   )
 }
 
-export default index
+export default Home
 
 export const query = graphql`
   query FaqQuery {

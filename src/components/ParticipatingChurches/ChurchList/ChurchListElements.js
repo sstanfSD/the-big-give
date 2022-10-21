@@ -94,7 +94,8 @@ font-size:1.6rem;
   }
 `
 
-export const ExternalBtn = styled(Link)`
+export const RegisterBtn = styled.button`
+  cursor: pointer;
   display: block;
   text-align: center;
   background-color: var(--color-red);

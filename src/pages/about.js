@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
+import Modal from "../components/Common/Modal"
 import Header from "../components/Common/Header"
 import AboutRegional from "../components/About/AboutRegional"
 import History from "../components/About/History"
@@ -10,7 +11,12 @@ import Team from "../components/About/Team"
 import FAQ from "../components/Common/FAQ"
 import Contact from "../components/About/Contact"
 
-const index = ({ data }) => {
+const About = ({ data }) => {
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen(!open)
+  }
+
   const SEO = data.wpPage.seo
   const header = data.wpPage.common_header
   const team = data.allWpTeamMembers
@@ -19,8 +25,9 @@ const index = ({ data }) => {
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
-      <Layout>
-        <Header header={header} />
+      <Layout toggle={toggle}>
+        <Modal open={open} toggle={toggle} />
+        <Header header={header} toggle={toggle} />
         <AboutRegional />
         <History />
         <Team team={team} />
@@ -31,7 +38,7 @@ const index = ({ data }) => {
   )
 }
 
-export default index
+export default About
 
 export const query = graphql`
   query FaqQuery {

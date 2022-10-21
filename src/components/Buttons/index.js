@@ -3,7 +3,15 @@ import { Link } from "gatsby"
 
 import { ButtonPrimary, ButtonPrimaryBlue } from "./ButtonElements"
 
-export const BtnPrimary = ({ text, to, large }) => {
+export const BtnPrimary = ({ text, large, toggle }) => {
+  return (
+    <ButtonPrimary onClick={toggle} large={large}>
+      {text}
+    </ButtonPrimary>
+  )
+}
+
+export const BtnPrimaryLink = ({ text, large, to }) => {
   return (
     <Link to={to}>
       <ButtonPrimary large={large}>{text}</ButtonPrimary>

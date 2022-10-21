@@ -5,14 +5,14 @@ import { Wrapper, Main } from "./LayoutElements"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, toggle }) => {
   return (
     <>
       <GlobalStyle />
       <Wrapper>
-        <Navbar />
+        <Navbar toggle={toggle} />
         <Main>{children}</Main>
-        <Footer />
+        <Footer toggle={toggle} />
       </Wrapper>
     </>
   )

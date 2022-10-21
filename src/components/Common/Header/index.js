@@ -17,7 +17,7 @@ import { BtnPrimary, BtnPrimaryBlue } from "../../Buttons"
 
 import bg from "../../../assets/images/about/header/text-bg-png.png"
 
-const Header = ({ header }) => {
+const Header = ({ header, toggle }) => {
   return (
     <Section>
       <Container>
@@ -29,10 +29,7 @@ const Header = ({ header }) => {
             <Heading>{header.heading}</Heading>
             <Body>{header.body}</Body>
             {header.redButton && (
-              <BtnPrimary
-                to={header.redButtonLink}
-                text={header.redButtonText}
-              />
+              <BtnPrimary text={header.redButtonText} toggle={toggle} />
             )}
 
             {header.blueButton && (

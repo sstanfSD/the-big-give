@@ -16,9 +16,11 @@ import {
 import { BtnPrimary } from "../../Buttons"
 import MobileMenu from "../MobileMenu"
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
+  console.log(toggle)
+
   const [open, setOpen] = useState(false)
-  const toggle = () => {
+  const openMobileMenu = () => {
     setOpen(!open)
   }
   return (
@@ -70,16 +72,16 @@ const Navbar = () => {
             <InternalLink to="/big-stories">big stories</InternalLink>
           </Item>
           <Item>
-            <BtnPrimary to={"/register"} text={"register"} />
+            <BtnPrimary toggle={toggle} text={"register"} />
           </Item>
         </List>
-        <MobileMenuBtn onClick={toggle} open={open}>
+        <MobileMenuBtn onClick={openMobileMenu} open={open}>
           <div open={open} />
           <div open={open} />
           <div open={open} />
         </MobileMenuBtn>
       </Container>
-      <MobileMenu open={open} toggle={toggle} />
+      <MobileMenu open={open} toggle={openMobileMenu} />
     </Nav>
   )
 }

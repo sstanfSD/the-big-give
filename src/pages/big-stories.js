@@ -1,12 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
+import Modal from "../components/Common/Modal"
 import Header from "../components/Common/Header"
 import Stories from "../components/BigStories/Stories"
 
-const index = ({ data }) => {
+const BigStories = ({ data }) => {
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen(!open)
+  }
+
   const SEO = data.wpPage.seo
   const header = data.wpPage.common_header
   const stories = data.allWpStory
@@ -15,14 +21,15 @@ const index = ({ data }) => {
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
       <Layout>
-        <Header header={header} />
-        <Stories stories={stories} />
+        <Modal toggle={toggle} open={open} />
+        <Header header={header} toggle={toggle} />
+        <Stories stories={stories} toggle={toggle} />
       </Layout>
     </>
   )
 }
 
-export default index
+export default BigStories
 
 export const query = graphql`
   query StoriesQuery {

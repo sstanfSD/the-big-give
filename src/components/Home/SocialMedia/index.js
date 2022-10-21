@@ -7,7 +7,7 @@ import {
   Heading,
   BtnContainer,
 } from "./SocialMediaElements"
-import { BtnPrimary } from "../../Buttons"
+import { BtnPrimaryLink } from "../../Buttons"
 
 const index = () => {
   return (
@@ -18,7 +18,11 @@ const index = () => {
         <EmbedSocialWidget refId="d92dcbe74f730552b8a9dd4325fdf089cd2d91de" />
 
         <BtnContainer>
-          <BtnPrimary to={"/big-stories"} text={"read full stories"} large />
+          <BtnPrimaryLink
+            to={"/big-stories"}
+            text={"read full stories"}
+            large
+          />
         </BtnContainer>
       </Container>
     </Section>

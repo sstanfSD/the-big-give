@@ -14,7 +14,7 @@ import {
   BtnList,
   BtnListItem,
   BtnWhite,
-  ExternalBtn,
+  RegisterBtn,
   ListContainer,
   ListHeading,
   StoryListElement,
@@ -27,9 +27,7 @@ import {
   Excerpt,
 } from "./StoriesElements"
 
-const Stories = ({ stories }) => {
-  console.log(stories)
-
+const Stories = ({ stories, toggle }) => {
   //LIST SELECTION LOGIC
 
   const options = [
@@ -94,9 +92,9 @@ const Stories = ({ stories }) => {
                   )
               })}
               <BtnListItem>
-                <ExternalBtn to={"/register"} large>
+                <RegisterBtn onClick={toggle} large>
                   register your church
-                </ExternalBtn>
+                </RegisterBtn>
               </BtnListItem>
             </BtnList>
           </ContentContainer>

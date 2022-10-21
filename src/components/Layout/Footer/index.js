@@ -12,9 +12,9 @@ import {
   ListLink,
 } from "./FooterElements"
 
-import { BtnPrimaryExternal } from "../../Buttons/"
+import { BtnPrimary } from "../../Buttons/"
 
-const Footer = () => {
+const Footer = ({ toggle }) => {
   return (
     <FooterElement>
       <Container>
@@ -72,7 +72,7 @@ const Footer = () => {
           </List>
         </Column>
         <Column>
-          <BtnPrimaryExternal to={"/"} text={"register your church"} />
+          <BtnPrimary toggle={toggle} text={"register your church"} />
         </Column>
       </Container>
     </FooterElement>

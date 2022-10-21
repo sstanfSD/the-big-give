@@ -77,7 +77,7 @@ const Steps = () => {
             <MobileImageContainer>
               <MobileImage id="step-1-image">
                 <StaticImage
-                  src="../../../assets/images/steps/step-1.png"
+                  src="../../../assets/images/steps/step-1.jpg"
                   alt="step 1"
                 />
               </MobileImage>
@@ -93,7 +93,7 @@ const Steps = () => {
             <MobileImageContainer>
               <MobileImage id="step-2-image">
                 <StaticImage
-                  src="../../../assets/images/steps/step-2.png"
+                  src="../../../assets/images/steps/step-2.jpg"
                   alt="step 2"
                 />
               </MobileImage>
@@ -109,7 +109,7 @@ const Steps = () => {
             <MobileImageContainer>
               <MobileImage id="step-3">
                 <StaticImage
-                  src="../../../assets/images/steps/step-1.png"
+                  src="../../../assets/images/steps/step-3.jpg"
                   alt="step 1"
                 />
               </MobileImage>
@@ -120,7 +120,7 @@ const Steps = () => {
           {imageOneVisible && (
             <Image id="step-1-image">
               <StaticImage
-                src="../../../assets/images/steps/step-1.png"
+                src="../../../assets/images/steps/step-1.jpg"
                 alt="step 1"
               />
             </Image>
@@ -129,7 +129,7 @@ const Steps = () => {
           {imageTwoVisible && (
             <Image id="step-2-image">
               <StaticImage
-                src="../../../assets/images/steps/step-2.png"
+                src="../../../assets/images/steps/step-2.jpg"
                 alt="step 2"
               />
             </Image>
@@ -138,7 +138,7 @@ const Steps = () => {
           {imageThreeVisible && (
             <Image id="step-3">
               <StaticImage
-                src="../../../assets/images/steps/step-1.png"
+                src="../../../assets/images/steps/step-3.jpg"
                 alt="step 1"
               />
             </Image>

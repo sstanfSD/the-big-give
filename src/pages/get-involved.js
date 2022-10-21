@@ -1,13 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
+import Modal from "../components/Common/Modal"
 import Header from "../components/Common/Header"
 import Resources from "../components/GetInvolved/Resources"
 import Events from "../components/GetInvolved/Events"
 
-const index = ({ data }) => {
+const GetInvolved = ({ data }) => {
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen(!open)
+  }
+
   const SEO = data.wpPage.seo
   const header = data.wpPage.common_header
 
@@ -20,8 +26,9 @@ const index = ({ data }) => {
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
-      <Layout>
-        <Header header={header} />
+      <Layout toggle={toggle}>
+        <Modal toggle={toggle} open={open} />
+        <Header header={header} toggle={toggle} />
         <Resources
           resources={resources}
           englishKit={englishKit}
@@ -33,7 +40,7 @@ const index = ({ data }) => {
   )
 }
 
-export default index
+export default GetInvolved
 
 export const query = graphql`
   query ResourcesQuery {

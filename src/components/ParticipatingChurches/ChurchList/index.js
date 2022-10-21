@@ -11,7 +11,7 @@ import {
   BtnList,
   BtnListItem,
   BtnWhite,
-  ExternalBtn,
+  RegisterBtn,
   ListContainer,
   ListHeading,
   ChurchListElement,
@@ -22,9 +22,7 @@ import {
   Details,
 } from "./ChurchListElements"
 
-const ChurchList = ({ churches }) => {
-  console.log(churches)
-
+const ChurchList = ({ churches, toggle }) => {
   //LIST SELECTION LOGIC
 
   const options = [
@@ -88,9 +86,9 @@ const ChurchList = ({ churches }) => {
                   )
               })}
               <BtnListItem>
-                <ExternalBtn to={"/register"} large>
+                <RegisterBtn large onClick={toggle}>
                   register your church
-                </ExternalBtn>
+                </RegisterBtn>
               </BtnListItem>
             </BtnList>
           </ContentContainer>

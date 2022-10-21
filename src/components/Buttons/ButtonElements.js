@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { media } from "../../../media"
 
-export const Button = styled.div`
+export const Button = styled.button`
   border: 2px solid var(--color-black);
   box-shadow: 4px 4px 0 0 var(--color-black);
 
@@ -14,6 +14,7 @@ export const Button = styled.div`
   font-size: ${props => (props.large ? "2.2rem" : "1.6rem")};
 
   transition: all 0.2s ease;
+  cursor: pointer;
 
   ${media.phone`
   padding: 1rem 3rem;

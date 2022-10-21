@@ -73,7 +73,8 @@ export const TextBg = styled.div`
 export const TextContent = styled.div`
   padding: 5rem;
 
-  & div {
+  & button {
+    display: block;
     margin-bottom: 2rem;
   }
 
