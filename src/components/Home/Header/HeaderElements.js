@@ -123,12 +123,12 @@ transform: ${props => `translateY(calc(max(-${props.offset}px, -600px) * .5))`};
   `}
 `
 
-export const Video = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+// export const Video = styled.div`
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
 
-  border: solid 1rem var(--color-blue-light);
-`
+//   border: solid 1rem var(--color-blue-light);
+// `

@@ -12,8 +12,9 @@ import {
   Date,
   VideoContainer,
   VideoWrapper,
-  Video,
 } from "./HeaderElements"
+
+import Video from "./Video/index"
 
 import headingBg from "../../../assets/images/home/HeadingBgWhite.png"
 import dateBg from "../../../assets/images/home/HeadingBgBlack.png"
