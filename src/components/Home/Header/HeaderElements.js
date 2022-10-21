@@ -12,6 +12,15 @@ export const Container = styled.div`
   ${media.tabport`
   height: 80rem;
   `}
+
+  ${media.phone`
+  padding: 10rem 2.5rem 5rem;
+  height: 70rem;
+  `}
+
+  ${media.phonesmall`
+  height: 60rem;
+  `}
 `
 
 export const TextContainer = styled.div`
@@ -22,6 +31,10 @@ export const TextContainer = styled.div`
   text-transform: uppercase;
 
   margin-bottom: 20rem;
+
+  ${media.phone`
+  margin-bottom: 10rem;
+  `}
 `
 
 export const HeadingContainer = styled.div`
@@ -107,7 +120,6 @@ export const VideoContainer = styled.div`
 export const VideoWrapper = styled.div`
   position: relative;
 
-  padding-bottom: 55%;
   width: 100%;
 
   position: relative;
@@ -120,6 +132,16 @@ export const VideoWrapper = styled.div`
 
   ${media.tabport`
 transform: ${props => `translateY(calc(max(-${props.offset}px, -600px) * .5))`};
+  `}
+
+  ${media.phone`
+  transform: ${props =>
+    `translateY(calc(max(-${props.offset}px, -500px) * .5))`};
+  `}
+
+  ${media.phonesmall`
+  transform: ${props =>
+    `translateY(calc(max(-${props.offset}px, -400px) * .5))`};
   `}
 `
 
