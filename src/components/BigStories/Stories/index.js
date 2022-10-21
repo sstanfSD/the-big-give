@@ -61,10 +61,8 @@ const Stories = ({ stories }) => {
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading>Big Stories</Heading>
-            <Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-            </Body>
+            <Heading>Stories by region</Heading>
+
             <BtnList>
               {options.map((option, i) => {
                 if (selected === option) {

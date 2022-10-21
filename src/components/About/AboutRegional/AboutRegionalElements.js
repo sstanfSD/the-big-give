@@ -79,9 +79,11 @@ export const TextContainer = styled.div`
   ${media.tabland`
   max-width: 80rem;`}
 `
-export const Heading = styled.h2``
+export const Heading = styled.h2`
+  margin-bottom: 2.5rem;
+`
 export const Body = styled.p`
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   font-size: var(--font-size-bodyS);
 
   ${media.phone`

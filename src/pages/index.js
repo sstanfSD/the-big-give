@@ -8,6 +8,7 @@ import About from "../components/Home/About"
 import Steps from "../components/Home/Steps"
 import RegionalChampions from "../components/Home/RegionalChampions"
 import FAQ from "../components/Common/FAQ"
+import SocialMedia from "../components/Home/SocialMedia"
 
 const index = ({ data }) => {
   const FAQs = data.allWpFaq
@@ -21,6 +22,7 @@ const index = ({ data }) => {
         <Steps />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
+        <SocialMedia />
       </Layout>
     </>
   )

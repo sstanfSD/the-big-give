@@ -23,10 +23,9 @@ const Team = ({ team }) => {
         <TextContainer>
           <Heading>The Big Give team</Heading>
           <Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            We’re a group of volunteers who have seen how much God can use our
+            free gifts to build bridges between our churches and the communities
+            they serve.
           </Body>
           <BtnPrimary to={"/about#contact"} text={"join the team"} large />
         </TextContainer>

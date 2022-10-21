@@ -29,8 +29,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
-  console.log(offset)
-
   return (
     <Section>
       <Container>

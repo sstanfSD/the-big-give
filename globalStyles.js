@@ -77,7 +77,7 @@ line-height: 1.4;
 
 h2{
 font-size: var(--font-size-headingL);
-line-height: 2;
+line-height: 1.4;
 }
 
 
@@ -86,7 +86,7 @@ a{
 }
 
 p {
-  font-size: var(--font-size-bodyM);
+  font-size: var(--font-size-bodyS);
   line-height: 1.6;
   
 }

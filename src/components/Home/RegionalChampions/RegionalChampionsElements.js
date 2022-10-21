@@ -3,17 +3,21 @@ import { media } from "../../../../media"
 
 export const Section = styled.section`
   background-color: var(--color-white);
+  position: relative;
+
+  height: calc(${props => props.height} * 50rem);
 `
 export const Container = styled.div`
   margin: 0 auto;
   max-width: var(--max-width);
-  padding: 0 10rem;
+  padding: 10rem 0;
 
-  height: 100vh;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
 
   display: grid;
   grid-template-columns: 45% 55%;
-  align-items: center;
 
   ${media.tabland`
     grid-template-columns: 1fr;
@@ -28,27 +32,53 @@ export const Container = styled.div`
 
 export const TextContainer = styled.div`
   border-right: solid 0.2rem var(--color-black);
-  padding: 10rem 5rem 10rem 0;
+  padding: 5rem 5rem 10rem 0;
+  background-color: var(--color-white);
+  position: relative;
+  z-index: 2;
+
+  padding: 0 10rem;
 
   ${media.tabland`
   border-right: 0;
   `}
 `
-export const Heading = styled.h2``
+export const Heading = styled.h2`
+  margin-bottom: 2rem;
+`
 export const Body = styled.p`
   margin-bottom: 5rem;
+  font-size: var(--font-size-bodyS);
 `
 
-export const CardsContainer = styled.div`
-  display: none;
+export const CardsContainer = styled.ul`
+  display: flex;
+  column-gap: 3rem;
 
-  & div:nth-of-type(3n) {
-    background-color: var(--color-red) !important;
-  }
+  height: min-content;
+  align-self: center;
+
+  list-style: none;
+
+  will-change: transform;
+
+  transform: translateX(calc(${props => props.scrollPosition}rem / 8));
 
   ${media.tabland`
   display: flex;
   flex-direction: column;
   align-items: center;
   `}
+
+  & li:nth-of-type(1n) {
+    background-color: var(--color-blue);
+  }
+
+  & li:nth-of-type(2n) {
+    background-color: var(--color-blue-dark);
+  }
+
+  & li:nth-of-type(3n) {
+    background-color: var(--color-red);
+  }
 `

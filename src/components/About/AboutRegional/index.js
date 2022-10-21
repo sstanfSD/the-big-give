@@ -21,16 +21,20 @@ const AboutRegional = () => {
     <Section>
       <Container>
         <TextContainer>
-          <Heading>More about the BIG Give</Heading>
+          <Heading>
+            “It’s the best outreach event we’ve ever been a part of.”
+          </Heading>
           <Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. <br />
+            It’s amazing how a free gift can build a bridge into your community.
+            And it’s so simple. We’ve seen churches offer free garage sales, car
+            washes, BBQs, movies in the park, pony rides and face painting. Some
+            churches even provided free haircuts and bouncy castles for kids.
+            Whatever you do, make it free.
             <br />
-            <strong>
-              Some text about getting involved in your own region.
-            </strong>
+            <br /> Get your church to join with thousands of other Christians
+            across the country for a unified day of giving extravagantly on
+            Saturday, June 3, 2023. Click on your region below. <br /> <br />{" "}
+            Don’t see your area? Talk to us about becoming a regional champion.
           </Body>
           <BtnContainer>
             <Top>

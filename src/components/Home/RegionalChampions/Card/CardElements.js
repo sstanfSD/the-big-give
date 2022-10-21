@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import { media } from "../../../../../media"
 
-export const CardsContainer = styled.div`
-  max-width: 50rem;
+export const CardContainer = styled.li`
+  width: 40rem;
 
   box-shadow: 8px 8px 0 0 var(--color-black);
 
@@ -15,7 +15,9 @@ export const CardsContainer = styled.div`
 
   //CARD BGs in style.css
 `
-export const ImageContainer = styled.div``
+export const ImageContainer = styled.div`
+  width: 40rem;
+`
 export const TextContainer = styled.div`
   padding: 2.5rem 2.5rem 1rem 2.5rem;
 `

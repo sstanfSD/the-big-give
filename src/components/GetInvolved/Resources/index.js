@@ -43,8 +43,9 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
           <ContentContainer>
             <Heading>Registration Resources</Heading>
             <Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Logo files, flyers, PowerPoint slides, promotional videos, prayer
+              letters… download all the resources you need to run a successful
+              Big Give event at your church.
             </Body>
             <BtnList>
               <BtnListItem>

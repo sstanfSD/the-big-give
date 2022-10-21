@@ -38,12 +38,14 @@ const About = () => {
         </ImageContainer>
         <ImageFilter />
         <TextContainer>
-          <Heading>about the Big Give</Heading>
+          <Heading>Join a national movement of generosity</Heading>
           <Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Each year, churches across Canada bless their neighbourhoods through
+            a day of giving extravagantly where EVERYTHING IS FREE!
+            <br />
+            <br /> The Big Give is run by volunteers who are fueled by the
+            testimonies that this day produces. Join us on Saturday, June 3,
+            2023, and see what happens in your town.
           </Body>
         </TextContainer>
       </Container>

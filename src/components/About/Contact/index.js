@@ -22,8 +22,8 @@ const Contact = () => {
           <TextContainer>
             <Heading>Get in touch</Heading>
             <Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+              We want to hear from you. Reach out to us and we’ll respond as
+              quickly as possible.
             </Body>
           </TextContainer>
           <Form />

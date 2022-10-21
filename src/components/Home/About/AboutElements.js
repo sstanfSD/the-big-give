@@ -85,7 +85,7 @@ export const TextContainer = styled.div`
 
   text-align: center;
 
-  max-width: 80rem;
+  max-width: 90rem;
 `
 export const Heading = styled.h2``
 export const Body = styled.p``
