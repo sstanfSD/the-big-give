@@ -4,7 +4,7 @@ export const QuestionElement = styled.p`
   font-size: 1.8rem;
   font-weight: bold;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: ${props => (props.open ? "var(--color-white)" : "#C9C9C9")};
 
   cursor: pointer;
@@ -17,6 +17,7 @@ export const QuestionElement = styled.p`
 export const Answer = styled.div`
   display: ${props => (props.open ? "block" : "none")};
   margin-bottom: 3rem;
+  margin-top: -1rem;
 
   & p {
     font-size: 1.6rem;

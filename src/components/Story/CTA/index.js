@@ -3,7 +3,7 @@ import { BtnPrimary } from "../../Buttons"
 
 import { Section, Container, TextContainer, Heading, Body } from "./CTAElements"
 
-const CTA = () => {
+const CTA = ({ toggle }) => {
   return (
     <Section>
       <Container>
@@ -13,7 +13,7 @@ const CTA = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Body>
-          <BtnPrimary large to={"/"} text={"register your church"} />
+          <BtnPrimary large toggle={toggle} text={"register your church"} />
         </TextContainer>
       </Container>
     </Section>

@@ -1,17 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout/index"
+import Modal from "../components/Common/Modal"
 import PageHead from "../components/PageHead"
 import Header from "../components/Story/Header"
 import Main from "../components/Story/Main"
 import CTA from "../components/Story/CTA"
 
-const story = ({ data }) => {
+const Story = ({ data }) => {
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen(!open)
+  }
+
   const story = data.post
 
   return (
     <Layout>
+      <Modal open={open} toggle={toggle} />
       <Header
         img={story.featuredImage.node.localFile.childImageSharp.gatsbyImageData}
         alt={story.featuredImage.altText}
@@ -21,12 +28,12 @@ const story = ({ data }) => {
         excerpt={story.excerpt}
       />
       <Main content={story.content} images={story.stories.storyImages} />
-      <CTA />
+      <CTA toggle={toggle} />
     </Layout>
   )
 }
 
-export default story
+export default Story
 
 export const storyQuery = graphql`
   query storyById($id: String!) {

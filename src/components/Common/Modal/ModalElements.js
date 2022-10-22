@@ -97,7 +97,6 @@ export const BtnWhite = styled.a`
     props.active
       ? "0 0 0 0 var(--color-black)"
       : "4px 4px 0 0 var(--color-black)"};
-  transform: translate(4px, 4px);
 
   ${media.tabport`
   max-width: 40rem;
