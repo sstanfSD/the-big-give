@@ -20,7 +20,7 @@ const RegionalChampions = ({ champions }) => {
   const scrollHandler = () => {
     console.log(Math.round(cardsRef.current.getBoundingClientRect().y))
 
-    // setScrollPosition(Math.round(cardsRef.current.getBoundingClientRect().y))
+    setScrollPosition(Math.round(cardsRef.current.getBoundingClientRect().y))
   }
 
   useEffect(() => {

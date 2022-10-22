@@ -27,7 +27,7 @@ const Home = ({ data }) => {
         <Header />
         <About />
         <Steps />
-        {/* <RegionalChampions champions={champions} /> */}
+        <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
         <SocialMedia />
       </Layout>
