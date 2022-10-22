@@ -13,10 +13,16 @@ export const CardContainer = styled.li`
     transform: translate(8px, 8px);
   }
 
-  //CARD BGs in style.css
+  ${media.tabland`
+width: calc(100% - .1rem);
+`}
 `
 export const ImageContainer = styled.div`
   width: 40rem;
+
+  ${media.tabland`
+width: 100%;
+`}
 `
 export const TextContainer = styled.div`
   padding: 2.5rem 2.5rem 1rem 2.5rem;

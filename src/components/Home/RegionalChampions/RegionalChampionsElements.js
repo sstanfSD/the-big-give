@@ -6,6 +6,10 @@ export const Section = styled.section`
   position: relative;
 
   height: calc(${props => props.height} * 50rem);
+
+  ${media.tabland`
+height: 100%;
+`}
 `
 export const Container = styled.div`
   margin: 0 auto;
@@ -20,9 +24,11 @@ export const Container = styled.div`
   grid-template-columns: 45% 55%;
 
   ${media.tabland`
+
+    max-width: 80rem;
     grid-template-columns: 1fr;
     height: 100%;
-    padding: 0 5rem 5rem;
+    padding: 10rem 5rem 5rem;
   `}
 
   ${media.phone`
@@ -41,6 +47,7 @@ export const TextContainer = styled.div`
 
   ${media.tabland`
   border-right: 0;
+  padding: 0 0rem;
   `}
 `
 export const Heading = styled.h2`
@@ -65,9 +72,13 @@ export const CardsContainer = styled.ul`
   transform: translateX(calc(${props => props.scrollPosition}rem / 8));
 
   ${media.tabland`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    transform: translateX(0);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 5rem;
+  margin-top: 10rem;
   `}
 
   & li:nth-of-type(1n) {

@@ -18,7 +18,7 @@ html{
     height:100%;
     font-family: 'Montserrat', sans-serif;
 
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 
 }
 
