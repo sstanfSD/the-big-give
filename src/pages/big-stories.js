@@ -6,6 +6,7 @@ import Layout from "../components/Layout/index"
 import Modal from "../components/Common/Modal"
 import Header from "../components/Common/Header"
 import Stories from "../components/BigStories/Stories"
+import Videos from "../components/BigStories/Videos"
 
 const BigStories = ({ data }) => {
   const [open, setOpen] = useState(false)
@@ -16,6 +17,7 @@ const BigStories = ({ data }) => {
   const SEO = data.wpPage.seo
   const header = data.wpPage.common_header
   const stories = data.allWpStory
+  const videos = data.allWpVideoTestimonial
 
   return (
     <>
@@ -24,6 +26,7 @@ const BigStories = ({ data }) => {
         <Modal toggle={toggle} open={open} />
         <Header header={header} toggle={toggle} />
         <Stories stories={stories} toggle={toggle} />
+        <Videos videos={videos} />
       </Layout>
     </>
   )
@@ -81,6 +84,22 @@ export const query = graphql`
         stories {
           location
           region
+        }
+      }
+    }
+    allWpVideoTestimonial {
+      nodes {
+        title
+        video {
+          videoEmbedCode
+          videoThumbnail {
+            altText
+            localFile {
+              childImageSharp {
+                gatsbyImageData(aspectRatio: 1.5)
+              }
+            }
+          }
         }
       }
     }
