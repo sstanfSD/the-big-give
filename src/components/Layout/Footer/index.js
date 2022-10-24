@@ -60,6 +60,14 @@ const Footer = ({ toggle }) => {
             <Item>
               <ListLink to={"/about#serve"}>serve</ListLink>
             </Item>
+            <Item>
+              <ListLink to={"/the-big-give-agreement"}>
+                the big give agreement
+              </ListLink>
+            </Item>
+            <Item>
+              <ListLink to={"/statement-of-faith"}>statement of faith</ListLink>
+            </Item>
           </List>
         </Column>
         <Column>
