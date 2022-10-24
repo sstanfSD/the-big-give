@@ -170,10 +170,26 @@ export const StoryListElement = styled.ul`
   grid-template-columns: 1fr 1fr;
   `}
 
+  ${media.tabland`
+  grid-template-columns: 1fr;
+  `}
+
+  ${media.tabport`
+  grid-template-columns: 1fr 1fr;
+  `}
+
+  ${media.phone`
+  grid-template-columns: 1fr;
+  `}
+
   & li {
     width: 30rem;
     box-shadow: 8px 8px 0 0 var(--color-black);
     transition: all 0.2s ease;
+
+    ${media.tabport`
+    width: 100%;
+  `}
   }
 
   & li:hover {
