@@ -34,4 +34,9 @@ export const TextContainer = styled.div`
       margin: 3rem 0;
     }
   }
+
+  & a {
+    text-decoration: underline;
+    color: var(--color-black);
+  }
 `

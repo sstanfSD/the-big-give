@@ -1,29 +1,29 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React, { useState } from "react"
+import { Link } from "gatsby"
+import PageHead from "../components/PageHead"
+import Layout from "../components/Layout/index"
+import AltHeader from "../components/Common/AltHeader"
+import PlainText from "../components/Common/PlainText"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-
-const NotFoundPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const StatementOfFaith = ({ data }) => {
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="404: Not Found" />
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
+    <>
+      <PageHead
+        title={"Statement of faith"}
+        description={"404 Page Not Found"}
+      />
+      <Layout>
+        <AltHeader heading={"The Big Give Agreement"} />
+        <PlainText>
+          <p>
+            We're sorry, we couldnt find what you were looking for.
+            <br />
+            <Link to={"/"}>Click here to return home</Link>.
+          </p>
+        </PlainText>
+      </Layout>
+    </>
   )
 }
 
-export default NotFoundPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default StatementOfFaith
