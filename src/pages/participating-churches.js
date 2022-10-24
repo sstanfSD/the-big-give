@@ -5,6 +5,7 @@ import PageHead from "../components/PageHead"
 import Modal from "../components/Common/Modal"
 import Layout from "../components/Layout/index"
 import Header from "../components/Common/Header"
+import MapSection from "../components/ParticipatingChurches/MapSection"
 import ChurchList from "../components/ParticipatingChurches/ChurchList"
 
 const ParticipatingChurches = ({ data }) => {
@@ -16,6 +17,7 @@ const ParticipatingChurches = ({ data }) => {
   const SEO = data.wpPage.seo
   const header = data.wpPage.common_header
   const churches = data.allWpParticipatingChurch
+  const markers = data.wpPage.mapMarkers
 
   return (
     <>
@@ -23,6 +25,7 @@ const ParticipatingChurches = ({ data }) => {
       <Layout toggle={toggle}>
         <Modal toggle={toggle} open={open} />
         <Header header={header} toggle={toggle} />
+        <MapSection markers={markers} />
         <ChurchList churches={churches} toggle={toggle} />
       </Layout>
     </>
@@ -56,6 +59,15 @@ export const query = graphql`
         redButton
         redButtonLink
         redButtonText
+      }
+      mapMarkers {
+        marker {
+          churchAddress
+          churchName
+          fieldGroupName
+          latitude
+          longitude
+        }
       }
     }
     allWpParticipatingChurch(sort: { fields: title, order: ASC }) {
