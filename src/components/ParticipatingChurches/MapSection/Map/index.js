@@ -13,11 +13,7 @@ const center = {
   lng: -77.121505,
 }
 
-const zoom = 6
-
 function MyComponent({ markers }) {
-  console.log(markers)
-
   const [activeMarker, setActiveMarker] = useState(null)
   const handleActiveMarker = marker => {
     if (marker === activeMarker) {
@@ -34,8 +30,7 @@ function MyComponent({ markers }) {
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center)
-    map.fitBounds(bounds)
+    map.setZoom(6)
     setMap(map)
   }, [])
 
@@ -48,7 +43,7 @@ function MyComponent({ markers }) {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={zoom}
+        zoom={6}
         onLoad={onLoad}
         onUnmount={onUnmount}
         onClick={() => setActiveMarker(null)}
