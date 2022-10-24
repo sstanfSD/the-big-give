@@ -32,7 +32,7 @@ export const Container = styled.div`
   `}
 
   ${media.phone`
-    padding: 0 2.5rem 2.5rem;
+    padding: 5rem 2.5rem 2.5rem;
   `}
 `
 
@@ -79,6 +79,11 @@ export const CardsContainer = styled.ul`
 
   gap: 5rem;
   margin-top: 10rem;
+  `}
+
+  ${media.phone`
+  grid-template-columns: 1fr;
+  justify-items: center;
   `}
 
   & li:nth-of-type(1n) {

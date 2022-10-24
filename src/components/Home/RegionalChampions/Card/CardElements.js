@@ -16,6 +16,10 @@ export const CardContainer = styled.li`
   ${media.tabland`
 width: calc(100% - .1rem);
 `}
+
+  ${media.phone`
+max-width: 40rem;
+`}
 `
 export const ImageContainer = styled.div`
   width: 40rem;

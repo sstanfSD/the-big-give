@@ -87,5 +87,9 @@ export const TextContainer = styled.div`
 
   max-width: 90rem;
 `
-export const Heading = styled.h2``
-export const Body = styled.p``
+export const Heading = styled.h2`
+  margin-bottom: 2rem;
+`
+export const Body = styled.p`
+  font-size: var(--font-size-bodyM);
+`

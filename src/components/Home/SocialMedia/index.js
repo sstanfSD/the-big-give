@@ -6,6 +6,7 @@ import {
   Container,
   Heading,
   BtnContainer,
+  SocialContainer,
 } from "./SocialMediaElements"
 import { BtnPrimaryLink } from "../../Buttons"
 
@@ -15,8 +16,9 @@ const index = () => {
       <Container>
         <Heading>See our work on social media</Heading>
 
-        <EmbedSocialWidget refId="d92dcbe74f730552b8a9dd4325fdf089cd2d91de" />
-
+        <SocialContainer>
+          <EmbedSocialWidget refId="d92dcbe74f730552b8a9dd4325fdf089cd2d91de" />
+        </SocialContainer>
         <BtnContainer>
           <BtnPrimaryLink
             to={"/big-stories"}
