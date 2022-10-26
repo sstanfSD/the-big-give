@@ -19,7 +19,7 @@ import Video from "./Video/index"
 import headingBg from "../../../assets/images/home/HeadingBgWhite.png"
 import dateBg from "../../../assets/images/home/HeadingBgBlack.png"
 
-const Header = () => {
+const Header = ({ date }) => {
   const [offset, setOffset] = useState(0)
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Header = () => {
               <img src={dateBg} />
             </DateBg>
 
-            <Date>Saturday June 3, 2023</Date>
+            <Date>{date}</Date>
           </DateContainer>
         </TextContainer>
         <VideoContainer>

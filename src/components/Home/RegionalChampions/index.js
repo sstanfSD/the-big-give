@@ -18,8 +18,6 @@ const RegionalChampions = ({ champions }) => {
   const [scrollPosition, setScrollPosition] = useState(0)
 
   const scrollHandler = () => {
-    console.log(Math.round(cardsRef.current.getBoundingClientRect().y))
-
     setScrollPosition(Math.round(cardsRef.current.getBoundingClientRect().y))
   }
 

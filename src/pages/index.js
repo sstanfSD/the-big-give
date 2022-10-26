@@ -10,6 +10,7 @@ import Steps from "../components/Home/Steps"
 import RegionalChampions from "../components/Home/RegionalChampions"
 import FAQ from "../components/Common/FAQ"
 import SocialMedia from "../components/Home/SocialMedia"
+import ThankYou from "../components/Home/ThankYou"
 
 const Home = ({ data }) => {
   const [open, setOpen] = useState(false)
@@ -17,19 +18,23 @@ const Home = ({ data }) => {
     setOpen(!open)
   }
 
+  const date = data.wpPage.homeheader.eventDate
   const FAQs = data.allWpFaq
   const champions = data.allWpRegionalChampion
+  const thankyou = data.wpPage.thankyou
+
   return (
     <>
       <PageHead title={"The Big Give"} description={"Lorem Ipsum"} />
       <Layout toggle={toggle}>
         <Modal open={open} toggle={toggle} />
-        <Header />
+        <Header date={date} />
         <About />
         <Steps toggle={toggle} />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
         <SocialMedia />
+        <ThankYou thankyou={thankyou} toggle={toggle} />
       </Layout>
     </>
   )
@@ -38,7 +43,28 @@ const Home = ({ data }) => {
 export default Home
 
 export const query = graphql`
-  query FaqQuery {
+  query HomeQuery {
+    wpPage(uri: { eq: "/" }) {
+      id
+      thankyou {
+        body
+        heading
+        images {
+          altText
+          localFile {
+            childImageSharp {
+              gatsbyImageData(aspectRatio: 1.5)
+            }
+          }
+        }
+        storylinks {
+          storySlug
+        }
+      }
+      homeheader {
+        eventDate
+      }
+    }
     allWpFaq(sort: { order: ASC, fields: date }) {
       nodes {
         faq {

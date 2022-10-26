@@ -68,7 +68,7 @@ const EventList = ({ events }) => {
           <ContentContainer>
             <Heading>Events</Heading>
             <Body>
-              There are regional events leading up to the Big Give on the last
+              There are regional events leading up to the Big Give on the first
               Saturday of June. Find prayer meetings, organizing events and
               other important dates in your region here.
             </Body>

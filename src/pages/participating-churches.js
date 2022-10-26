@@ -57,7 +57,6 @@ export const query = graphql`
           }
         }
         redButton
-        redButtonLink
         redButtonText
       }
       mapMarkers {

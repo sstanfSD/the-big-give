@@ -41,6 +41,14 @@ export const TextContainer = styled.div`
   padding: 10rem;
   text-align: left;
 
+  ${media.phone`
+  padding: 5rem;
+  `}
+
+  ${media.phonesmall`
+  padding: 5rem 2.5rem;
+  `}
+
   & h2 {
     margin-bottom: 2rem;
   }

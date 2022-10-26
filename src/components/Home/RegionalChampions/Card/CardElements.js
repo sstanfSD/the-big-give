@@ -8,11 +8,6 @@ export const CardContainer = styled.li`
 
   transition: all 0.2s ease;
 
-  &:hover {
-    box-shadow: 0 0 0 0 var(--color-black);
-    transform: translate(8px, 8px);
-  }
-
   ${media.tabland`
 width: calc(100% - .1rem);
 `}
@@ -20,7 +15,15 @@ width: calc(100% - .1rem);
   ${media.phone`
 max-width: 40rem;
 `}
+
+pointer-events: none;
+
+  &:hover {
+    box-shadow: 0 0 0 0 var(--color-black);
+    transform: translate(8px, 8px);
+  }
 `
+
 export const ImageContainer = styled.div`
   width: 40rem;
 
@@ -45,6 +48,8 @@ export const ChampionInfo = styled.div`
   font-size: 1.6rem;
   padding-bottom: 2rem;
   line-height: 1.6;
+
+  pointer-events: auto;
 `
 export const Name = styled.div``
 export const Email = styled.a`
