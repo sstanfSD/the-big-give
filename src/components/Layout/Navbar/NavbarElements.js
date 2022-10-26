@@ -31,6 +31,7 @@ export const Container = styled.div`
 
 export const LogoContainer = styled.div`
   width: 100%;
+  max-width: 22rem;
   ${media.tabland`
     max-width: 15rem
 `}

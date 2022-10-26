@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 import {
   FooterElement,
@@ -14,12 +15,21 @@ import {
 
 import { BtnPrimary } from "../../Buttons/"
 
+import logowhite from "../../../assets/logos/logo-white.png"
+
 const Footer = ({ toggle }) => {
   return (
     <FooterElement>
       <Container>
         <Column>
-          <LogoContainer>LOGO</LogoContainer>
+          <LogoContainer>
+            <Link to="/">
+              <StaticImage
+                src="../../../assets/logos/logo-white.png"
+                alt="The Big Give logo in white."
+              />
+            </Link>
+          </LogoContainer>
         </Column>
         <Column>
           <List>
@@ -76,6 +86,15 @@ const Footer = ({ toggle }) => {
               <Link to={"/about#contact"}>
                 <ListHeading>contact</ListHeading>
               </Link>
+            </Item>
+            <Item>
+              <p>Kathy Blakely</p>
+            </Item>
+            <Item>
+              <a href="tel:6132822015">613-282-2015</a>
+            </Item>
+            <Item>
+              <a href="mailto:kathy@thebiggive.ca">kathy@thebiggive.ca</a>
             </Item>
           </List>
         </Column>

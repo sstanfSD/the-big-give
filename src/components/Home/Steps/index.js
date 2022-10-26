@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 import {
   Section,
@@ -13,7 +14,9 @@ import {
   MobileImage,
 } from "./StepsElements"
 
-const Steps = () => {
+import { BtnPrimary } from "../../../components/Buttons"
+
+const Steps = ({ toggle }) => {
   //SCROLL ANIMATION
 
   const [imageOneVisible, setImageOneVisible] = useState(true)
@@ -71,7 +74,17 @@ const Steps = () => {
             <TextContainer>
               <div>
                 <h2>Step 1</h2>
-                <p>Lorem</p>
+                <p>
+                  Read the{" "}
+                  <Link to="/the-big-give-agreement">church agreements</Link>{" "}
+                  and <Link to="/statement-of-faith">statement of faith</Link>
+                  and register your church.
+                </p>
+                <BtnPrimary
+                  toggle={toggle}
+                  text={"register your church"}
+                  large
+                />
               </div>
             </TextContainer>
             <MobileImageContainer>
@@ -87,7 +100,10 @@ const Steps = () => {
             <TextContainer>
               <div>
                 <h2>Step 2</h2>
-                <p>Lorem</p>
+                <p>
+                  Gather a team at your church to dream and pray over your plans
+                  for Saturday, June 3, 2023.{" "}
+                </p>
               </div>
             </TextContainer>
             <MobileImageContainer>
@@ -103,7 +119,10 @@ const Steps = () => {
             <TextContainer>
               <div>
                 <h2>Step 3</h2>
-                <p>Lorem</p>
+                <p>
+                  Pray some more while you prepare for the big day using our{" "}
+                  <Link to="/get-involved#resources">free resources</Link>.
+                </p>
               </div>
             </TextContainer>
             <MobileImageContainer>

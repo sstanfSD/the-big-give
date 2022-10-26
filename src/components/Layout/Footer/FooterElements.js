@@ -48,7 +48,6 @@ export const Column = styled.div`
 `
 
 export const LogoContainer = styled.div`
-  background-color: var(--color-white);
   width: 16rem;
 `
 
@@ -57,14 +56,19 @@ export const List = styled.ul`
 `
 export const Item = styled.li`
   margin-bottom: 1.5rem;
+
+  & a,
+  p {
+    font-size: 1.6rem;
+    color: var(--color-white);
+  }
 `
 export const ListHeading = styled(Link)`
-  font-size: 2.4rem;
-  color: var(--color-blue-light);
+  font-size: 2.4rem !important;
+  color: var(--color-blue-light) !important;
   font-weight: bold;
 `
 export const ListLink = styled(Link)`
   font-size: 1.6rem;
   color: var(--color-white);
 `
-export const ExternalLink = styled.a``

@@ -37,6 +37,23 @@ export const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  padding: 10rem;
+  text-align: left;
+
+  & h2 {
+    margin-bottom: 2rem;
+  }
+
+  & p {
+    font-size: var(--font-size-bodyM);
+    margin-bottom: 5rem;
+  }
+
+  & a {
+    text-decoration: underline;
+    color: var(--color-black);
+  }
 `
 export const ImagesContainer = styled.div`
   width: 100%;

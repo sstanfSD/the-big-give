@@ -26,7 +26,7 @@ const Home = ({ data }) => {
         <Modal open={open} toggle={toggle} />
         <Header />
         <About />
-        <Steps />
+        <Steps toggle={toggle} />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
         <SocialMedia />
