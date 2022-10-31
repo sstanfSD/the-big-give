@@ -18,6 +18,7 @@ import { BtnPrimary, BtnPrimaryBlue } from "../../Buttons"
 import bg from "../../../assets/images/about/header/text-bg-png.png"
 
 const Header = ({ header, toggle }) => {
+  console.log(header)
   return (
     <Section>
       <Container>
@@ -27,7 +28,7 @@ const Header = ({ header, toggle }) => {
           </TextBg>
           <TextContent>
             <Heading>{header.heading}</Heading>
-            <Body>{header.body}</Body>
+            <Body dangerouslySetInnerHTML={{ __html: header.body }} />
             {header.redButton && (
               <BtnPrimary text={header.redButtonText} toggle={toggle} />
             )}

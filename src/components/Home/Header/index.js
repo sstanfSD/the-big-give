@@ -36,16 +36,13 @@ const Header = ({ date }) => {
         <TextContainer>
           <HeadingContainer>
             <HeadingBg>
-              <img src={headingBg} />
+              <img src={headingBg} alt="Heading background" />
             </HeadingBg>
-            <Heading>
-              A gift opens the door. <br />
-              Jesus does the rest.
-            </Heading>
+            <Heading>Outreach is easy when it starts with GIVING</Heading>
           </HeadingContainer>
           <DateContainer>
             <DateBg>
-              <img src={dateBg} />
+              <img src={dateBg} alt="Date backgroud" />
             </DateBg>
 
             <Date>{date}</Date>

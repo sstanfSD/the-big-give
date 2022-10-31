@@ -2,10 +2,16 @@ import React, { useState } from "react"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
+import Modal from "../components/Common/Modal"
 import AltHeader from "../components/Common/AltHeader"
 import PlainText from "../components/Common/PlainText"
 
 const StatementOfFaith = ({ data }) => {
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen(!open)
+  }
+
   return (
     <>
       <PageHead
@@ -14,7 +20,8 @@ const StatementOfFaith = ({ data }) => {
           "The Big Give is organized by volunteers and groups from many different Christian traditions, but we’re inspired by a common profession of faith."
         }
       />
-      <Layout>
+      <Layout toggle={toggle}>
+        <Modal toggle={toggle} open={open} />
         <AltHeader heading={"Statement of Faith"} />
         <PlainText>
           <p>

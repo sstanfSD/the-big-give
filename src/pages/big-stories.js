@@ -22,7 +22,7 @@ const BigStories = ({ data }) => {
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
-      <Layout>
+      <Layout toggle={toggle}>
         <Modal toggle={toggle} open={open} />
         <Header header={header} toggle={toggle} />
         <Stories stories={stories} toggle={toggle} />

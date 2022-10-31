@@ -91,12 +91,17 @@ export const TextContent = styled.div`
 `
 
 export const Heading = styled.h1``
-export const Body = styled.p`
+export const Body = styled.div`
   margin-bottom: 5rem;
+
+  & p {
+    font-size: var(--font-size-bodyXS);
+    margin-bottom: 1.2rem;
+  }
 
   ${media.phonesmall`
   margin-bottom: 2.5rem;
-  `}
+  `};
 `
 
 export const ImageContainer = styled.div`

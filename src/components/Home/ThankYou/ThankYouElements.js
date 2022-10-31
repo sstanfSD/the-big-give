@@ -28,7 +28,7 @@ grid-template-columns: 1fr;
   `}
 
   ${media.phonesmall`
-  padding: 5rem 1rem;
+  padding: 5rem 2.5rem;
   `}
 `
 export const TextContainer = styled.div`

@@ -58,7 +58,7 @@ export const HeadingBg = styled.div`
   width: 100%;
   height: 110%;
 
-  padding: 0 2rem;
+  padding: 0rem;
 
   z-index: -1;
 
@@ -70,11 +70,12 @@ export const HeadingBg = styled.div`
   }
 `
 export const Heading = styled.h1`
-  margin-top: 2rem;
+  margin: 2rem 1rem 0;
   font-size: var(--font-size-headingXXL);
 
   ${media.laptopsmall`
   font-size: var(--font-size-headingXL);
+  width: 95%;
   `}
 `
 
