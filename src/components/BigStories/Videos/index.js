@@ -15,13 +15,27 @@ import {
   VideoTitle,
 } from "./VideoElements"
 
+import Thumbnail from "./Thumbnail"
+import VideoModal from "./VideoModal"
+
 const Videos = ({ videos }) => {
+  console.log(videos)
+
+  //PLAY ACTIVE VIDEO
+  const [activeVideo, setActiveVideo] = useState(-1)
+  const playVideo = i => {
+    setActiveVideo(i)
+  }
+
+  const closeVideo = () => {
+    setActiveVideo(-1)
+  }
+
+  // SCROLL ANIMATION
   const videosRef = useRef()
   const [scrollPosition, setScrollPosition] = useState(0)
 
   const scrollHandler = () => {
-    console.log(Math.round(videosRef.current.getBoundingClientRect().y))
-
     setScrollPosition(Math.round(videosRef.current.getBoundingClientRect().y))
   }
 
@@ -50,23 +64,49 @@ const Videos = ({ videos }) => {
           >
             {videos.nodes.map((video, i) => {
               return (
-                <VideoContainer key={i}>
-                  <VideoThumbnail
+                // <VideoContainer key={i}>
+                //   <VideoThumbnail
+                //     image={
+                //       video.video.videoThumbnail.localFile.childImageSharp
+                //         .gatsbyImageData
+                //     }
+                //     alt={video.video.videoThumbnail.altText}
+                //   />
+                //   <VideoOverlay>
+                //     <VideoTitle>{video.title}</VideoTitle>
+                //   </VideoOverlay>
+                // </VideoContainer>
+                <div
+                  onClick={() => {
+                    playVideo(i)
+                  }}
+                >
+                  <Thumbnail
+                    key={i}
                     image={
                       video.video.videoThumbnail.localFile.childImageSharp
                         .gatsbyImageData
                     }
-                    alt={video.video.videoThumbnail.altText}
+                    alt={video.video.videoThumbnail.altTex}
+                    title={video.title}
                   />
-                  <VideoOverlay>
-                    <VideoTitle>{video.title}</VideoTitle>
-                  </VideoOverlay>
-                </VideoContainer>
+                </div>
               )
             })}
           </VideosContainer>
         </VideosWrapper>
       </Container>
+      {videos.nodes.map((video, i) => {
+        return (
+          <VideoModal
+            key={i}
+            index={i}
+            activeVideo={activeVideo}
+            closeVideo={closeVideo}
+            video={video.video.videoEmbedCode}
+          />
+        )
+      })}
     </Section>
   )
 }

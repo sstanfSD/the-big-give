@@ -18,7 +18,6 @@ import { BtnPrimary, BtnPrimaryBlue } from "../../Buttons"
 import bg from "../../../assets/images/about/header/text-bg-png.png"
 
 const Header = ({ header, toggle }) => {
-  console.log(header)
   return (
     <Section>
       <Container>
