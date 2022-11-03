@@ -52,8 +52,8 @@ const Videos = ({ videos }) => {
         <TextContainer>
           <Heading>Video testimonials</Heading>
           <Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+            See some of our favourite people and hear the stories from past Big
+            Give events.
           </Body>
         </TextContainer>
         <VideoRef ref={videosRef} />

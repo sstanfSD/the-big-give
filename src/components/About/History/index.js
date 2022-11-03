@@ -22,7 +22,7 @@ const History = () => {
           <Heading>History of the Big Give</Heading>
           <Body>
             <p>
-              The idea of a city-wide “Big Give” dates back to 2009. A local
+              The idea of a citywide “Big Give” dates back to 2009. A local
               church in Ottawa had just completed The 40 Days of Community by
               Rick Warren. The challenge at the end of the book study was to
               find a church-wide project that would reach the community in a
