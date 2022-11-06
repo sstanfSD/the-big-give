@@ -18,6 +18,8 @@ import {
 import { BtnPrimary } from "../../Buttons"
 
 const ThankYou = ({ thankyou, toggle }) => {
+  console.log(thankyou)
+
   return (
     <Section>
       <Container>
@@ -28,7 +30,9 @@ const ThankYou = ({ thankyou, toggle }) => {
             {thankyou.storylinks.map((link, i) => {
               return (
                 <li>
-                  <StoryLink to={`/stories/${link.storySlug}`}>story</StoryLink>
+                  <StoryLink to={`/stories/${link.storySlug}`}>
+                    {link.storyTitle}
+                  </StoryLink>
                 </li>
               )
             })}

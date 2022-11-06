@@ -59,6 +59,7 @@ export const query = graphql`
         }
         storylinks {
           storySlug
+          storyTitle
         }
       }
       homeheader {
