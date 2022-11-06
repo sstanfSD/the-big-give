@@ -14,7 +14,7 @@ import {
   BtnList,
   BtnListItem,
   BtnWhite,
-  ExternalBtn,
+  Contact,
   ListContainer,
   ListHeading,
   ImageContainer,
@@ -103,9 +103,15 @@ const EventList = ({ events }) => {
                   )
               })}
               <BtnListItem>
-                <RegisterBtn large onClick={toggle}>
+                <Contact>
+                  To register an event in your community, please email{" "}
+                  <a href="mailto:janice@onewayministries.ca">
+                    janice@onewayministries.ca
+                  </a>
+                </Contact>
+                {/* <RegisterBtn large onClick={toggle}>
                   register an event
-                </RegisterBtn>
+                </RegisterBtn> */}
               </BtnListItem>
             </BtnList>
           </ContentContainer>

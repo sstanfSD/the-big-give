@@ -12,9 +12,9 @@ import FAQ from "../components/Common/FAQ"
 import Contact from "../components/About/Contact"
 
 const About = ({ data }) => {
-  const [open, setOpen] = useState(false)
-  const toggle = () => {
-    setOpen(!open)
+  const [openModal, setOpenModal] = useState(false)
+  const toggleModal = () => {
+    setOpenModal(!openModal)
   }
 
   const SEO = data.wpPage.seo
@@ -25,9 +25,9 @@ const About = ({ data }) => {
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
-      <Layout toggle={toggle}>
-        <Modal open={open} toggle={toggle} />
-        <Header header={header} toggle={toggle} />
+      <Layout>
+        <Modal openModal={openModal} toggleModal={toggleModal} />
+        <Header header={header} toggle={toggleModal} />
         <AboutRegional />
         <History />
         <Team team={team} />

@@ -17,7 +17,7 @@ import { BtnPrimary } from "../../Buttons/"
 
 import logowhite from "../../../assets/logos/logo-white.png"
 
-const Footer = ({ toggle }) => {
+const Footer = ({ toggleModal }) => {
   return (
     <FooterElement>
       <Container>
@@ -99,7 +99,7 @@ const Footer = ({ toggle }) => {
           </List>
         </Column>
         <Column>
-          <BtnPrimary toggle={toggle} text={"register your church"} />
+          <BtnPrimary toggle={toggleModal} text={"register your church"} />
         </Column>
       </Container>
     </FooterElement>

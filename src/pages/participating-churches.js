@@ -9,9 +9,9 @@ import MapSection from "../components/ParticipatingChurches/MapSection"
 import ChurchList from "../components/ParticipatingChurches/ChurchList"
 
 const ParticipatingChurches = ({ data }) => {
-  const [open, setOpen] = useState(false)
-  const toggle = () => {
-    setOpen(!open)
+  const [openModal, setOpenModal] = useState(false)
+  const toggleModal = () => {
+    setOpenModal(!openModal)
   }
 
   const SEO = data.wpPage.seo
@@ -22,11 +22,11 @@ const ParticipatingChurches = ({ data }) => {
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
-      <Layout toggle={toggle}>
-        <Modal toggle={toggle} open={open} />
-        <Header header={header} toggle={toggle} />
+      <Layout>
+        <Modal openModal={openModal} toggleModal={toggleModal} />
+        <Header header={header} toggle={toggleModal} />
         <MapSection markers={markers} />
-        <ChurchList churches={churches} toggle={toggle} />
+        <ChurchList churches={churches} toggle={toggleModal} />
       </Layout>
     </>
   )

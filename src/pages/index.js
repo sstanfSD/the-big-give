@@ -13,9 +13,9 @@ import SocialMedia from "../components/Home/SocialMedia"
 import ThankYou from "../components/Home/ThankYou"
 
 const Home = ({ data }) => {
-  const [open, setOpen] = useState(false)
-  const toggle = () => {
-    setOpen(!open)
+  const [openModal, setOpenModal] = useState(false)
+  const toggleModal = () => {
+    setOpenModal(!openModal)
   }
 
   const date = data.wpPage.homeheader.eventDate
@@ -26,15 +26,15 @@ const Home = ({ data }) => {
   return (
     <>
       <PageHead title={"The Big Give"} description={"Lorem Ipsum"} />
-      <Layout toggle={toggle}>
-        <Modal open={open} toggle={toggle} />
+      <Layout>
+        <Modal openModal={openModal} toggleModal={toggleModal} />
         <Header date={date} />
         <About />
-        <Steps toggle={toggle} />
+        <Steps toggle={toggleModal} />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
         <SocialMedia />
-        <ThankYou thankyou={thankyou} toggle={toggle} />
+        <ThankYou thankyou={thankyou} toggle={toggleModal} />
       </Layout>
     </>
   )

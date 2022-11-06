@@ -38,19 +38,31 @@ const AboutRegional = () => {
           </Body>
           <BtnContainer>
             <Top>
-              <a>
+              <a
+                href="https://www.eventbrite.com/e/the-big-give-2023-ottawaottawa-valley-registration-383606606687"
+                target="_blank"
+              >
                 <Btn>Ottawa, Ottawa Valley</Btn>
               </a>
-              <a>
+              <a
+                href="https://www.eventbrite.ca/e/the-big-give-2023-greater-toronto-area-gta-registration-384157394107"
+                target="_blank"
+              >
                 <Btn>GTA</Btn>
               </a>
             </Top>
             <Bottom>
-              <a>
+              <a
+                href="https://www.eventbrite.ca/e/the-big-give-2023-quebec-registration-384758050687"
+                target="_blank"
+              >
                 <Btn>Quebec</Btn>
               </a>
-              <a>
-                <Btn>all other communities</Btn>
+              <a
+                href="https://www.eventbrite.ca/e/the-big-give-2023-all-other-communities-registration-384163642797"
+                target="_blank"
+              >
+                <Btn>All Other Communities</Btn>
               </a>
             </Bottom>
           </BtnContainer>

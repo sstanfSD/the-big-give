@@ -9,16 +9,15 @@ import Main from "../components/Story/Main"
 import CTA from "../components/Story/CTA"
 
 const Story = ({ data }) => {
-  const [open, setOpen] = useState(false)
-  const toggle = () => {
-    setOpen(!open)
+  const [openModal, setOpenModal] = useState(false)
+  const toggleModal = () => {
+    setOpenModal(!openModal)
   }
-
   const story = data.post
 
   return (
     <Layout>
-      <Modal open={open} toggle={toggle} />
+      <Modal openModal={openModal} toggleModal={toggleModal} />
       <Header
         img={story.featuredImage.node.localFile.childImageSharp.gatsbyImageData}
         alt={story.featuredImage.altText}
@@ -28,7 +27,7 @@ const Story = ({ data }) => {
         excerpt={story.excerpt}
       />
       <Main content={story.content} images={story.stories.storyImages} />
-      <CTA toggle={toggle} />
+      <CTA toggle={toggleModal} />
     </Layout>
   )
 }

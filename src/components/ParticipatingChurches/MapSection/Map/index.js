@@ -9,8 +9,8 @@ const containerStyle = {
 }
 
 const center = {
-  lat: 44.64881,
-  lng: -77.121505,
+  lat: 49.8954,
+  lng: -97.1385,
 }
 
 function MyComponent({ markers }) {
@@ -30,7 +30,7 @@ function MyComponent({ markers }) {
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
-    map.setZoom(6)
+    map.setZoom(4.5)
     setMap(map)
   }, [])
 

@@ -22,6 +22,12 @@ export const FormContainer = styled.div`
   grid-row: 2;
   width: 100%;
   `}
+
+  ${media.phonesmall`
+  padding: 5rem 2.5rem;
+  grid-row: 2;
+  width: 100%;
+  `}
 `
 export const TextContainer = styled.div``
 export const Heading = styled.h2``

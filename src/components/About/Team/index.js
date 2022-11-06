@@ -14,7 +14,7 @@ import {
 
 import Card from "./Card"
 
-import { BtnPrimary } from "../../Buttons"
+import { BtnPrimaryLink } from "../../Buttons"
 
 const Team = ({ team }) => {
   return (
@@ -27,7 +27,7 @@ const Team = ({ team }) => {
             free gifts to build bridges between our churches and the communities
             they serve.
           </Body>
-          <BtnPrimary to={"/about#contact"} text={"join the team"} large />
+          <BtnPrimaryLink to={"/about#contact"} text={"join the team"} large />
         </TextContainer>
         <TeamContainer>
           <TopContainer>

@@ -7,10 +7,6 @@ import AltHeader from "../components/Common/AltHeader"
 import PlainText from "../components/Common/PlainText"
 
 const StatementOfFaith = ({ data }) => {
-  const [open, setOpen] = useState(false)
-  const toggle = () => {
-    setOpen(!open)
-  }
   return (
     <>
       <PageHead
@@ -19,8 +15,7 @@ const StatementOfFaith = ({ data }) => {
           "The Big Give is organized by volunteers and groups from many different Christian traditions, but we’re inspired by a common profession of faith."
         }
       />
-      <Layout toggle={toggle}>
-        <Modal toggle={toggle} open={open} />
+      <Layout>
         <AltHeader heading={"The Big Give Agreement"} />
         <PlainText>
           <h2>Church Agreement</h2>

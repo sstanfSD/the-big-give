@@ -62,6 +62,7 @@ export const BtnListItem = styled.li`
 `
 export const BtnWhite = styled.button`
   cursor: pointer;
+  text-transform: capitalize;
 
   width: 100%;
   background-color: ${props =>
@@ -152,6 +153,7 @@ padding:  2.5rem;
 export const ListHeading = styled.h3`
   font-size: var(--font-size-headingM);
   font-family: var(--font-body);
+  text-transform: capitalize;
 
   margin-bottom: 5rem;
 

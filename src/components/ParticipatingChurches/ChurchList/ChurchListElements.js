@@ -60,6 +60,8 @@ export const BtnListItem = styled.li`
 export const BtnWhite = styled.button`
   cursor: pointer;
 
+  text-transform: capitalize;
+
   width: 100%;
   background-color: ${props =>
     props.active ? "#D9D9D9" : "var(--color-white)"};
@@ -136,6 +138,7 @@ export const ListContainer = styled.div`
 export const ListHeading = styled.h3`
   font-size: var(--font-size-headingM);
   font-family: var(--font-body);
+  text-transform: capitalize;
 
   ${media.tabport`
 margin-top: 5rem;

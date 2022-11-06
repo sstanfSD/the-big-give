@@ -9,9 +9,11 @@ import {
   SecondaryItem,
 } from "./MobileMenuElements"
 
-const MobileMenu = ({ open, toggle }) => {
+import { BtnPrimary } from "../../Buttons"
+
+const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
   return (
-    <Nav open={open}>
+    <Nav openMobile={openMobile}>
       <List>
         <Item>
           <InternalLink to="/" onClick={toggle}>
@@ -24,8 +26,18 @@ const MobileMenu = ({ open, toggle }) => {
           </InternalLink>
           <SecondaryList>
             <SecondaryItem>
-              <InternalLink to="/leadership" onClick={toggle}>
-                item
+              <InternalLink to="/about#history" onClick={toggle}>
+                history
+              </InternalLink>
+            </SecondaryItem>
+            <SecondaryItem>
+              <InternalLink to="/about#team" onClick={toggle}>
+                team
+              </InternalLink>
+            </SecondaryItem>
+            <SecondaryItem>
+              <InternalLink to="/about#contact" onClick={toggle}>
+                contact
               </InternalLink>
             </SecondaryItem>
           </SecondaryList>
@@ -34,23 +46,31 @@ const MobileMenu = ({ open, toggle }) => {
           <InternalLink to="/participating churches" onClick={toggle}>
             participating churches
           </InternalLink>
-          <SecondaryList>
-            <SecondaryItem>
-              <InternalLink to="/kids-and-youth#kids" onClick={toggle}>
-                item
-              </InternalLink>
-            </SecondaryItem>
-          </SecondaryList>
         </Item>
         <Item>
           <InternalLink to="/get-involved" onClick={toggle}>
             get involved
           </InternalLink>
+          <SecondaryList>
+            <SecondaryItem>
+              <InternalLink to="/get-involved#resources" onClick={toggle}>
+                resources
+              </InternalLink>
+            </SecondaryItem>
+            <SecondaryItem>
+              <InternalLink to="/get-involved#events" onClick={toggle}>
+                events
+              </InternalLink>
+            </SecondaryItem>
+          </SecondaryList>
         </Item>
         <Item>
-          <InternalLink to="/past-big-givces" onClick={toggle}>
-            past big gives
+          <InternalLink to="/big-stories" onClick={toggle}>
+            big stories
           </InternalLink>
+        </Item>
+        <Item>
+          <BtnPrimary text="register your church" toggle={toggleModal} />
         </Item>
       </List>
     </Nav>

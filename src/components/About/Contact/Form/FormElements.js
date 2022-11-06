@@ -95,6 +95,8 @@ export const TextArea = styled.textarea`
   background-color: transparent;
   transition: 0.2s ease all;
 
+  resize: none;
+
   padding: 0.5rem;
   font-size: var(--font-size-bodyS);
   font-family: var(--font-body);

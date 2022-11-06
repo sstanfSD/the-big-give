@@ -18,7 +18,6 @@ import {
 import { BtnPrimary } from "../../Buttons"
 
 const ThankYou = ({ thankyou, toggle }) => {
-  console.log(thankyou)
   return (
     <Section>
       <Container>

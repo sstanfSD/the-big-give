@@ -1,18 +1,27 @@
-import React from "react"
+import React, { useState } from "react"
 import "../../css/typography.css"
 import GlobalStyle from "../../../globalStyles"
 import { Wrapper, Main } from "./LayoutElements"
+import Modal from "../Common/Modal"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
-const Layout = ({ children, toggle }) => {
+const Layout = ({ children }) => {
+  const [openModal, setOpenModal] = useState(false)
+
+  const toggleModal = () => {
+    setOpenModal(!openModal)
+    console.log(openModal)
+  }
+
   return (
     <>
       <GlobalStyle />
       <Wrapper>
-        <Navbar toggle={toggle} />
+        <Modal openModal={openModal} toggleModal={toggleModal} />
+        <Navbar toggleModal={toggleModal} />
         <Main>{children}</Main>
-        <Footer toggle={toggle} />
+        <Footer toggleModal={toggleModal} />
       </Wrapper>
     </>
   )

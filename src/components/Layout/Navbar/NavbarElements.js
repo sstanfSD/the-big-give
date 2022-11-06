@@ -6,12 +6,18 @@ export const Nav = styled.nav`
   background-color: var(--color-white);
   width: 100%;
   border-bottom: solid 0.2rem var(--color-black);
-`
-export const Container = styled.div`
-  max-width: var(--max-width);
-  margin: 0 auto;
 
   padding: 1rem 5rem;
+
+  ${media.tabland`
+ 
+  padding: 1rem 2.5rem;
+`}
+`
+export const Container = styled.div`
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
 
   display: grid;
   width: 100%;
@@ -20,7 +26,6 @@ export const Container = styled.div`
 
   ${media.tabland`
   grid-template-columns: 20% 80%;
-  padding: 1rem 2.5rem;
 `}
 
   ${media.tabport`
@@ -98,12 +103,14 @@ export const MobileMenuBtn = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  cursor: pointer;
+
+  position: ${props => (props.openMobile ? "fixed" : "relative")};
+
+  right: ${props => (props.openMobile ? "2.5rem" : "0")};
+
   ${media.tabport`
   display: flex;
-  `}
-
-  ${media.phone`
-  top: 2.4rem;
   `}
 
   & div {
@@ -117,17 +124,18 @@ export const MobileMenuBtn = styled.div`
   & div:nth-of-type(1) {
     transform-origin: top left;
     transform: ${props =>
-      props.open ? "rotate(45deg) translateY(-.1rem)" : "rotate(0)"};
+      props.openMobile ? "rotate(45deg) translateY(-.1rem)" : "rotate(0)"};
   }
 
   & div:nth-of-type(3) {
     transform-origin: bottom left;
     transform: ${props =>
-      props.open ? "rotate(-45deg) translateY(.1rem)" : "rotate(0)"};
+      props.openMobile ? "rotate(-45deg) translateY(.1rem)" : "rotate(0)"};
   }
 
   & div:nth-of-type(2) {
-    opacity: ${props => (props.open ? "0" : "1")};
-    transform: ${props => (props.open ? "translateX(-100%)" : "translateX(0)")};
+    opacity: ${props => (props.openMobile ? "0" : "1")};
+    transform: ${props =>
+      props.openMobile ? "translateX(-100%)" : "translateX(0)"};
   }
 `

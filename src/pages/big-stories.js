@@ -9,9 +9,9 @@ import Stories from "../components/BigStories/Stories"
 import Videos from "../components/BigStories/Videos"
 
 const BigStories = ({ data }) => {
-  const [open, setOpen] = useState(false)
-  const toggle = () => {
-    setOpen(!open)
+  const [openModal, setOpenModal] = useState(false)
+  const toggleModal = () => {
+    setOpenModal(!openModal)
   }
 
   const SEO = data.wpPage.seo
@@ -22,10 +22,10 @@ const BigStories = ({ data }) => {
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
-      <Layout toggle={toggle}>
-        <Modal toggle={toggle} open={open} />
-        <Header header={header} toggle={toggle} />
-        <Stories stories={stories} toggle={toggle} />
+      <Layout>
+        <Modal openModal={openModal} toggleModal={toggleModal} />
+        <Header header={header} toggle={toggleModal} />
+        <Stories stories={stories} toggle={toggleModal} />
         <Videos videos={videos} />
       </Layout>
     </>

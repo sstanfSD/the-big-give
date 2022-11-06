@@ -62,6 +62,7 @@ const ContactForm = () => {
     <FormElement
       name="contact"
       method="POST"
+      action="/thank-you"
       data-netlify="true"
       style={{ display: "flex", flexDirection: "column" }}
     >

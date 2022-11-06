@@ -13,9 +13,10 @@ export const Nav = styled.nav`
   height: 100vh;
   width: 100vw;
 
-  background-color: var(--color-blue);
+  background-color: var(--color-blue-light);
 
-  transform: ${props => (props.open ? "translate(0%)" : "translate(-100%)")};
+  transform: ${props =>
+    props.openMobile ? "translate(0%)" : "translate(-100%)"};
   transition: transform 0.3s ease;
 
   display: flex;
@@ -44,7 +45,7 @@ export const Item = styled.li`
   font-weight: bold;
 `
 export const InternalLink = styled(Link)`
-  color: var(--color-white) !important;
+  color: var(--color-black) !important;
   text-decoration: none;
   position: relative;
   font-size: var(--font-size-bodyL);

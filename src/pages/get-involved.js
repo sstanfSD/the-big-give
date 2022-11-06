@@ -9,9 +9,9 @@ import Resources from "../components/GetInvolved/Resources"
 import Events from "../components/GetInvolved/Events"
 
 const GetInvolved = ({ data }) => {
-  const [open, setOpen] = useState(false)
-  const toggle = () => {
-    setOpen(!open)
+  const [openModal, setOpenModal] = useState(false)
+  const toggleModal = () => {
+    setOpenModal(!openModal)
   }
 
   const SEO = data.wpPage.seo
@@ -26,9 +26,9 @@ const GetInvolved = ({ data }) => {
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />
-      <Layout toggle={toggle}>
-        <Modal toggle={toggle} open={open} />
-        <Header header={header} toggle={toggle} />
+      <Layout>
+        <Modal openModal={openModal} toggleModal={toggleModal} />
+        <Header header={header} toggle={toggleModal} />
         <Resources
           resources={resources}
           englishKit={englishKit}

@@ -6,7 +6,7 @@ import Modal from "../components/Common/Modal"
 import AltHeader from "../components/Common/AltHeader"
 import PlainText from "../components/Common/PlainText"
 
-const ThankYou = ({ data }) => {
+const BecomeAChampion = ({ data }) => {
   return (
     <>
       <PageHead
@@ -16,7 +16,7 @@ const ThankYou = ({ data }) => {
         }
       />
       <Layout>
-        <AltHeader heading={"Thank You!"} />
+        <AltHeader heading={"Become a regional champion"} />
         <PlainText>
           <p style={{ marginBottom: "15rem", textAlign: "center" }}>
             Thank you for reaching out to us. We will get back to you as quickly
@@ -28,4 +28,4 @@ const ThankYou = ({ data }) => {
   )
 }
 
-export default ThankYou
+export default BecomeAChampion

@@ -10,11 +10,11 @@ import {
   CloseBtn,
 } from "./ModalElements"
 
-const Modal = ({ open, toggle }) => {
+const Modal = ({ openModal, toggleModal }) => {
   return (
-    <ModalContainer open={open}>
+    <ModalContainer open={openModal}>
       <ModalScroll>
-        <ModalLeft onClick={toggle} />
+        <ModalLeft onClick={toggleModal} />
 
         <ModalMain>
           <TextContainer>
@@ -49,11 +49,11 @@ const Modal = ({ open, toggle }) => {
               href="https://www.eventbrite.ca/e/the-big-give-2023-all-other-communities-registration-384163642797"
             >
               {" "}
-              all other communities
+              All Other Communities
             </BtnWhite>
           </TextContainer>
         </ModalMain>
-        <CloseBtn onClick={toggle}>
+        <CloseBtn onClick={toggleModal}>
           <div />
           <div />
         </CloseBtn>

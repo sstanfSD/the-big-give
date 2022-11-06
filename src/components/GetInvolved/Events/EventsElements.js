@@ -62,6 +62,8 @@ export const BtnListItem = styled.li`
 export const BtnWhite = styled.button`
   cursor: pointer;
 
+  text-transform: capitalize;
+
   width: 100%;
   background-color: ${props =>
     props.active ? "#D9D9D9" : "var(--color-white)"};
@@ -131,6 +133,14 @@ font-size:1.6rem;
   }
 `
 
+export const Contact = styled.p`
+  padding-top: 2rem;
+  & a {
+    color: white;
+    text-decoration: underline;
+  }
+`
+
 export const ListContainer = styled.div`
   background-color: #f6f6f6;
 
@@ -151,6 +161,7 @@ padding:  2.5rem;
 export const ListHeading = styled.h3`
   font-size: var(--font-size-headingM);
   font-family: var(--font-body);
+  text-transform: capitalize;
 
   ${media.tabport`
 margin-top: 5rem;
