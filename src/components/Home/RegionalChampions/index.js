@@ -11,7 +11,7 @@ import {
 
 import Card from "./Card"
 
-import { BtnPrimary } from "../../Buttons/"
+import { BtnPrimaryLink } from "../../Buttons/"
 
 const RegionalChampions = ({ champions }) => {
   const cardsRef = useRef()
@@ -44,7 +44,11 @@ const RegionalChampions = ({ champions }) => {
             Don’t see your town? Click below to learn more about becoming a
             regional champion yourself.
           </Body>
-          <BtnPrimary to={"/about#contact"} text={"become a champion"} large />
+          <BtnPrimaryLink
+            to={"/become-a-regional-champion"}
+            text={"become a champion"}
+            large
+          />
         </TextContainer>
         <CardsContainer scrollPosition={scrollPosition}>
           {champions.nodes.map((champion, i) => {
