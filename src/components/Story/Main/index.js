@@ -14,9 +14,12 @@ const Main = ({ content, images }) => {
     <Section>
       <Container>
         <TextContainer dangerouslySetInnerHTML={{ __html: content }} />
-        <SliderContainer>
-          <Slider images={images} />
-        </SliderContainer>
+
+        {images && (
+          <SliderContainer>
+            <Slider images={images} />
+          </SliderContainer>
+        )}
       </Container>
     </Section>
   )
