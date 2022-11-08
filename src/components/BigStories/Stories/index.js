@@ -107,30 +107,34 @@ const Stories = ({ stories, toggle }) => {
                 if (story.stories.region === options[0]) {
                   return (
                     <StoryListItem key={i}>
-                      <Link to={`/stories/${story.slug}`}>
-                        <div className="story-wrapper">
-                          <Card>
-                            <ImageContainer>
-                              <GatsbyImage
-                                image={
-                                  story.featuredImage.node.localFile
-                                    .childImageSharp.gatsbyImageData
-                                }
-                                alt={story.featuredImage.node.altText}
-                              />
-                            </ImageContainer>
-                            <TextContainer>
-                              <Title>{story.title}</Title>
-                              <Location>{story.stories.location}</Location>
-                              <Excerpt
-                                dangerouslySetInnerHTML={{
-                                  __html: story.excerpt,
-                                }}
-                              />
-                            </TextContainer>
-                          </Card>
-                        </div>
-                      </Link>
+                      {story.featuredImage.node.localFile.childImageSharp
+                        .gatsbyImageData &&
+                        story.excerpt && (
+                          <Link to={`/stories/${story.slug}`}>
+                            <div className="story-wrapper">
+                              <Card>
+                                <ImageContainer>
+                                  <GatsbyImage
+                                    image={
+                                      story.featuredImage.node.localFile
+                                        .childImageSharp.gatsbyImageData
+                                    }
+                                    alt={story.featuredImage.node.altText}
+                                  />
+                                </ImageContainer>
+                                <TextContainer>
+                                  <Title>{story.title}</Title>
+                                  <Location>{story.stories.location}</Location>
+                                  <Excerpt
+                                    dangerouslySetInnerHTML={{
+                                      __html: story.excerpt,
+                                    }}
+                                  />
+                                </TextContainer>
+                              </Card>
+                            </div>
+                          </Link>
+                        )}
                     </StoryListItem>
                   )
                 }
@@ -140,28 +144,34 @@ const Stories = ({ stories, toggle }) => {
                 if (story.stories.region === options[1]) {
                   return (
                     <StoryListItem key={i}>
-                      <div className="story-wrapper">
-                        <Card>
-                          <ImageContainer>
-                            <GatsbyImage
-                              image={
-                                story.featuredImage.node.localFile
-                                  .childImageSharp.gatsbyImageData
-                              }
-                              alt={story.featuredImage.node.altText}
-                            />
-                          </ImageContainer>
-                          <TextContainer>
-                            <Title>{story.title}</Title>
-                            <Location>{story.stories.location}</Location>
-                            <Excerpt
-                              dangerouslySetInnerHTML={{
-                                __html: story.excerpt,
-                              }}
-                            />
-                          </TextContainer>
-                        </Card>
-                      </div>
+                      {story.featuredImage.node.localFile.childImageSharp
+                        .gatsbyImageData &&
+                        story.excerpt && (
+                          <Link to={`/stories/${story.slug}`}>
+                            <div className="story-wrapper">
+                              <Card>
+                                <ImageContainer>
+                                  <GatsbyImage
+                                    image={
+                                      story.featuredImage.node.localFile
+                                        .childImageSharp.gatsbyImageData
+                                    }
+                                    alt={story.featuredImage.node.altText}
+                                  />
+                                </ImageContainer>
+                                <TextContainer>
+                                  <Title>{story.title}</Title>
+                                  <Location>{story.stories.location}</Location>
+                                  <Excerpt
+                                    dangerouslySetInnerHTML={{
+                                      __html: story.excerpt,
+                                    }}
+                                  />
+                                </TextContainer>
+                              </Card>
+                            </div>
+                          </Link>
+                        )}
                     </StoryListItem>
                   )
                 }
@@ -171,28 +181,34 @@ const Stories = ({ stories, toggle }) => {
                 if (story.stories.region === options[2]) {
                   return (
                     <StoryListItem key={i}>
-                      <div className="story-wrapper">
-                        <Card>
-                          <ImageContainer>
-                            <GatsbyImage
-                              image={
-                                story.featuredImage.node.localFile
-                                  .childImageSharp.gatsbyImageData
-                              }
-                              alt={story.featuredImage.node.altText}
-                            />
-                          </ImageContainer>
-                          <TextContainer>
-                            <Title>{story.title}</Title>
-                            <Location>{story.stories.location}</Location>
-                            <Excerpt
-                              dangerouslySetInnerHTML={{
-                                __html: story.excerpt,
-                              }}
-                            />
-                          </TextContainer>
-                        </Card>
-                      </div>
+                      {story.featuredImage.node.localFile.childImageSharp
+                        .gatsbyImageData &&
+                        story.excerpt && (
+                          <Link to={`/stories/${story.slug}`}>
+                            <div className="story-wrapper">
+                              <Card>
+                                <ImageContainer>
+                                  <GatsbyImage
+                                    image={
+                                      story.featuredImage.node.localFile
+                                        .childImageSharp.gatsbyImageData
+                                    }
+                                    alt={story.featuredImage.node.altText}
+                                  />
+                                </ImageContainer>
+                                <TextContainer>
+                                  <Title>{story.title}</Title>
+                                  <Location>{story.stories.location}</Location>
+                                  <Excerpt
+                                    dangerouslySetInnerHTML={{
+                                      __html: story.excerpt,
+                                    }}
+                                  />
+                                </TextContainer>
+                              </Card>
+                            </div>
+                          </Link>
+                        )}
                     </StoryListItem>
                   )
                 }
@@ -202,28 +218,34 @@ const Stories = ({ stories, toggle }) => {
                 if (story.stories.region === "Other") {
                   return (
                     <StoryListItem key={i}>
-                      <div className="story-wrapper">
-                        <Card>
-                          <ImageContainer>
-                            <GatsbyImage
-                              image={
-                                story.featuredImage.node.localFile
-                                  .childImageSharp.gatsbyImageData
-                              }
-                              alt={story.featuredImage.node.altText}
-                            />
-                          </ImageContainer>
-                          <TextContainer>
-                            <Title>{story.title}</Title>
-                            <Location>{story.stories.location}</Location>
-                            <Excerpt
-                              dangerouslySetInnerHTML={{
-                                __html: story.excerpt,
-                              }}
-                            />
-                          </TextContainer>
-                        </Card>
-                      </div>
+                      {story.featuredImage.node.localFile.childImageSharp
+                        .gatsbyImageData &&
+                        story.excerpt && (
+                          <Link to={`/stories/${story.slug}`}>
+                            <div className="story-wrapper">
+                              <Card>
+                                <ImageContainer>
+                                  <GatsbyImage
+                                    image={
+                                      story.featuredImage.node.localFile
+                                        .childImageSharp.gatsbyImageData
+                                    }
+                                    alt={story.featuredImage.node.altText}
+                                  />
+                                </ImageContainer>
+                                <TextContainer>
+                                  <Title>{story.title}</Title>
+                                  <Location>{story.stories.location}</Location>
+                                  <Excerpt
+                                    dangerouslySetInnerHTML={{
+                                      __html: story.excerpt,
+                                    }}
+                                  />
+                                </TextContainer>
+                              </Card>
+                            </div>
+                          </Link>
+                        )}
                     </StoryListItem>
                   )
                 }
