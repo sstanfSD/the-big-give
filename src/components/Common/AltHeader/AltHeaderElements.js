@@ -33,11 +33,11 @@ max-width: 40rem;
 `}
 
 ${media.phonesmall`
-max-width: 36rem;
+
 `}
 `
 export const Heading = styled.h1`
-  padding-top: 2rem;
+  padding: 2rem 0 0;
 
   ${media.phonesmall`
 font-size: var(--font-size-headingM);
@@ -50,12 +50,10 @@ export const HeadingBg = styled.div`
   width: 100%;
   height: 110%;
 
-  padding: 0 2rem;
-
   z-index: -1;
 
   ${media.phonesmall`
-   padding: 0 1rem;
+ 
 `}
 
   & img {

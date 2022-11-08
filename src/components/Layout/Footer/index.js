@@ -68,7 +68,9 @@ const Footer = ({ toggleModal }) => {
               <ListLink to={"/about#events"}>events</ListLink>
             </Item>
             <Item>
-              <ListLink to={"/about#serve"}>serve</ListLink>
+              <ListLink to={"/become-a-regional-champion"}>
+                become a regional champion
+              </ListLink>
             </Item>
             <Item>
               <ListLink to={"/the-big-give-agreement"}>

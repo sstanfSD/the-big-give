@@ -10,8 +10,8 @@ const CTA = ({ toggle }) => {
         <TextContainer>
           <Heading>Ready to register?</Heading>
           <Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Join us on the last Saturday of June and see what happens in your
+            town.
           </Body>
           <BtnPrimary large toggle={toggle} text={"register your church"} />
         </TextContainer>
