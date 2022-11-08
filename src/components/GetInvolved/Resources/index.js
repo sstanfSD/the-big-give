@@ -102,12 +102,12 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                             </LinkContainer>
                           )}
                           {resource.registrationResource.link && (
-                            <Link
+                            <a
                               target="_blank"
                               href={resource.registrationResource.link.url}
                             >
-                              {resource.title}
-                            </Link>
+                              {resource.registrationResource.link.title}
+                            </a>
                           )}
                         </ResourceListItem>
                       )
