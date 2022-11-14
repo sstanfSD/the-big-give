@@ -63,6 +63,9 @@ export const query = graphql`
         marker {
           churchAddress
           churchName
+          churchLink {
+            url
+          }
           fieldGroupName
           latitude
           longitude

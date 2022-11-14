@@ -247,6 +247,8 @@ export const Title = styled.h4`
   font-size: var(--font-size-bodyS);
   margin-bottom: 0rem;
   font-family: var(--font-body);
+
+  text-transform: capitalize !important;
 `
 export const Location = styled.p`
   font-size: var(--font-size-bodyXS);

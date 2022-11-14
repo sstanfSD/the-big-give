@@ -15,6 +15,8 @@ const Story = ({ data }) => {
   }
   const story = data.post
 
+  console.log(data.post)
+
   return (
     <Layout>
       <Modal openModal={openModal} toggleModal={toggleModal} />
@@ -26,7 +28,11 @@ const Story = ({ data }) => {
         location={story.stories.location}
         excerpt={story.excerpt}
       />
-      <Main content={story.content} images={story.stories.storyImages} />
+      <Main
+        content={story.content}
+        images={story.stories.storyImages}
+        video={story.stories.videoEmbedCode}
+      />
       <CTA toggle={toggleModal} />
     </Layout>
   )
@@ -64,6 +70,7 @@ export const storyQuery = graphql`
         location
         region
         year
+        videoEmbedCode
         storyImages {
           altText
           localFile {

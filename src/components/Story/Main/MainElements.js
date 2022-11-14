@@ -41,3 +41,29 @@ export const SliderContainer = styled.div`
     margin: 0 auto;
   }
 `
+
+export const VideoContainer = styled.div`
+  position: relative;
+  width: 100%;
+
+  padding-bottom: 56.25%;
+  overflow: hidden;
+`
+export const Video = styled.iframe`
+  position: absolute;
+  border: none;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+
+  &::-webkit-media-controls-start-playback-button {
+    opacity: 0 !important;
+    position: absolute !important;
+    top: -9999px !important;
+    display: none !important;
+    -webkit-appearance: none !important;
+  }
+`

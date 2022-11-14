@@ -10,6 +10,7 @@ import {
 import Map from "./Map"
 
 const MapSection = ({ markers }) => {
+  console.log(markers)
   return (
     <Section>
       <Container>

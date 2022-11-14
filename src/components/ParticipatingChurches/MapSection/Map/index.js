@@ -62,7 +62,18 @@ function MyComponent({ markers }) {
             {activeMarker === i ? (
               <InfoWindow onCloseClick={() => setActiveMarker(null)}>
                 <div>
-                  <ChurchName>{m.churchName}</ChurchName>
+                  {m.churchLink ? (
+                    <a href={m.churchLink.url} target="_blank" rel="noreferrer">
+                      <ChurchName
+                        dangerouslySetInnerHTML={{ __html: m.churchName }}
+                      />
+                    </a>
+                  ) : (
+                    <ChurchName
+                      dangerouslySetInnerHTML={{ __html: m.churchName }}
+                    />
+                  )}
+
                   <br />
                   <ChurchAddress>{m.churchAddress}</ChurchAddress>
                 </div>
