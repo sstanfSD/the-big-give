@@ -42,7 +42,7 @@ export const ImageContainer = styled.div`
     height: 100%;
 
     ${media.tabland`
-max-height: 60rem;
+
   `}
   }
 `

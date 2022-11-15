@@ -34,9 +34,7 @@ const Footer = ({ toggleModal }) => {
         <Column>
           <List>
             <Item>
-              <Link to={"/about"}>
-                <ListHeading>about</ListHeading>
-              </Link>
+              <ListHeading to={"/about"}>about</ListHeading>
             </Item>
             <Item>
               <ListLink to={"/participating-churches"}>
@@ -57,9 +55,7 @@ const Footer = ({ toggleModal }) => {
         <Column>
           <List>
             <Item>
-              <Link to={"/get-involved"}>
-                <ListHeading>get involved</ListHeading>
-              </Link>
+              <ListHeading to={"/get-involved"}>get involved</ListHeading>
             </Item>
             <Item>
               <ListLink to={"/get-involved#resources"}>resources</ListLink>
@@ -85,9 +81,7 @@ const Footer = ({ toggleModal }) => {
         <Column>
           <List>
             <Item>
-              <Link to={"/about#contact"}>
-                <ListHeading>contact</ListHeading>
-              </Link>
+              <ListHeading to={"/about#contact"}>contact</ListHeading>
             </Item>
             <Item>
               <p>Kathy Blakely</p>
