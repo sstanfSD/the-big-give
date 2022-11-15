@@ -5,7 +5,7 @@ export const QuestionElement = styled.p`
   font-weight: bold;
 
   margin-bottom: 2rem;
-  color: ${props => (props.open ? "var(--color-white)" : "#C9C9C9")};
+  color: ${props => (props.open ? "var(--color-white)" : "#D6D6D6")};
 
   cursor: pointer;
   transition: color ease 0.3s;

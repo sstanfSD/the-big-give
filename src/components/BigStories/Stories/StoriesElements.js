@@ -236,6 +236,12 @@ export const Card = styled.article`
 export const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
+
+  min-width: 30rem;
+
+  & img {
+    min-width: 30rem;
+  }
 `
 
 export const TextContainer = styled.div`
