@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import { BtnPrimary } from "../../Buttons"
@@ -55,7 +55,7 @@ const Stories = ({ stories, toggle }) => {
   useEffect(() => {}, [])
 
   return (
-    <Section>
+    <Section id="stories">
       <Container>
         <Sidebar>
           <ContentContainer>
@@ -71,6 +71,7 @@ const Stories = ({ stories, toggle }) => {
                         large
                         onClick={e => {
                           handleSelection(option)
+                          navigate("/big-stories#stories")
                         }}
                       >
                         {option}
@@ -84,6 +85,7 @@ const Stories = ({ stories, toggle }) => {
                         large
                         onClick={e => {
                           handleSelection(option)
+                          navigate("/big-stories#stories")
                         }}
                       >
                         {option}

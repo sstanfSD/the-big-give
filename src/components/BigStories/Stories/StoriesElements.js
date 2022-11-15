@@ -199,20 +199,16 @@ export const StoryListElement = styled.ul`
     transform: translate(4px, 4px);
   }
 
-  & li:nth-of-type(1n) {
+  & li:nth-of-type(1n - 1) {
     background-color: var(--color-blue);
   }
 
-  & li:nth-of-type(2n) {
+  & li:nth-of-type(2n - 2) {
     background-color: var(--color-blue-dark);
   }
 
-  & li:nth-of-type(3n) {
+  & li:nth-of-type(3n - 3) {
     background-color: var(--color-red);
-  }
-
-  & li:nth-of-type(4n) {
-    background-color: var(--color-blue);
   }
 `
 export const StoryListItem = styled.li`
@@ -221,16 +217,6 @@ export const StoryListItem = styled.li`
 
 export const Card = styled.article`
   cursor: pointer;
-
-  /* & :nth-of-type(1n) {
-    background-color: var(--color-blue);
-  }
-  & :nth-of-type(2n) {
-    background-color: var(--color-blue-dark);
-  }
-  & :nth-of-type(3n) {
-    background-color: var(--color-red);
-  } */
 `
 
 export const ImageContainer = styled.div`

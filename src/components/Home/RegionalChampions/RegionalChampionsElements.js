@@ -86,15 +86,17 @@ export const CardsContainer = styled.ul`
   justify-items: center;
   `}
 
-  & li:nth-of-type(1n) {
+
+
+  & li:nth-of-type(1n - 1) {
     background-color: var(--color-blue);
   }
 
-  & li:nth-of-type(2n) {
+  & li:nth-of-type(2n - 2) {
     background-color: var(--color-blue-dark);
   }
 
-  & li:nth-of-type(3n) {
+  & li:nth-of-type(3n - 3) {
     background-color: var(--color-red);
   }
 `
