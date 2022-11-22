@@ -2,7 +2,9 @@ import styled from "styled-components"
 import { media } from "../../../../media"
 
 import HeadingBg from "../../../assets/images/home/HeadingBgWhite.png"
+import HeadingBgMobile from "../../../assets/images/home/HeadingBgWhiteMobile.png"
 import DateBg from "../../../assets/images/home/HeadingBgBlack.png"
+import DateBgMobile from "../../../assets/images/home/HeadingBgBlackMobile.png"
 
 export const Section = styled.section``
 export const Container = styled.div`
@@ -82,6 +84,10 @@ export const Heading = styled.h1`
   font-size: var(--font-size-headingXL);
   width: 95%;
   `}
+
+  ${media.phoneheading`
+  background-image: url(${HeadingBgMobile});
+  `}
 `
 
 export const DateContainer = styled.div`
@@ -106,6 +112,10 @@ export const Date = styled.h2`
 
   ${media.tabport`
   font-size: var(--font-size-headingXS);
+  `}
+
+  ${media.phoneheading`
+  background-image:url(${DateBgMobile});
   `}
 `
 // export const DateBg = styled.div`
