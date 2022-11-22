@@ -6,6 +6,7 @@ const sizes = {
   tabland: 1200,
   tabport: 900,
   phone: 650,
+  phoneheading: 550,
   phonesmall: 450,
 }
 

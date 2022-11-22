@@ -1,6 +1,11 @@
 import styled from "styled-components"
 import { media } from "../../../../media"
 
+import HeadingBg from "../../../assets/images/home/HeadingBgWhite.png"
+import HeadingBgMobile from "../../../assets/images/home/HeadingBgWhiteMobile.png"
+import DateBg from "../../../assets/images/home/HeadingBgBlack.png"
+import DateBgMobile from "../../../assets/images/home/HeadingBgBlackMobile.png"
+
 export const Section = styled.section``
 export const Container = styled.div`
   max-width: var(--max-width);
@@ -52,30 +57,36 @@ export const HeadingContainer = styled.div`
   max-width: 60rem;
   `}
 `
-export const HeadingBg = styled.div`
-  position: absolute;
+// export const HeadingBg = styled.div`
+//   position: absolute;
 
-  width: 100%;
-  height: 110%;
+//   width: 100%;
+//   height: 110%;
 
-  padding: 0rem;
+//   padding: 0rem;
 
-  z-index: -1;
+//   z-index: -1;
 
-  & img {
-    width: 100%;
-    height: 100%;
+//   & .gatsby-image-wrapper {
+//     height: 100%;
+//   }
+// `
 
-    object-fit: fill;
-  }
-`
 export const Heading = styled.h1`
   margin: 2rem 1rem 0;
   font-size: var(--font-size-headingXXL);
 
+  background-image: url(${HeadingBg});
+  background-size: 100% 100%;
+  padding: 2rem;
+
   ${media.laptopsmall`
   font-size: var(--font-size-headingXL);
   width: 95%;
+  `}
+
+  ${media.phoneheading`
+  background-image: url(${HeadingBgMobile});
   `}
 `
 
@@ -89,6 +100,12 @@ export const Date = styled.h2`
   font-size: var(--font-size-headingM);
   padding: 0 2rem;
 
+  margin: -1rem 0;
+
+  background-image: url(${DateBg});
+  background-size: 100% 100%;
+  padding: 2rem;
+
   ${media.laptopsmall`
   font-size: var(--font-size-headingS);
   `}
@@ -96,22 +113,27 @@ export const Date = styled.h2`
   ${media.tabport`
   font-size: var(--font-size-headingXS);
   `}
+
+  ${media.phoneheading`
+  background-image:url(${DateBgMobile});
+  `}
 `
-export const DateBg = styled.div`
-  position: absolute;
+// export const DateBg = styled.div`
+//   position: absolute;
 
-  width: 100%;
-  height: 100%;
+//   width: 100%;
+//   height: 100%;
 
-  z-index: -1;
+//   z-index: -1;
 
-  & img {
-    width: 100%;
-    height: 100%;
+//   & img {
+//     width: 100%;
+//     object-fit: fill;
+//   }
 
-    object-fit: fill;
-  }
-`
+//   & .gatsby-image-wrapper {
+//   }
+// `
 
 export const VideoContainer = styled.div`
   max-width: 100rem;
