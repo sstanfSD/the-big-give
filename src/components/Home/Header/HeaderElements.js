@@ -62,13 +62,6 @@ export const HeadingBg = styled.div`
 
   z-index: -1;
 
-  & img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: fill;
-  }
-
   & .gatsby-image-wrapper {
     height: 100%;
   }

@@ -40,6 +40,8 @@ const Header = ({ date }) => {
               <StaticImage
                 src={"../../../assets/images/home/HeadingBgWhite.png"}
                 alt="Heading background"
+                loading="eager"
+                objectFit="fill"
               />
             </HeadingBg>
             <Heading>Outreach is easy when it starts with GIVING</Heading>
@@ -49,6 +51,7 @@ const Header = ({ date }) => {
               <StaticImage
                 src={"../../../assets/images/home/HeadingBgBlack.png"}
                 alt="Date backgroud"
+                loading="eager"
               />
             </DateBg>
 
