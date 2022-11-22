@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 import {
   Section,
@@ -36,13 +37,19 @@ const Header = ({ date }) => {
         <TextContainer>
           <HeadingContainer>
             <HeadingBg>
-              <img src={headingBg} alt="Heading background" />
+              <StaticImage
+                src={"../../../assets/images/home/HeadingBgWhite.png"}
+                alt="Heading background"
+              />
             </HeadingBg>
             <Heading>Outreach is easy when it starts with GIVING</Heading>
           </HeadingContainer>
           <DateContainer>
             <DateBg>
-              <img src={dateBg} alt="Date backgroud" />
+              <StaticImage
+                src={"../../../assets/images/home/HeadingBgBlack.png"}
+                alt="Date backgroud"
+              />
             </DateBg>
 
             <Date>{date}</Date>
