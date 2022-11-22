@@ -4,19 +4,17 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Pagination, Autoplay } from "swiper"
+import { Pagination } from "swiper"
 
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/pagination"
-import "swiper/css/autoplay"
 
 export default ({ images }) => {
-  console.log(images)
   return (
     <Swiper
       slidesPerView={1}
-      modules={[Pagination, Autoplay]}
+      modules={[Pagination]}
       pagination={{ clickable: true }}
       loop={true}
       autoplay={{ delay: 4000 }}

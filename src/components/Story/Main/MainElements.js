@@ -46,6 +46,8 @@ export const VideoContainer = styled.div`
   position: relative;
   width: 100%;
 
+  margin-top: 10rem;
+
   padding-bottom: 56.25%;
   overflow: hidden;
 `
