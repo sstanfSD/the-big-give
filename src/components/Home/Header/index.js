@@ -36,24 +36,24 @@ const Header = ({ date }) => {
       <Container>
         <TextContainer>
           <HeadingContainer>
-            <HeadingBg>
+            {/* <HeadingBg>
               <StaticImage
                 src={"../../../assets/images/home/HeadingBgWhite.png"}
                 alt="Heading background"
                 loading="eager"
                 objectFit="fill"
               />
-            </HeadingBg>
+            </HeadingBg> */}
             <Heading>Outreach is easy when it starts with GIVING</Heading>
           </HeadingContainer>
           <DateContainer>
-            <DateBg>
+            {/* <DateBg>
               <StaticImage
                 src={"../../../assets/images/home/HeadingBgBlack.png"}
                 alt="Date backgroud"
                 loading="eager"
               />
-            </DateBg>
+            </DateBg> */}
 
             <Date>{date}</Date>
           </DateContainer>
