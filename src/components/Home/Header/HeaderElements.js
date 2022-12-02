@@ -12,14 +12,14 @@ export const Container = styled.div`
   margin: 0 auto;
   height: 90rem;
 
-  padding: 15rem 2.5rem 5rem;
+  padding: 7.5rem 2.5rem 5rem;
 
   ${media.tabport`
   height: 80rem;
   `}
 
   ${media.phone`
-  padding: 10rem 2.5rem 5rem;
+  padding: 7.5rem 2.5rem 5rem;
   height: 70rem;
   `}
 
@@ -35,10 +35,10 @@ export const TextContainer = styled.div`
 
   text-transform: uppercase;
 
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 
   ${media.phone`
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   `}
 `
 

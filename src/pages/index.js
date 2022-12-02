@@ -10,6 +10,7 @@ import Steps from "../components/Home/Steps"
 import RegionalChampions from "../components/Home/RegionalChampions"
 import FAQ from "../components/Common/FAQ"
 import SocialMedia from "../components/Home/SocialMedia"
+import BigStories from "../components/Home/BigStories"
 import ThankYou from "../components/Home/ThankYou"
 
 const Home = ({ data }) => {
@@ -33,7 +34,8 @@ const Home = ({ data }) => {
         <Steps toggle={toggleModal} />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
-        <SocialMedia />
+        <BigStories />
+
         <ThankYou thankyou={thankyou} toggle={toggleModal} />
       </Layout>
     </>
@@ -47,8 +49,6 @@ export const query = graphql`
     wpPage(uri: { eq: "/" }) {
       id
       thankyou {
-        body
-        heading
         images {
           altText
           localFile {

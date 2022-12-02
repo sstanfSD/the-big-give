@@ -89,7 +89,9 @@ export const TextContainer = styled.div`
 `
 export const Heading = styled.h2`
   margin-bottom: 2rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 `
 export const Body = styled.p`
   font-size: var(--font-size-bodyM);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 `

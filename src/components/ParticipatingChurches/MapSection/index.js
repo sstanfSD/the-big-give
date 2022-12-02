@@ -1,11 +1,6 @@
 import React from "react"
 
-import {
-  Section,
-  Container,
-  MapContainer,
-  MapIframe,
-} from "./MapSectionElements"
+import { Section, Container, MapContainer, Heading } from "./MapSectionElements"
 
 import Map from "./Map"
 
@@ -14,6 +9,7 @@ const MapSection = ({ markers }) => {
   return (
     <Section>
       <Container>
+        <Heading>Churches that participated in 2022</Heading>
         <MapContainer>
           <Map markers={markers} />
         </MapContainer>

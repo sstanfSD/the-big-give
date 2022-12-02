@@ -47,7 +47,7 @@ const Videos = ({ videos }) => {
   }, [])
 
   return (
-    <Section>
+    <Section id="videos">
       <Container height={videos.nodes.length}>
         <TextContainer>
           <Heading>Video testimonials</Heading>

@@ -40,12 +40,14 @@ const About = () => {
         <TextContainer>
           <Heading>Join a national movement of generosity</Heading>
           <Body>
-            Each year, churches across Canada bless their neighbourhoods through
-            a day of giving extravagantly where EVERYTHING IS FREE!
+            Each year, churches across Canada bless and love their
+            neighbourhoods through a day of giving extravagantly where
+            EVERYTHING IS FREE!
             <br />
-            <br /> The Big Give is run by volunteers who are fueled by the
-            testimonies that this day produces. Join us on Saturday, June 3,
-            2023, and see what happens in your town.
+            <br /> The Big Give is run by volunteers who are fueled by a passion
+            to love their communities and draw them into relationship with
+            Jesus. Join us on Saturday, June 3, 2023 and see what happens in
+            your town.
           </Body>
         </TextContainer>
       </Container>

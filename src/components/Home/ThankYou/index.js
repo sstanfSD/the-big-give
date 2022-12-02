@@ -22,8 +22,12 @@ const ThankYou = ({ thankyou, toggle }) => {
     <Section>
       <Container>
         <TextContainer>
-          <Heading>{thankyou.heading}</Heading>
-          <Body>{thankyou.body}</Body>
+          <Heading>Thank You</Heading>
+          <Body>
+            Keep the Thank You but please change the text to say – For more
+            information on The Big Give, please contact Director,{" "}
+            <a href="mailto:kathy@thebiggive.ca ">Kathy Blakely</a>.
+          </Body>
           <List>
             {thankyou.storylinks.map((link, i) => {
               return (
@@ -35,7 +39,7 @@ const ThankYou = ({ thankyou, toggle }) => {
               )
             })}
           </List>
-          <BtnPrimary toggle={toggle} text={"register for next year"} large />
+          <BtnPrimary toggle={toggle} text={"register now"} large />
         </TextContainer>
         <ImageContainer>
           <TopRow>

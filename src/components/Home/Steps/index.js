@@ -75,10 +75,10 @@ const Steps = ({ toggle }) => {
               <div>
                 <h2>Step 1</h2>
                 <p>
-                  Read the{" "}
-                  <Link to="/the-big-give-agreement">church agreements</Link>{" "}
-                  and <Link to="/statement-of-faith">statement of faith</Link>{" "}
-                  and register your church.
+                  Understand what the Big Give is by reading our{" "}
+                  <Link to="/the-big-give-agreement">church agreement</Link> and{" "}
+                  <Link to="/statement-of-faith">statement of faith</Link> and
+                  register your church.
                 </p>
                 <BtnPrimary
                   toggle={toggle}
@@ -123,6 +123,11 @@ const Steps = ({ toggle }) => {
                   Pray some more and prepare for the big day using our{" "}
                   <Link to="/get-involved#resources">free resources</Link>.
                 </p>
+                <BtnPrimary
+                  toggle={toggle}
+                  text={"register your church"}
+                  large
+                />
               </div>
             </TextContainer>
             <MobileImageContainer>

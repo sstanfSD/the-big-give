@@ -68,6 +68,13 @@ const Navbar = ({ toggleModal }) => {
           </Item>
           <Item>
             <InternalLink to="/big-stories">big stories</InternalLink>
+            <Dropdown>
+              <DropdownItem>
+                <InternalLink to="/big-stories#videos">
+                  video testimonials
+                </InternalLink>
+              </DropdownItem>
+            </Dropdown>
           </Item>
           <Item>
             <BtnPrimary toggle={toggleModal} text={"register"} />

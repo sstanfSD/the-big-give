@@ -61,6 +61,7 @@ export const Dropdown = styled.ul`
 `
 export const DropdownItem = styled.li`
   padding: 1rem;
+  white-space: nowrap;
 `
 
 export const List = styled.ul`

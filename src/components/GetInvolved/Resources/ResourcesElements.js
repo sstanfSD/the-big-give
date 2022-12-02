@@ -100,6 +100,10 @@ export const ListContainer = styled.div`
 
   padding: 10rem;
 
+  & p {
+    font-size: var(--font-size-bodyL);
+  }
+
   ${media.tabport`
   padding: 5rem 10rem;
   `}

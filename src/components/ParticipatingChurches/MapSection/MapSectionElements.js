@@ -19,3 +19,14 @@ export const MapContainer = styled.div`
     border: none;
   }
 `
+
+export const Heading = styled.h2`
+  text-align: center;
+  color: var(--color-white);
+
+  margin-bottom: 10rem;
+
+  ${media.phone`
+  margin-bottom: 5rem;
+  `}
+`
