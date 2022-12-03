@@ -54,7 +54,7 @@ const Header = ({ header, toggle }) => {
               <p>
                 Testimonies are what fuel the volunteers who run The Big Give.
                 Here are some of our favourite stories from previous Big Gives.
-                Register your church today and creating your own testimonies of
+                Register your church today and create your own testimonies of
                 God’s goodness in your community.
               </p>
             </Body>
