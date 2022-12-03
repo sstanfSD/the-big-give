@@ -24,12 +24,11 @@ const ThankYou = ({ thankyou, toggle }) => {
         <TextContainer>
           <Heading>Thank You</Heading>
           <Body>
-            Keep the Thank You but please change the text to say – For more
-            information on The Big Give, please contact Director,{" "}
+            For more information on The Big Give, please contact Director,{" "}
             <a href="mailto:kathy@thebiggive.ca ">Kathy Blakely</a>.
           </Body>
           <List>
-            {thankyou.storylinks.map((link, i) => {
+            {thankyou?.storylinks?.map((link, i) => {
               return (
                 <li>
                   <StoryLink to={`/stories/${link.storySlug}`}>

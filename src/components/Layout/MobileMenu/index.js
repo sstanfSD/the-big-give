@@ -68,6 +68,13 @@ const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
           <InternalLink to="/big-stories" onClick={toggle}>
             big stories
           </InternalLink>
+          <SecondaryList>
+            <SecondaryItem>
+              <InternalLink to="/big-stories#videos" onClick={toggle}>
+                video testimonials
+              </InternalLink>
+            </SecondaryItem>
+          </SecondaryList>
         </Item>
         <Item>
           <BtnPrimary text="register your church" toggle={toggleModal} />

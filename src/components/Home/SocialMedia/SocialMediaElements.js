@@ -46,14 +46,18 @@ export const IconsContainer = styled.div`
   align-items: center;
   gap: 5rem;
 
-  max-width: 100rem;
+  max-width: 80rem;
   margin: 0 auto;
+
+  ${media.phone`
+    flex-direction: column;
+  `}
 `
 
 export const IconBg = styled.div`
   background-color: var(--color-black);
   height: calc(100% - 1px);
-  width: 200px;
+  width: 150px;
   transform: translate(10px, 10px);
   position: absolute;
   top: 0;
@@ -63,8 +67,8 @@ export const IconBg = styled.div`
 
 export const Icon = styled.div`
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 
   border-radius: 20px;
 

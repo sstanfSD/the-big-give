@@ -182,6 +182,7 @@ export const StoryListElement = styled.ul`
 
   ${media.phone`
   grid-template-columns: 1fr;
+  justify-items: center;
   `}
 
   & li {
@@ -191,6 +192,10 @@ export const StoryListElement = styled.ul`
 
     ${media.tabport`
     width: 100%;
+  `}
+
+    ${media.phonesmall`
+  width: 27rem;
   `}
   }
 
@@ -225,8 +230,16 @@ export const ImageContainer = styled.div`
 
   min-width: 30rem;
 
+  ${media.phonesmall`
+  min-width: 27rem;
+  `}
+
   & img {
     min-width: 30rem;
+
+    ${media.phonesmall`
+  min-width: 27rem;
+  `}
   }
 `
 

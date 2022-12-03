@@ -37,6 +37,7 @@ const Home = ({ data }) => {
         <BigStories />
 
         <ThankYou thankyou={thankyou} toggle={toggleModal} />
+        <SocialMedia />
       </Layout>
     </>
   )

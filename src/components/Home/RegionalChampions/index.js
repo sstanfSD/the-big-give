@@ -34,12 +34,12 @@ const RegionalChampions = ({ champions }) => {
         <TextContainer className="card-text">
           <Heading>Connect with a big give champion in your area</Heading>
           <Body>
-            The Big Give is run by passionate servant leaders who volunteer
+            {/* The Big Give is run by passionate servant leaders who volunteer
             their time. Some of the biggest heroes of this ministry are our
             regional champions. They help mobilize churches in their area to
             join this life-changing movement.
             <br />
-            <br />
+            <br /> */}
             Click on your community to connect with your regional champion.
             Don’t see your town? Click below to learn more about becoming a
             regional champion yourself.

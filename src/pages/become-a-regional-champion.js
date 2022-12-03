@@ -33,8 +33,14 @@ const BecomeAChampion = ({ data }) => {
                 1. Commit to The Big Give idea: One movement on one day where
                 everything is free with no strings attached
               </li>
-              <li>2. Read and agree with our statement of faith</li>
-              <li> 3. Attend committee meetings either in person or online</li>
+              <li>
+                2. Read and agree with our{" "}
+                <Link to={"/statement-of-faith"}>statement of faith</Link>
+              </li>
+              <li>
+                {" "}
+                3. Attend Big Give committee meetings either in person or online
+              </li>
               <li>
                 {" "}
                 4. Enjoy connecting with other church leaders in your area We

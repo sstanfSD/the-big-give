@@ -9,6 +9,10 @@ export const Container = styled.div`
   padding: 5rem 0;
 
   height: calc(${props => props.height} * 36rem);
+
+  ${media.phone`
+    height: 100%;
+  `}
 `
 
 export const TextContainer = styled.div`
