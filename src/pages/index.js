@@ -26,7 +26,12 @@ const Home = ({ data }) => {
 
   return (
     <>
-      <PageHead title={"The Big Give"} description={"Lorem Ipsum"} />
+      <PageHead
+        title={"The Big Give"}
+        description={
+          "Join a national movement of generosity on Saturday, June 3, 2023."
+        }
+      />
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
         <Header date={date} />
