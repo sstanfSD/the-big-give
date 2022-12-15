@@ -43,7 +43,7 @@ export const TextContainer = styled.div`
   position: relative;
   z-index: 2;
 
-  padding: 0 10rem;
+  padding: 5rem 10rem;
 
   ${media.tabland`
   border-right: 0;
