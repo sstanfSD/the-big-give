@@ -52,7 +52,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                 <BtnWhite
                   large
                   target={"_blank"}
-                  href={englishKit.registrationResource.file.mediaItemUrl}
+                  href={englishKit.registrationResource.file?.mediaItemUrl}
                 >
                   download English press kit
                 </BtnWhite>
@@ -61,7 +61,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                 <BtnWhite
                   target={"_blank"}
                   large
-                  href={frenchKit.registrationResource.file.mediaItemUrl}
+                  href={frenchKit.registrationResource.file?.mediaItemUrl}
                 >
                   download French press kit
                 </BtnWhite>
@@ -84,7 +84,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                     if (resource.categories.nodes[0].name === "English") {
                       return (
                         <ResourceListItem key={i}>
-                          <Type>{resource.resourceTypes.nodes[0].name}</Type>
+                          <Type>{resource.resourceTypes.nodes[0]?.name}</Type>
                           {resource.registrationResource.file && (
                             <LinkContainer>
                               <Icon>
@@ -121,7 +121,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                     if (resource.categories.nodes[0].name === "French") {
                       return (
                         <ResourceListItem key={i}>
-                          <Type>{resource.resourceTypes.nodes[0].name}</Type>
+                          <Type>{resource.resourceTypes.nodes[0]?.name}</Type>
                           {resource.registrationResource.file && (
                             <LinkContainer>
                               <Icon>
@@ -162,7 +162,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                   if (resource.categories.nodes[0].name === "English") {
                     return (
                       <ResourceListItem key={i}>
-                        <Type>{resource.resourceTypes.nodes[0].name}</Type>
+                        <Type>{resource.resourceTypes.nodes[0]?.name}</Type>
                         {resource.registrationResource.file && (
                           <LinkContainer>
                             <Icon>
@@ -201,7 +201,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                   if (resource.categories.nodes[0].name === "French") {
                     return (
                       <ResourceListItem key={i}>
-                        <Type>{resource.resourceTypes.nodes[0].name}</Type>
+                        <Type>{resource.resourceTypes.nodes[0]?.name}</Type>
                         {resource.registrationResource.file && (
                           <LinkContainer>
                             <Icon>
