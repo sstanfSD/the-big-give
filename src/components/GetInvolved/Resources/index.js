@@ -42,12 +42,12 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
         <Sidebar>
           <ContentContainer>
             <Heading>Big Give Resources</Heading>
-            {/* <Body>
+            <Body>
               Logo files, flyers, PowerPoint slides, promotional videos, prayer
               letters… download all the resources you need to run a successful
               Big Give event at your church.
-            </Body> */}
-            {/* <BtnList>
+            </Body>
+            <BtnList>
               <BtnListItem>
                 <BtnWhite
                   large
@@ -66,12 +66,11 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                   download French press kit
                 </BtnWhite>
               </BtnListItem>
-            </BtnList> */}
+            </BtnList>
           </ContentContainer>
         </Sidebar>
         <ListContainer>
-          <p>Updated resources coming soon.</p>
-          {/* <Dropdown
+          <Dropdown
             options={options}
             selected={selected}
             onSelectedChange={setSelected}
@@ -232,7 +231,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                 }
               })}
             </FrenchResourceList>
-          )} */}
+          )}
         </ListContainer>
       </Container>
     </Section>
