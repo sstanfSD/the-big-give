@@ -9,7 +9,7 @@ const MapSection = ({ markers }) => {
   return (
     <Section>
       <Container>
-        <Heading>Churches that participated in 2022</Heading>
+        <Heading>Participating Churches 2023</Heading>
         <MapContainer>
           <Map markers={markers} />
         </MapContainer>
