@@ -129,6 +129,11 @@ export const ResourceListItem = styled.li`
   margin: 4rem 0;
 
   max-width: 70rem;
+
+  & a {
+    font-size: var(--font-size-bodyXS);
+    color: var(--color-black);
+  }
 `
 
 export const Type = styled.h4`

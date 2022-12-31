@@ -43,7 +43,7 @@ const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
           </SecondaryList>
         </Item>
         <Item>
-          <InternalLink to="/participating churches" onClick={toggle}>
+          <InternalLink to="/participating-churches" onClick={toggle}>
             participating churches
           </InternalLink>
         </Item>

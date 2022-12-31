@@ -13,7 +13,7 @@ const StatementOfFaith = ({ data }) => {
         description={"404 Page Not Found"}
       />
       <Layout>
-        <AltHeader heading={"The Big Give Agreement"} />
+        <AltHeader heading={"404 Page Not Found"} />
         <PlainText>
           <p>
             We're sorry, we couldnt find what you were looking for.
