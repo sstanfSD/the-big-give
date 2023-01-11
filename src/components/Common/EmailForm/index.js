@@ -70,6 +70,20 @@ const ContactForm = () => {
         <Label htmlFor="email">Email Address</Label>
       </InputContainer>
 
+      <InputContainer>
+        <Input
+          placeholder="location"
+          id="location"
+          name="location"
+          type="location"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.location}
+          required
+        />
+        <Label htmlFor="location">Location (city / country)</Label>
+      </InputContainer>
+
       {/* {formik.errors.message || formik.values.region === "" ? (
         <Btn large type="submit" disabled>
           Submit
