@@ -15,6 +15,10 @@ export const CardContainer = styled.div`
     box-shadow: 0 0 0 0 var(--color-black);
     transform: translate(6px, 6px);
   }
+
+  & .gatsby-image-wrapper{
+    height: 100%;
+  }
 `
 export const CardText = styled.div`
   position: absolute;
