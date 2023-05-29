@@ -12,14 +12,14 @@ export const Container = styled.div`
   margin: 0 auto;
   height: 90rem;
 
-  padding: 7.5rem 2.5rem 5rem;
+  padding: 5rem 2.5rem 5rem;
 
   ${media.tabport`
   height: 80rem;
   `}
 
   ${media.phone`
-  padding: 7.5rem 2.5rem 5rem;
+  padding:5rem 2.5rem 5rem;
   height: 70rem;
   `}
 
@@ -94,6 +94,7 @@ export const DateContainer = styled.div`
   position: relative;
   max-width: 60rem;
   text-align: center;
+  margin-bottom: 3rem;
 `
 export const Date = styled.h2`
   color: var(--color-white);

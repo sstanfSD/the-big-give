@@ -15,6 +15,8 @@ import {
   VideoWrapper,
 } from "./HeaderElements"
 
+import { BtnPrimaryLink } from "../../Buttons"
+
 import Video from "./Video/index"
 
 import headingBg from "../../../assets/images/home/HeadingBgWhite.png"
@@ -57,6 +59,12 @@ const Header = ({ date }) => {
 
             <Date>{date}</Date>
           </DateContainer>
+
+          <BtnPrimaryLink
+            to="/participating-churches"
+            text="View Participating Churches"
+            large
+          />
         </TextContainer>
         <VideoContainer>
           <VideoWrapper offset={offset}>
