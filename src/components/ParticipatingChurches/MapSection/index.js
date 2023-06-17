@@ -5,11 +5,12 @@ import { Section, Container, MapContainer, Heading } from "./MapSectionElements"
 import Map from "./Map"
 
 const MapSection = ({ markers }) => {
-  console.log(markers)
+  const year = new Date()
+
   return (
     <Section>
       <Container>
-        <Heading>Participating Churches 2023</Heading>
+        <Heading>Participating Churches 2024</Heading>
         <MapContainer>
           <Map markers={markers} />
         </MapContainer>

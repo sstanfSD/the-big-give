@@ -63,15 +63,13 @@ const StatementOfFaith = ({ data }) => {
             <li>
               <h3>4. You take the proper legal precautions</h3>
               <p>
-                The Big Give’s purpose is to draw our guests attention to God’s
-                love for them. Our events are not environments for preaching,
-                teaching or judging. If our guests have faith questions we
-                encourage our volunteers to respond based on biblical principles
-                and only obtain contact information if offered by the guest. We
-                also encourage our participating churches to have a designated
-                prayer area and tables offering free Bibles. Our Big Give events
-                are first and foremost environments for showing God’s love
-                through practical and tangible acts of kindness and generosity.
+                Your partnership with The Big Give means that any
+                indemnification that your insurance company may require will be
+                your responsibility. The Big Give, Love Ottawa, One Way
+                Ministries or any third parties mentioned on The Big Give
+                website are not liable for any damages including but not limited
+                to accidental, consequential damages or personal injury
+                resulting from any activities associated with The Big Give.
               </p>
             </li>
             <li>

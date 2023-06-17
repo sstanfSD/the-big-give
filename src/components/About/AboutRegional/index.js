@@ -33,7 +33,7 @@ const AboutRegional = () => {
             <br />
             <br /> Get your church to join with thousands of other Christians
             across the country for a unified day of giving extravagantly on
-            Saturday, June 3, 2023. Click on your region below. <br /> <br />{" "}
+            Saturday, June 1, 2024. Click on your region below. <br /> <br />{" "}
             Don’t see your area? Talk to us about becoming a regional champion.
           </Body>
           <BtnContainer>

@@ -86,6 +86,19 @@ const index = () => {
           </TimelineItem>
           <TimelineItemShadow left={true} />
         </TimelineItemWrapper>
+        <TimelineItemWrapper>
+          <TimelineItem>
+            <TimelineItemHeading>2023</TimelineItemHeading>
+            <TimelineItemSubheading>
+              With the pandemic behind us, we had 70 churches participate in
+              2023. We continue to grow with a few new cities joining us this
+              year: Aylmer ON, Sarnia ON and Spencerville ON. We had 42 sites in
+              the Ottawa/Ottawa Valley, 6 sites in the GTA, 10 sties in Quebec
+              and 12 sites in other Canadian communities.
+            </TimelineItemSubheading>
+          </TimelineItem>
+          <TimelineItemShadow />
+        </TimelineItemWrapper>
         <TimelineLine />
       </TimelineContainer>
     </TimelineSection>

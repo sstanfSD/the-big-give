@@ -19,6 +19,8 @@ const ParticipatingChurches = ({ data }) => {
   const churches = data.allWpParticipatingChurch
   const markers = data.wpPage.mapMarkers
 
+  console.log(markers)
+
   return (
     <>
       <PageHead title={SEO.title} description={SEO.metaDesc} />

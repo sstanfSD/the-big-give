@@ -48,7 +48,7 @@ function MyComponent({ markers }) {
         onUnmount={onUnmount}
         onClick={() => setActiveMarker(null)}
       >
-        {markers.marker.map((m, i) => (
+        {markers?.marker.map((m, i) => (
           <Marker
             key={i}
             position={JSON.parse(
