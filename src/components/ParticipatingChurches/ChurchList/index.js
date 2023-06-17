@@ -50,11 +50,11 @@ const ChurchList = ({ churches, toggle }) => {
   useEffect(() => {}, [])
 
   return (
-    <Section id="#list">
+    <Section>
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading>Participating Churches 2023</Heading>
+            <Heading id="list">Participating Churches 2023</Heading>
             <BtnList>
               {options.map((option, i) => {
                 if (selected === option) {
