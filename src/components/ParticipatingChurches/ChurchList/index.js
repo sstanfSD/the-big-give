@@ -50,7 +50,7 @@ const ChurchList = ({ churches, toggle }) => {
   useEffect(() => {}, [])
 
   return (
-    <Section>
+    <Section id="#list">
       <Container>
         <Sidebar>
           <ContentContainer>

@@ -102,7 +102,7 @@ const Steps = ({ toggle }) => {
                 <h2>Step 2</h2>
                 <p>
                   Gather a team at your church to dream and pray over your plans
-                  for Saturday, June 3, 2023.{" "}
+                  for Saturday, June 1, 2024.{" "}
                 </p>
               </div>
             </TextContainer>

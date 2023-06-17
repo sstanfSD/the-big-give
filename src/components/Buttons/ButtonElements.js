@@ -7,9 +7,6 @@ export const Button = styled.button`
 
   padding: ${props => (props.large ? "1.5rem 4rem" : "1rem 3rem")};
 
-  white-space: nowrap;
-  max-width: min-content;
-
   font-weight: bold;
   font-size: ${props => (props.large ? "2.2rem" : "1.6rem")};
 

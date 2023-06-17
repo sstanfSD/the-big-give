@@ -22,7 +22,7 @@ const Modal = ({ openModal, toggleModal }) => {
             <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.com/e/the-big-give-2023-ottawaottawa-valley-registration-383606606687"
+              href="https://www.eventbrite.ca/e/the-big-give-2024-ottawaottawa-valley-registration-654039107577"
             >
               {" "}
               Ottawa, Ottawa Valley
@@ -30,7 +30,7 @@ const Modal = ({ openModal, toggleModal }) => {
             <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.ca/e/the-big-give-2023-greater-toronto-area-gta-registration-384157394107"
+              href="https://www.eventbrite.ca/e/the-big-give-2024-greater-toronto-area-gta-registration-654046258967"
             >
               {" "}
               GTA
@@ -38,7 +38,7 @@ const Modal = ({ openModal, toggleModal }) => {
             <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.ca/e/the-big-give-2023-quebec-registration-384758050687"
+              href="https://www.eventbrite.ca/e/the-big-give-2023-quebec-registration-654050461537"
             >
               {" "}
               Quebec
@@ -46,7 +46,7 @@ const Modal = ({ openModal, toggleModal }) => {
             <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.ca/e/the-big-give-2023-all-other-communities-registration-384163642797"
+              href="https://www.eventbrite.ca/e/the-big-give-2024-all-other-communities-registration-654035707407"
             >
               {" "}
               All Other Communities

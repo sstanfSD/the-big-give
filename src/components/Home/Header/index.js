@@ -61,8 +61,8 @@ const Header = ({ date }) => {
           </DateContainer>
 
           <BtnPrimaryLink
-            to="/participating-churches"
-            text="View Participating Churches"
+            to="/participating-churches/#list"
+            text="Thanks to all the participating churches in 2023"
             large
           />
         </TextContainer>

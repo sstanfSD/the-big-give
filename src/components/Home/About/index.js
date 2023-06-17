@@ -46,7 +46,7 @@ const About = () => {
             <br />
             <br /> The Big Give is run by volunteers who are fueled by a passion
             to love their communities and draw them into relationship with
-            Jesus. Join us on Saturday, June 3, 2023 and see what happens in
+            Jesus. Join us on Saturday, June 1, 2024 and see what happens in
             your town.
           </Body>
         </TextContainer>
