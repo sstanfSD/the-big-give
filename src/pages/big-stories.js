@@ -60,7 +60,7 @@ export const query = graphql`
         redButtonText
       }
     }
-    allWpStory(sort: { fields: date, order: ASC }) {
+    allWpStory(sort: { fields: date, order: DESC }) {
       nodes {
         categories {
           nodes {
