@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react"
 
-import { BtnPrimary } from "../../Buttons"
-
 import {
   Section,
   Container,

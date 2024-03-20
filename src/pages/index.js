@@ -34,7 +34,7 @@ const Home = ({ data }) => {
       />
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
-        <Header date={date} />
+        <Header date={date} toggleModal={toggleModal} />
         <About />
         <Steps toggle={toggleModal} />
         <RegionalChampions champions={champions} />

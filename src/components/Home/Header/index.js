@@ -15,14 +15,14 @@ import {
   VideoWrapper,
 } from "./HeaderElements"
 
-import { BtnPrimaryLink } from "../../Buttons"
+import { BtnPrimary } from "../../Buttons"
 
 import Video from "./Video/index"
 
 import headingBg from "../../../assets/images/home/HeadingBgWhite.png"
 import dateBg from "../../../assets/images/home/HeadingBgBlack.png"
 
-const Header = ({ date }) => {
+const Header = ({ date, toggleModal }) => {
   const [offset, setOffset] = useState(0)
 
   useEffect(() => {
@@ -32,6 +32,8 @@ const Header = ({ date }) => {
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
+
+  console.log(toggleModal)
 
   return (
     <Section>
@@ -60,11 +62,7 @@ const Header = ({ date }) => {
             <Date>{date}</Date>
           </DateContainer>
 
-          <BtnPrimaryLink
-            to="/participating-churches/#list"
-            text="Thanks to all the participating churches in 2023"
-            large
-          />
+          <BtnPrimary toggle={toggleModal} text="REGISTER TODAY" large />
         </TextContainer>
         <VideoContainer>
           <VideoWrapper offset={offset}>
