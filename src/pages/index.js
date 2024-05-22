@@ -28,9 +28,7 @@ const Home = ({ data }) => {
     <>
       <PageHead
         title={"The Big Give"}
-        description={
-          "Join a national movement of generosity on Saturday, June 3, 2023."
-        }
+        description={`Join a national movement of generosity on ${date}.`}
       />
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
