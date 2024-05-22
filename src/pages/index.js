@@ -24,11 +24,21 @@ const Home = ({ data }) => {
   const champions = data.allWpRegionalChampion
   const thankyou = data.wpPage.thankyou
 
+  function capitalizeFirstLetterOfEachWord(str) {
+    return str
+      .toLowerCase()
+      .split(" ")
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ")
+  }
+
   return (
     <>
       <PageHead
         title={"The Big Give"}
-        description={`Join a national movement of generosity on ${date}.`}
+        description={`Join a national movement of generosity on ${capitalizeFirstLetterOfEachWord(
+          date
+        )}.`}
       />
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
