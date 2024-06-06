@@ -99,6 +99,23 @@ const index = () => {
           </TimelineItem>
           <TimelineItemShadow />
         </TimelineItemWrapper>
+
+        <TimelineItemWrapper left={true}>
+          <TimelineItem left={true}>
+            <TimelineItemHeading>2024</TimelineItemHeading>
+            <TimelineItemSubheading>
+              In 2024 there were 86 churches who participated in the Big Give
+              including three churches in Australia! Another new city was St.
+              Stephen, New Brunswick. In the Ottawa/Ottawa Valley we had 46
+              churches. In the Greater Toronto Area we have 11 churches. In
+              Quebec we had 6 churches. There were 23 churches in the following
+              cities: Brockville ON, Port Hope ON, Sarnia ON, Truro NS, Lively
+              ON, Sidney BC, Dutton ON, Spencerville ON, Prescott ON, and Aylmer
+              ON.
+            </TimelineItemSubheading>
+          </TimelineItem>
+          <TimelineItemShadow left={true} />
+        </TimelineItemWrapper>
         <TimelineLine />
       </TimelineContainer>
     </TimelineSection>

@@ -16,7 +16,7 @@ import {
 
 import bg from "../../../assets/images/home-about/about-bg.jpg"
 
-const About = () => {
+const About = ({ date }) => {
   return (
     <Section>
       <Container>
@@ -46,8 +46,7 @@ const About = () => {
             <br />
             <br /> The Big Give is run by volunteers who are fueled by a passion
             to love their communities and draw them into relationship with
-            Jesus. Join us on Saturday, June 1, 2024 and see what happens in
-            your town.
+            Jesus. Join us on {date} and see what happens in your town.
           </Body>
         </TextContainer>
       </Container>

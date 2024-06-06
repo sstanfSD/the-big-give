@@ -43,8 +43,11 @@ const Home = ({ data }) => {
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
         <Header date={date} toggleModal={toggleModal} />
-        <About />
-        <Steps toggle={toggleModal} />
+        <About date={capitalizeFirstLetterOfEachWord(date)} />
+        <Steps
+          toggle={toggleModal}
+          date={capitalizeFirstLetterOfEachWord(date)}
+        />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
         <BigStories />

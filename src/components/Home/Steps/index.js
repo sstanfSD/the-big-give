@@ -16,7 +16,7 @@ import {
 
 import { BtnPrimary } from "../../../components/Buttons"
 
-const Steps = ({ toggle }) => {
+const Steps = ({ toggle, date }) => {
   //SCROLL ANIMATION
 
   const [imageOneVisible, setImageOneVisible] = useState(true)
@@ -102,7 +102,7 @@ const Steps = ({ toggle }) => {
                 <h2>Step 2</h2>
                 <p>
                   Gather a team at your church to dream and pray over your plans
-                  for Saturday, June 1, 2024.{" "}
+                  for {date}.{" "}
                 </p>
               </div>
             </TextContainer>

@@ -18,8 +18,10 @@ const Modal = ({ openModal, toggleModal }) => {
 
         <ModalMain>
           <TextContainer>
-            <Heading>Choose your region</Heading>
-            <BtnWhite
+            <Heading>
+              Registration will be available in the Fall of 2024.
+            </Heading>
+            {/* <BtnWhite
               large
               target="_blank"
               href="https://www.eventbrite.ca/e/the-big-give-2024-ottawaottawa-valley-registration-654039107577"
@@ -50,7 +52,7 @@ const Modal = ({ openModal, toggleModal }) => {
             >
               {" "}
               All Other Communities
-            </BtnWhite>
+            </BtnWhite> */}
           </TextContainer>
         </ModalMain>
         <CloseBtn onClick={toggleModal}>
