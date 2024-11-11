@@ -14,7 +14,7 @@ import {
   MobileImage,
 } from "./StepsElements"
 
-import { BtnPrimary } from "../../../components/Buttons"
+import { BtnPrimaryExternal } from "../../../components/Buttons"
 
 const Steps = ({ toggle, date }) => {
   //SCROLL ANIMATION
@@ -80,9 +80,9 @@ const Steps = ({ toggle, date }) => {
                   <Link to="/statement-of-faith">statement of faith</Link> and
                   register your church.
                 </p>
-                <BtnPrimary
-                  toggle={toggle}
+                <BtnPrimaryExternal
                   text={"register your church"}
+                  to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
                 />
               </div>
@@ -123,9 +123,9 @@ const Steps = ({ toggle, date }) => {
                   Pray some more and prepare for the big day using our{" "}
                   <Link to="/get-involved#resources">free resources</Link>.
                 </p>
-                <BtnPrimary
-                  toggle={toggle}
+                <BtnPrimaryExternal
                   text={"register your church"}
+                  to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
                 />
               </div>

@@ -52,7 +52,7 @@ const ChurchList = ({ churches, toggle }) => {
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading id="list">Participating Churches 2024</Heading>
+            <Heading id="list">Participating Churches 2025</Heading>
             <BtnList>
               {options.map((option, i) => {
                 if (selected === option) {

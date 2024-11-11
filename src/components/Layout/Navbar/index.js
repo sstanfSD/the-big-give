@@ -13,7 +13,7 @@ import {
   MobileMenuBtn,
 } from "./NavbarElements"
 
-import { BtnPrimary } from "../../Buttons"
+import { BtnPrimary, BtnPrimaryBlue, BtnPrimaryExternal } from "../../Buttons"
 import MobileMenu from "../MobileMenu"
 
 const Navbar = ({ toggleModal }) => {
@@ -77,7 +77,11 @@ const Navbar = ({ toggleModal }) => {
             </Dropdown>
           </Item>
           <Item>
-            <BtnPrimary toggle={toggleModal} text={"register"} />
+            {/* <BtnPrimary toggle={toggleModal} text={"register"} /> */}
+            <BtnPrimaryExternal
+              to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
+              text={"register"}
+            />
           </Item>
         </List>
         <MobileMenuBtn onClick={openMobileMenu} openMobile={openMobile}>

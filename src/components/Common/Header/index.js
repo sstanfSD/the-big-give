@@ -13,7 +13,7 @@ import {
   BottomRow,
 } from "./HeaderElements"
 
-import { BtnPrimary, BtnPrimaryBlue } from "../../Buttons"
+import { BtnPrimaryExternal, BtnPrimaryBlue } from "../../Buttons"
 
 import bg from "../../../assets/images/about/header/text-bg-png.png"
 
@@ -28,9 +28,14 @@ const Header = ({ header, toggle }) => {
           <TextContent>
             <Heading>{header.heading}</Heading>
             <Body dangerouslySetInnerHTML={{ __html: header.body }} />
-            {header.redButton && (
+            {/* {header.redButton && (
               <BtnPrimary text={header.redButtonText} toggle={toggle} />
-            )}
+            )} */}
+            <BtnPrimaryExternal
+              text={"register"}
+              to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
+              minWidth={true}
+            />
 
             {header.blueButton && (
               <BtnPrimaryBlue

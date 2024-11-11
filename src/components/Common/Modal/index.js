@@ -18,13 +18,13 @@ const Modal = ({ openModal, toggleModal }) => {
 
         <ModalMain>
           <TextContainer>
-            <Heading>
+            {/* <Heading>
               Registration will be available in the Fall of 2024.
-            </Heading>
-            {/* <BtnWhite
+            </Heading> */}
+            <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.ca/e/the-big-give-2024-ottawaottawa-valley-registration-654039107577"
+              href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343462QE&id=182"
             >
               {" "}
               Ottawa, Ottawa Valley
@@ -32,7 +32,7 @@ const Modal = ({ openModal, toggleModal }) => {
             <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.ca/e/the-big-give-2024-greater-toronto-area-gta-registration-654046258967"
+              href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343462QE&id=182"
             >
               {" "}
               GTA
@@ -40,7 +40,7 @@ const Modal = ({ openModal, toggleModal }) => {
             <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.ca/e/the-big-give-2023-quebec-registration-654050461537"
+              href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343462QE&id=182"
             >
               {" "}
               Quebec
@@ -48,11 +48,11 @@ const Modal = ({ openModal, toggleModal }) => {
             <BtnWhite
               large
               target="_blank"
-              href="https://www.eventbrite.ca/e/the-big-give-2024-all-other-communities-registration-654035707407"
+              href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343462QE&id=182"
             >
               {" "}
               All Other Communities
-            </BtnWhite> */}
+            </BtnWhite>
           </TextContainer>
         </ModalMain>
         <CloseBtn onClick={toggleModal}>

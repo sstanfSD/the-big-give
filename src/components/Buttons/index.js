@@ -1,7 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { ButtonPrimary, ButtonPrimaryBlue } from "./ButtonElements"
+import {
+  ButtonPrimary,
+  ButtonPrimaryBlue,
+  ButtonPrimaryExternal,
+} from "./ButtonElements"
 
 export const BtnPrimary = ({ text, large, toggle }) => {
   return (
@@ -27,10 +31,15 @@ export const BtnPrimaryBlue = ({ text, to, large }) => {
   )
 }
 
-export const BtnPrimaryExternal = ({ text, to }) => {
+export const BtnPrimaryExternal = ({ text, to, large, minWidth }) => {
   return (
-    <a href={to} target="_blank">
-      <ButtonPrimary>{text}</ButtonPrimary>
-    </a>
+    <ButtonPrimaryExternal
+      href={to}
+      target="_blank"
+      large={large}
+      minWidth={minWidth}
+    >
+      {text}
+    </ButtonPrimaryExternal>
   )
 }

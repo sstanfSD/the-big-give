@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link, navigate } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { BtnPrimary } from "../../Buttons"
+import { BtnPrimaryExternal } from "../../Buttons"
 
 import {
   Section,
@@ -94,9 +94,11 @@ const Stories = ({ stories, toggle }) => {
                   )
               })}
               <BtnListItem>
-                <RegisterBtn onClick={toggle} large>
-                  register your church
-                </RegisterBtn>
+                <BtnPrimaryExternal
+                  text="register your church"
+                  to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
+                  large
+                />
               </BtnListItem>
             </BtnList>
           </ContentContainer>

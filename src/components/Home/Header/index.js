@@ -15,7 +15,7 @@ import {
   VideoWrapper,
 } from "./HeaderElements"
 
-import { BtnPrimary } from "../../Buttons"
+import { BtnPrimaryExternal } from "../../Buttons"
 
 import Video from "./Video/index"
 
@@ -62,7 +62,12 @@ const Header = ({ date, toggleModal }) => {
             <Date>{date}</Date>
           </DateContainer>
 
-          <BtnPrimary toggle={toggleModal} text="REGISTER TODAY" large />
+          <BtnPrimaryExternal
+            // toggle={toggleModal}
+            text="REGISTER TODAY"
+            to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
+            large
+          />
         </TextContainer>
         <VideoContainer>
           <VideoWrapper offset={offset}>

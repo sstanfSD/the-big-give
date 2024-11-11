@@ -16,6 +16,8 @@ import {
   ImageBottom,
 } from "./AboutRegionalElements"
 
+import { BtnPrimaryExternal } from "../../Buttons"
+
 const AboutRegional = () => {
   return (
     <Section>
@@ -33,38 +35,14 @@ const AboutRegional = () => {
             <br />
             <br /> Get your church to join with thousands of other Christians
             across the country for a unified day of giving extravagantly on
-            Saturday, June 1, 2024. Click on your region below. <br /> <br />{" "}
-            Don’t see your area? Talk to us about becoming a regional champion.
+            Saturday, June 7, 2025.
           </Body>
           <BtnContainer>
-            <Top>
-              <a
-                href="https://www.eventbrite.com/e/the-big-give-2023-ottawaottawa-valley-registration-383606606687"
-                target="_blank"
-              >
-                <Btn>Ottawa, Ottawa Valley</Btn>
-              </a>
-              <a
-                href="https://www.eventbrite.ca/e/the-big-give-2023-greater-toronto-area-gta-registration-384157394107"
-                target="_blank"
-              >
-                <Btn>GTA</Btn>
-              </a>
-            </Top>
-            <Bottom>
-              <a
-                href="https://www.eventbrite.ca/e/the-big-give-2023-quebec-registration-384758050687"
-                target="_blank"
-              >
-                <Btn>Quebec</Btn>
-              </a>
-              <a
-                href="https://www.eventbrite.ca/e/the-big-give-2023-all-other-communities-registration-384163642797"
-                target="_blank"
-              >
-                <Btn>All Other Communities</Btn>
-              </a>
-            </Bottom>
+            <BtnPrimaryExternal
+              text="Register your church"
+              to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
+              large
+            />
           </BtnContainer>
         </TextContainer>
         <ImageContainer>
