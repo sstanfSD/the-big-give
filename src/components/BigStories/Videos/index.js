@@ -59,7 +59,7 @@ const Videos = ({ videos }) => {
         <VideoRef ref={videosRef} />
         <VideosWrapper>
           <VideosContainer
-            length={`${videos.nodes.length / 2}`}
+            length={Math.ceil(videos.nodes.length / 2)}
             scrollPosition={scrollPosition}
           >
             {videos.nodes.map((video, i) => {

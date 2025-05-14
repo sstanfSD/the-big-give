@@ -86,7 +86,7 @@ export const query = graphql`
         }
       }
     }
-    allWpVideoTestimonial {
+    allWpVideoTestimonial(sort: { fields: date, order: DESC }) {
       nodes {
         title
         video {
