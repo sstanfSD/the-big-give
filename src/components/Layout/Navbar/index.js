@@ -77,11 +77,11 @@ const Navbar = ({ toggleModal }) => {
             </Dropdown>
           </Item>
           <Item>
-            {/* <BtnPrimary toggle={toggleModal} text={"register"} /> */}
-            <BtnPrimaryExternal
+            <BtnPrimary toggle={toggleModal} text={"register"} />
+            {/* <BtnPrimaryExternal
               to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
               text={"register"}
-            />
+            /> */}
           </Item>
         </List>
         <MobileMenuBtn onClick={openMobileMenu} openMobile={openMobile}>

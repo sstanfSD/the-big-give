@@ -19,8 +19,6 @@ import Thumbnail from "./Thumbnail"
 import VideoModal from "./VideoModal"
 
 const Videos = ({ videos }) => {
-  console.log(videos)
-
   //PLAY ACTIVE VIDEO
   const [activeVideo, setActiveVideo] = useState(-1)
   const playVideo = i => {

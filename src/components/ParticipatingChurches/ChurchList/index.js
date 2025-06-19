@@ -43,6 +43,26 @@ const ChurchList = ({ churches, toggle }) => {
     } else if (option === "all other communities") {
       setSelected(options[3])
     } else return
+
+    // Scroll to list on mobile
+    scrollToList()
+  }
+
+  const scrollToList = () => {
+    // Check if we're on mobile (tablet portrait and below)
+    if (window.innerWidth <= 900) {
+      // tabport breakpoint
+
+      setTimeout(() => {
+        const listElement = document.getElementById("list-heading")
+        if (listElement) {
+          listElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          })
+        }
+      }, 100)
+    }
   }
 
   useEffect(() => {}, [])
@@ -91,9 +111,9 @@ const ChurchList = ({ churches, toggle }) => {
             </BtnList>
           </ContentContainer>
         </Sidebar>
-        <ListContainer>
+        <ListContainer id="list">
           <ChurchListElement>
-            <ListHeading>{selected}</ListHeading>
+            <ListHeading id="list-heading">{selected}</ListHeading>
             {churches.nodes.map((church, i) => {
               if (selected === options[0]) {
                 if (church.participatingChurch.region === options[0]) {

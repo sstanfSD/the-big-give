@@ -116,6 +116,27 @@ const index = () => {
           </TimelineItem>
           <TimelineItemShadow left={true} />
         </TimelineItemWrapper>
+
+        <TimelineItemWrapper left={false}>
+          <TimelineItem left={false}>
+            <TimelineItemHeading>2025</TimelineItemHeading>
+            <TimelineItemSubheading>
+              In 2025 there were 89 churches who participated in the Big Give
+              including five churches in Australia! Two new cities joined us
+              this year: Barrie, Ontario with two churches participating and
+              Wingham, ON with one church coming on board. We also had our first
+              church join us from Red Deer, Alberta. In the Ottawa/Ottawa Valley
+              we had 46 churches. In the Greater Toronto Area we have 9
+              churches. In Quebec we had 9 churches. There were 25 churches in
+              the following cities: Brockville ON, Lyn ON, Johnston, ON, Dutton,
+              ON, Port Hope ON, Barrie, ON, Wingham, ON, Lively ON, Sidney BC,
+              Red Deer, AB, Dutton ON, Spencerville ON, Prescott ON, and Aylmer
+              ON and St. Stephen’s, NB.
+            </TimelineItemSubheading>
+          </TimelineItem>
+          <TimelineItemShadow left={false} />
+        </TimelineItemWrapper>
+
         <TimelineLine />
       </TimelineContainer>
     </TimelineSection>

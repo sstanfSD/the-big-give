@@ -12,8 +12,6 @@ import {
 import Slider from "../Slider"
 
 const Main = ({ content, images, video }) => {
-  console.log(video)
-
   return (
     <Section>
       <Container>

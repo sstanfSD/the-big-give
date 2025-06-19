@@ -13,7 +13,7 @@ import {
   ListLink,
 } from "./FooterElements"
 
-import { BtnPrimaryExternal } from "../../Buttons/"
+import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons/"
 
 import logowhite from "../../../assets/logos/logo-white.png"
 
@@ -95,10 +95,12 @@ const Footer = ({ toggleModal }) => {
           </List>
         </Column>
         <Column>
-          <BtnPrimaryExternal
+          <BtnPrimary text={"register your church"} toggle={toggleModal} />
+
+          {/* <BtnPrimaryExternal
             text={"register your church"}
             to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
-          />
+          /> */}
         </Column>
       </Container>
     </FooterElement>

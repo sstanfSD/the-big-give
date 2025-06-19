@@ -18,10 +18,10 @@ const Modal = ({ openModal, toggleModal }) => {
 
         <ModalMain>
           <TextContainer>
-            {/* <Heading>
-              Registration will be available in the Fall of 2024.
-            </Heading> */}
-            <BtnWhite
+            <Heading>
+              Registration will be available in the Fall of 2025.
+            </Heading>
+            {/* <BtnWhite
               large
               target="_blank"
               href="https://interland3.donorperfect.net/weblink/weblink.aspx?name=E343462QE&id=182"
@@ -52,7 +52,7 @@ const Modal = ({ openModal, toggleModal }) => {
             >
               {" "}
               All Other Communities
-            </BtnWhite>
+            </BtnWhite> */}
           </TextContainer>
         </ModalMain>
         <CloseBtn onClick={toggleModal}>

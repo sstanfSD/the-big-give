@@ -15,7 +15,7 @@ import {
   BottomRow,
 } from "./ThankYouElements"
 
-import { BtnPrimaryExternal } from "../../Buttons"
+import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons"
 
 const ThankYou = ({ thankyou, toggle }) => {
   return (
@@ -39,11 +39,12 @@ const ThankYou = ({ thankyou, toggle }) => {
             })}
           </List>
 
-          <BtnPrimaryExternal
+          {/* <BtnPrimaryExternal
             text={"register now"}
             to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
             large
-          />
+          /> */}
+          <BtnPrimary text="register now" toggle={toggle} large />
         </TextContainer>
         <ImageContainer>
           <TopRow>

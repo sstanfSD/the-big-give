@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link, navigate } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-import { BtnPrimaryExternal } from "../../Buttons"
+import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons"
 
 import {
   Section,
@@ -94,11 +94,12 @@ const Stories = ({ stories, toggle }) => {
                   )
               })}
               <BtnListItem>
-                <BtnPrimaryExternal
+                {/* <BtnPrimaryExternal
                   text="register your church"
                   to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
-                />
+                /> */}
+                <BtnPrimary text="register your church" toggle={toggle} large />
               </BtnListItem>
             </BtnList>
           </ContentContainer>

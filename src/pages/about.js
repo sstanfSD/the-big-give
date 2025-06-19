@@ -28,7 +28,7 @@ const About = ({ data }) => {
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
         <Header header={header} toggle={toggleModal} />
-        <AboutRegional />
+        <AboutRegional toggle={toggleModal} />
         <History />
         <Team team={team} />
         <FAQ FAQs={FAQs} />

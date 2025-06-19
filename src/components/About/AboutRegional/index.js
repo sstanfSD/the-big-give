@@ -16,9 +16,9 @@ import {
   ImageBottom,
 } from "./AboutRegionalElements"
 
-import { BtnPrimaryExternal } from "../../Buttons"
+import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons"
 
-const AboutRegional = () => {
+const AboutRegional = ({ toggle }) => {
   return (
     <Section>
       <Container>
@@ -35,14 +35,15 @@ const AboutRegional = () => {
             <br />
             <br /> Get your church to join with thousands of other Christians
             across the country for a unified day of giving extravagantly on
-            Saturday, June 7, 2025.
+            Saturday, June 6, 2026.
           </Body>
           <BtnContainer>
-            <BtnPrimaryExternal
+            {/* <BtnPrimaryExternal
               text="Register your church"
               to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
               large
-            />
+            /> */}
+            <BtnPrimary text="Register your church" toggle={toggle} large />
           </BtnContainer>
         </TextContainer>
         <ImageContainer>
