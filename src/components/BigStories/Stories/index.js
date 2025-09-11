@@ -94,12 +94,12 @@ const Stories = ({ stories, toggle }) => {
                   )
               })}
               <BtnListItem>
-                {/* <BtnPrimaryExternal
+                <BtnPrimaryExternal
                   text="register your church"
                   to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
-                /> */}
-                <BtnPrimary text="register your church" toggle={toggle} large />
+                />
+                {/* <BtnPrimary text="register your church" toggle={toggle} large /> */}
               </BtnListItem>
             </BtnList>
           </ContentContainer>

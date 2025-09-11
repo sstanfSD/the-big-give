@@ -95,12 +95,12 @@ const Footer = ({ toggleModal }) => {
           </List>
         </Column>
         <Column>
-          <BtnPrimary text={"register your church"} toggle={toggleModal} />
+          {/* <BtnPrimary text={"register your church"} toggle={toggleModal} /> */}
 
-          {/* <BtnPrimaryExternal
+          <BtnPrimaryExternal
             text={"register your church"}
             to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
-          /> */}
+          />
         </Column>
       </Container>
     </FooterElement>

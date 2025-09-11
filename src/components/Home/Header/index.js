@@ -62,13 +62,13 @@ const Header = ({ date, toggleModal }) => {
             <Date>{date}</Date>
           </DateContainer>
 
-          {/* <BtnPrimaryExternal
+          <BtnPrimaryExternal
             // toggle={toggleModal}
             text="REGISTER TODAY"
             to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
             large
-          /> */}
-          <BtnPrimary text="REGISTER TODAY" toggle={toggleModal} large />
+          />
+          {/* <BtnPrimary text="REGISTER TODAY" toggle={toggleModal} large /> */}
         </TextContainer>
         <VideoContainer>
           <VideoWrapper offset={offset}>

@@ -27,8 +27,8 @@ const ParticipatingChurches = ({ data }) => {
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
         <Header header={header} toggle={toggleModal} />
-        <MapSection markers={markers} />
         <ChurchList churches={churches} toggle={toggleModal} />
+        <MapSection markers={markers} />
       </Layout>
     </>
   )

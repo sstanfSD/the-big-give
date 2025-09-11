@@ -38,12 +38,12 @@ const AboutRegional = ({ toggle }) => {
             Saturday, June 6, 2026.
           </Body>
           <BtnContainer>
-            {/* <BtnPrimaryExternal
+            <BtnPrimaryExternal
               text="Register your church"
               to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
               large
-            /> */}
-            <BtnPrimary text="Register your church" toggle={toggle} large />
+            />
+            {/* <BtnPrimary text="Register your church" toggle={toggle} large /> */}
           </BtnContainer>
         </TextContainer>
         <ImageContainer>

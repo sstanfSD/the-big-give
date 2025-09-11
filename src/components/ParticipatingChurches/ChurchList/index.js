@@ -20,6 +20,8 @@ import {
   Details,
 } from "./ChurchListElements"
 
+import { BtnPrimaryExternal } from "../../Buttons"
+
 const ChurchList = ({ churches, toggle }) => {
   //LIST SELECTION LOGIC
 
@@ -104,9 +106,15 @@ const ChurchList = ({ churches, toggle }) => {
                   )
               })}
               <BtnListItem>
-                <RegisterBtn large onClick={toggle}>
+                {/* <RegisterBtn large onClick={toggle}>
                   register your church
-                </RegisterBtn>
+                </RegisterBtn> */}
+
+                <BtnPrimaryExternal
+                  to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
+                  text={"Register your church"}
+                  large
+                />
               </BtnListItem>
             </BtnList>
           </ContentContainer>

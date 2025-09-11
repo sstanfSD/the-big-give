@@ -29,16 +29,16 @@ const Header = ({ header, toggle }) => {
             <Heading>{header.heading}</Heading>
             <Body dangerouslySetInnerHTML={{ __html: header.body }} />
 
-            <div style={{ marginBottom: "2rem" }}>
+            {/* <div style={{ marginBottom: "2rem" }}>
               {header.redButton && (
                 <BtnPrimary text={header.redButtonText} toggle={toggle} />
               )}
-            </div>
-            {/* <BtnPrimaryExternal
+            </div> */}
+            <BtnPrimaryExternal
               text={"register"}
               to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
               minWidth={true}
-            /> */}
+            />
 
             {header.blueButton && (
               <BtnPrimaryBlue
