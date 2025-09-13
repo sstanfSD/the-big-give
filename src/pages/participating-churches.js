@@ -26,7 +26,7 @@ const ParticipatingChurches = ({ data }) => {
       <PageHead title={SEO.title} description={SEO.metaDesc} />
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
-        <Header header={header} toggle={toggleModal} />
+        {/* <Header header={header} toggle={toggleModal} /> */}
         <ChurchList churches={churches} toggle={toggleModal} />
         <MapSection markers={markers} />
       </Layout>
