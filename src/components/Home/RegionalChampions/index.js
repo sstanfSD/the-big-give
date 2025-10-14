@@ -12,8 +12,10 @@ import {
 import Card from "./Card"
 
 import { BtnPrimaryLink } from "../../Buttons/"
+import {useTarnslation, useTranslation} from "gatsby-plugin-react-i18next"
 
 const RegionalChampions = ({ champions }) => {
+  const {t} = useTranslation()
   const cardsRef = useRef()
   const [scrollPosition, setScrollPosition] = useState(0)
 
@@ -32,7 +34,7 @@ const RegionalChampions = ({ champions }) => {
     <Section ref={cardsRef} height={champions.nodes.length}>
       <Container>
         <TextContainer className="card-text">
-          <Heading>Connect with a big give champion in your area</Heading>
+          <Heading>{t("champion.title")}</Heading>
           <Body>
             {/* The Big Give is run by passionate servant leaders who volunteer
             their time. Some of the biggest heroes of this ministry are our
@@ -40,13 +42,11 @@ const RegionalChampions = ({ champions }) => {
             join this life-changing movement.
             <br />
             <br /> */}
-            Click on your community to connect with your regional champion.
-            Don’t see your town? Click below to learn more about becoming a
-            regional champion yourself.
+            {t("champion.subtitle")}
           </Body>
           <BtnPrimaryLink
             to={"/become-a-regional-champion"}
-            text={"become a champion"}
+            text={t("champion.cta")}
             large
           />
         </TextContainer>

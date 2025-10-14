@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
@@ -10,18 +11,18 @@ import Events from "../components/GetInvolved/Events"
 
 const GetInvolved = ({ data }) => {
   const [openModal, setOpenModal] = useState(false)
+  const { t } = useTranslation()
+  
   const toggleModal = () => {
     setOpenModal(!openModal)
   }
 
-  const SEO = data.wpPage.seo
-  const header = data.wpPage.common_header
-
-  const resources = data.allWpRegistrationResource
+  const SEO = data.wpPage?.seo || {}
+  const header = data.wpPage?.common_header || {}
+  const resources = data.allWpRegistrationResource || { nodes: [] }
   const englishKit = data.englishKit
   const frenchKit = data.frenchKit
-
-  const events = data.allWpEvent
+  const events = data.allWpEvent || { nodes: [] }
 
   return (
     <>
@@ -43,7 +44,16 @@ const GetInvolved = ({ data }) => {
 export default GetInvolved
 
 export const query = graphql`
-  query ResourcesQuery {
+  query ResourcesQuery($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     wpPage(uri: { eq: "/get-involved/" }) {
       id
       seo {

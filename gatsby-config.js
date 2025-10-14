@@ -13,6 +13,7 @@ module.exports = {
    * Gatsby has a rich ecosystem of plugins.
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
+  siteMetadata: { siteUrl: "https://thebiggive.ca" },
   plugins: [
     {
       /**
@@ -110,5 +111,29 @@ module.exports = {
      * To learn more, visit: https://gatsby.dev/offline
      */
     // `gatsby-plugin-offline`,
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "locale",
+        path: `${__dirname}/locales`, 
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-i18next",
+      options: {
+        localeJsonSourceName: "locale",      
+        languages: ["en", "fr"],
+        defaultLanguage: "en",
+        generateDefaultLanguagePage: true,
+        siteUrl: "https://thebiggive.ca",
+        i18nextOptions: {
+          interpolation: { escapeValue: false },
+          keySeparator: false,
+          ns: ["common"],                    
+          defaultNS: "common",               
+        },
+      },
+    },
   ],
 }

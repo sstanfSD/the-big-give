@@ -1,35 +1,37 @@
-import React, { useState } from "react"
-import { graphql } from "gatsby"
+import React, { useState } from "react";
+import { graphql } from "gatsby";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
-import PageHead from "../components/PageHead"
-import Layout from "../components/Layout/index"
-import Modal from "../components/Common/Modal"
-import Header from "../components/Home/Header"
-import About from "../components/Home/About"
-import Steps from "../components/Home/Steps"
-import RegionalChampions from "../components/Home/RegionalChampions"
-import FAQ from "../components/Common/FAQ"
-import SocialMedia from "../components/Home/SocialMedia"
-import BigStories from "../components/Home/BigStories"
-import ThankYou from "../components/Home/ThankYou"
+import PageHead from "../components/PageHead";
+import Layout from "../components/Layout/index";
+import Modal from "../components/Common/Modal";
+import Header from "../components/Home/Header";
+import About from "../components/Home/About";
+import Steps from "../components/Home/Steps";
+import RegionalChampions from "../components/Home/RegionalChampions";
+import FAQ from "../components/Common/FAQ";
+import SocialMedia from "../components/Home/SocialMedia";
+import BigStories from "../components/Home/BigStories";
+import ThankYou from "../components/Home/ThankYou";
 
 const Home = ({ data }) => {
-  const [openModal, setOpenModal] = useState(false)
-  const toggleModal = () => {
-    setOpenModal(!openModal)
-  }
+  const [openModal, setOpenModal] = useState(false);
+  const toggleModal = () => setOpenModal(!openModal);
 
-  const date = data.wpPage.homeheader.eventDate
-  const FAQs = data.allWpFaq
-  const champions = data.allWpRegionalChampion
-  const thankyou = data.wpPage.thankyou
+  const { t } = useTranslation();
+
+  // Handle cases where WordPress data might not be available
+  const date = data.wpPage?.homeheader?.eventDate || "May 3, 2025";
+  const FAQs = data.allWpFaq || { nodes: [] };
+  const champions = data.allWpRegionalChampion || { nodes: [] };
+  const thankyou = data.wpPage?.thankyou || null;
 
   function capitalizeFirstLetterOfEachWord(str) {
     return str
       .toLowerCase()
       .split(" ")
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ")
+      .join(" ");
   }
 
   return (
@@ -44,25 +46,31 @@ const Home = ({ data }) => {
         <Modal openModal={openModal} toggleModal={toggleModal} />
         <Header date={date} toggleModal={toggleModal} />
         <About date={capitalizeFirstLetterOfEachWord(date)} />
-        <Steps
-          toggle={toggleModal}
-          date={capitalizeFirstLetterOfEachWord(date)}
-        />
+        <Steps toggle={toggleModal} date={capitalizeFirstLetterOfEachWord(date)} />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
         <BigStories />
-
-        <ThankYou thankyou={thankyou} toggle={toggleModal} />
+        {thankyou && <ThankYou thankyou={thankyou} toggle={toggleModal} />}
         <SocialMedia />
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
 
+// IMPORTANT: add $language and the locales query so i18n JSON is loaded
 export const query = graphql`
-  query HomeQuery {
+  query HomeQuery($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     wpPage(uri: { eq: "/" }) {
       id
       thankyou {
@@ -113,4 +121,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
@@ -10,14 +11,16 @@ import Videos from "../components/BigStories/Videos"
 
 const BigStories = ({ data }) => {
   const [openModal, setOpenModal] = useState(false)
+  const { t } = useTranslation()
+  
   const toggleModal = () => {
     setOpenModal(!openModal)
   }
 
-  const SEO = data.wpPage.seo
-  const header = data.wpPage.common_header
-  const stories = data.allWpStory
-  const videos = data.allWpVideoTestimonial
+  const SEO = data.wpPage?.seo || {}
+  const header = data.wpPage?.common_header || {}
+  const stories = data.allWpStory || { nodes: [] }
+  const videos = data.allWpVideoTestimonial || { nodes: [] }
 
   return (
     <>
@@ -35,7 +38,16 @@ const BigStories = ({ data }) => {
 export default BigStories
 
 export const query = graphql`
-  query StoriesQuery {
+  query StoriesQuery($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     wpPage(uri: { eq: "/big-stories/" }) {
       id
       seo {
@@ -60,7 +72,7 @@ export const query = graphql`
         redButtonText
       }
     }
-    allWpStory(sort: { fields: date, order: DESC }) {
+    allWpStory(sort: { date: DESC }) {
       nodes {
         categories {
           nodes {
@@ -86,7 +98,7 @@ export const query = graphql`
         }
       }
     }
-    allWpVideoTestimonial(sort: { fields: date, order: DESC }) {
+    allWpVideoTestimonial(sort: { date: DESC }) {
       nodes {
         title
         video {

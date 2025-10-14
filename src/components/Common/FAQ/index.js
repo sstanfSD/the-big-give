@@ -14,19 +14,23 @@ import {
 } from "./FAQElements"
 
 import Question from "./Question"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const FAQ = ({ FAQs }) => {
+
+  const {t} = useTranslation();
+
   return (
     <Section>
       <Container>
         <HeadingContainer>
           <Heading>
-            Frequently <br></br>asked questions
+            {t("faq.title1")} <br></br>{t("faq.title2")}
           </Heading>
           <Contact>
-            Is your question not answered?
+            {t("faq.subtitle")}
             <br />
-            <Link to={"/about#contact"}>Contact us directly</Link>.
+            <Link to={"/about#contact"}>{t("faq.contact")}</Link>.
           </Contact>
         </HeadingContainer>
         <QuestionsContainer>

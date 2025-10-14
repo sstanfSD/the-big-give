@@ -1,0 +1,252 @@
+{
+  "nav.about": "à propos",
+  "nav.history": "histoire",
+  "nav.team": "équipe",
+  "nav.contact": "contact",
+  "nav.churches": "églises participantes",
+  "nav.getInvolved": "s'impliquer",
+  "nav.resources": "ressources",
+  "nav.events": "événements",
+  "nav.stories": "grandes histoires",
+  "nav.videos": "témoignages vidéo",
+  "nav.register": "s'inscrire",
+
+  "hero.title": "L’entraide devient simple lorsqu’elle commence par le don.",
+  "hero.cta.explore": "Inscrivez-vous dès aujourd’hui",
+
+  "section.title": "Rejoignez un mouvement national de générosité",
+  "section.desc1": "Chaque année, des églises partout au Canada bénissent et aiment leurs quartiers lors d’une journée de don extraordinaire où TOUT EST GRATUIT !",
+  "section.desc2": "Le Big Give est animé par des bénévoles passionnés, motivés par l’amour de leur communauté et le désir de les rapprocher de Jésus. Rejoignez-nous le",
+  "section.desc3": "et découvrez ce qui se passe dans votre ville.",
+
+
+  "step1.title": "Étape 1",
+  "step1.desc1": "Comprenez ce qu’est The Big Give en lisant notre",
+  "step1.desc2": "accord d’église",
+  "step1.desc3": "et",
+  "step1.desc4": "déclaration de foi",
+  "step1.desc5": "et inscrivez votre église.",
+  "step1.cta": "inscrivez votre église",
+
+  "step2.title": "Étape 2",
+  "step2.desc": "Rassemblez une équipe dans votre église pour rêver et prier à propos de vos projets pour le samedi",
+
+  "step3.title": "Étape 3",
+  "step3.desc1": "Priez encore et préparez-vous pour le grand jour en utilisant nos",
+  "step3.desc2": "ressources gratuites.",
+  "step3.cta": "inscrivez votre église",
+
+  "champion.title": "Connectez-vous avec un champion du Big Give dans votre région",
+  "champion.subtitle": "Cliquez sur votre communauté pour vous connecter avec votre champion régional. Vous ne voyez pas votre ville ? Cliquez ci-dessous pour en savoir plus sur comment devenir vous-même un champion régional.",
+  "champion.cta": "devenez un champion",
+  "champion.region.ottawa": "Ottawa",
+  "champion.region.ottawaValley": "Vallée de l'Outaouais",
+  "champion.region.toronto": "Toronto et la région du Grand Toronto",
+  "champion.region.westIsland": "West Island, Montréal",
+  "champion.region.westernOntario": "Ouest de l'Ontario",
+  "champion.region.britishColumbia": "Colombie-Britannique",
+
+  "faq.title1": "Foire",
+  "faq.title2": "aux questions",
+  "faq.subtitle": "Votre question n'a pas de réponse ?",
+  "faq.contact": "Contactez-nous directement.",
+
+  "bigStories.title": "Grandes histoires",
+  "bigStories.desc": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le Big Give. Voici quelques-unes de nos histoires préférées des précédents Big Give. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
+  "bigStories.cta": "lire les grandes histoires",
+
+  "finalCta.thankYou": "Merci",
+  "finalCta.moreInfo": "Pour plus d'informations sur le Big Give, veuillez contacter la directrice,",
+  "finalCta.registerNow": "inscrivez-vous maintenant",
+
+  "footer.about": "à propos",
+  "footer.churches": "églises participantes",
+  "footer.history": "histoire",
+  "footer.team": "équipe",
+  "footer.bigStories": "grandes histoires",
+  "footer.getInvolved": "s'impliquer",
+  "footer.resources": "ressources",
+  "footer.events": "événements",
+  "footer.becomeChampion": "devenir un champion régional",
+  "footer.agreement": "l'accord du Big Give",
+  "footer.statementOfFaith": "déclaration de foi",
+  "footer.cta": "inscrivez votre église",
+
+  "about.page.title": "À propos du BIG Give",
+
+  "about.hero.intro": "Chaque année, le premier samedi de juin, les églises de toutes les confessions à travers le Canada montrent à leurs voisins l'amour inconditionnel de Dieu en donnant gratuitement, sans rien demander en retour.",
+
+  "about.testimonial.quote": "J'étais sur mon balcon, j'ai senti l'odeur du BBQ à l'église au bout de la rue, je suis allé chercher un hamburger gratuit et d'autres choses gratuites dont j'avais besoin. Je suis allé à l'église pour la première fois le lendemain matin, j'ai découvert qui était vraiment Jésus et combien il m'aimait. Ma vie a changé depuis.",
+
+  "about.cta.text": "Rejoignez-nous cette année et voyez ce qui se passe dans le quartier de votre église.",
+  "about.cta.button": "s'inscrire",
+
+  "about.quote.highlight": "C'est le meilleur événement d'entraide auquel nous ayons jamais participé.",
+
+  "about.description.paragraph1": "C'est incroyable comment un cadeau gratuit peut construire un pont vers votre communauté. Et c'est si simple. Nous avons vu des églises offrir des ventes de garage gratuites, des lave-autos, des BBQ, des films dans le parc, des promenades en poney et du maquillage pour enfants. Certaines églises ont même offert des coupes de cheveux gratuites et des châteaux gonflables pour les enfants. Quoi que vous fassiez, rendez-le gratuit.",
+
+  "about.description.paragraph2": "Faites en sorte que votre église se joigne à des milliers d'autres chrétiens à travers le pays pour une journée unifiée de don extravagant le samedi 6 juin 2026.",
+
+  "about.timeline.title": "Histoire du Big Give",
+  "about.timeline.2015.title": "2015",
+  "about.timeline.2015.desc": "55 églises participantes dans la région d'Ottawa",
+
+  "about.timeline.2016.title": "2016",
+  "about.timeline.2016.desc": "66 églises participantes dans la région d'Ottawa et les communautés environnantes",
+
+  "about.timeline.2017.title": "2017",
+  "about.timeline.2017.desc": "92 églises participantes à Ottawa, Arnprior, Toronto (RGT), Montréal, Brockville, Cornwall, Sidney BC, Simcoe et d'autres communautés !",
+
+  "about.timeline.2018.title": "2018",
+  "about.timeline.2018.desc": "130 églises participantes à Ottawa, Arnprior, Cobden, Pembroke, Toronto (RGT), Montréal, Brockville, Cornwall, Prescott, Morrisburg, Perth, Lindsay, Brantford, Brighton, Gatineau, Rockland, Pickering, Hamilton, St. Catharines, Sidney BC, Charlottetown IPÉ et de nombreuses autres communautés !",
+
+  "about.timeline.2019.title": "2019",
+  "about.timeline.2019.desc": "137 églises participantes à Ottawa, Arnprior, Cobden, Pembroke, Shawville, Lively, Toronto (RGT), Montréal, Brockville, Cornwall, Morrisburg, Perth, Almonte, Lindsay, Port Hope, Brantford, Burlington, Chatham, Brighton, Gatineau, Aylmer, Rockland, Pickering, Hamilton, St. Catharines, Sidney BC, Creston BC, Charlottetown IPÉ et de nombreuses autres communautés !",
+
+  "about.timeline.2022.title": "2022",
+  "about.timeline.2022.desc": "52 églises participantes à Ottawa, Arnprior, Carleton Place, Pembroke, Lively, Toronto (RGT), Brockville, Perth, Port Hope, Montréal QC, Shawville QC, Sidney BC, Truro NÉ, Amherst NÉ et de nombreuses autres communautés !",
+
+  "about.timeline.2023.title": "2023",
+  "about.timeline.2023.desc": "Avec la pandémie derrière nous, nous avons eu 70 églises participantes en 2023. Nous continuons à croître avec quelques nouvelles villes qui nous rejoignent cette année : Aylmer ON, Sarnia ON et Spencerville ON. Nous avions 42 sites dans la région d'Ottawa/Vallée de l'Outaouais, 6 sites dans la RGT, 10 sites au Québec et 12 sites dans d'autres communautés canadiennes.",
+
+  "about.timeline.2024.title": "2024",
+  "about.timeline.2024.desc": "En 2024, il y avait 86 églises qui ont participé au Big Give, dont trois églises en Australie ! Une autre nouvelle ville était St. Stephen, Nouveau-Brunswick. Dans la région d'Ottawa/Vallée de l'Outaouais, nous avions 46 églises. Dans la région du Grand Toronto, nous avons 11 églises. Au Québec, nous avions 6 églises. Il y avait 23 églises dans les villes suivantes : Brockville ON, Port Hope ON, Sarnia ON, Truro NÉ, Lively ON, Sidney BC, Dutton ON, Spencerville ON, Prescott ON et Aylmer ON.",
+
+  "about.timeline.2025.title": "2025",
+  "about.timeline.2025.desc": "En 2025, il y avait 89 églises qui ont participé au Big Give, dont cinq églises en Australie ! Deux nouvelles villes nous ont rejoints cette année : Barrie, Ontario avec deux églises participantes et Wingham, ON avec une église à bord. Nous avons également eu notre première église qui nous a rejoints de Red Deer, Alberta. Dans la région d'Ottawa/Vallée de l'Outaouais, nous avions 46 églises. Dans la région du Grand Toronto, nous avons 9 églises. Au Québec, nous avions 9 églises. Il y avait 25 églises dans les villes suivantes : Brockville ON, Lyn ON, Johnston, ON, Dutton, ON, Port Hope ON, Barrie, ON, Wingham, ON, Lively ON, Sidney BC, Red Deer, AB, Dutton ON, Spencerville ON, Prescott ON et Aylmer ON et St. Stephen's, NB.",
+
+  "about.history.title": "Histoire du Big Give",
+  "about.history.paragraph1": "L'idée d'un \"Big Give\" à l'échelle de la ville remonte à 2009. Une église locale d'Ottawa venait de terminer Les 40 jours de communauté par Rick Warren. Le défi à la fin de l'étude du livre était de trouver un projet à l'échelle de l'église qui atteindrait la communauté d'une manière unique.",
+
+  "about.history.paragraph2": "Kathy Blakely s'est réveillée tôt un matin avec l'idée d'une vente de garage gratuite. C'était quelque chose de facile à faire et qui ne coûterait pas beaucoup d'argent à l'église. En partageant sa vision avec d'autres, il est devenu évident que c'était une \"idée de Dieu\". Le premier Big Give a eu lieu cette année-là, et Kathy avait le rêve de voir les églises partout dans la ville faire la même chose le même jour.",
+
+  "about.history.paragraph3": "En 2014, Richard Long de Love Ottawa a entendu parler de l'idée et a approché Kathy pour un partenariat. Un comité a été formé et, en juin 2015, 55 églises de la capitale nationale se sont réunies pour une journée unifiée de don radical.",
+
+  "about.history.paragraph4": "Grâce au partenariat continu avec Love Ottawa et One Way Ministries, l'équipe espère que l'événement continuera à croître et sera une bénédiction incroyable pour les communautés d'Ottawa et à travers le pays.",
+
+  "about.team.title": "L'équipe du Big Give",
+  "about.team.subtitle": "Nous sommes un groupe de bénévoles qui ont vu combien Dieu peut utiliser nos cadeaux gratuits pour construire des ponts entre nos églises et les communautés qu'elles servent.",
+
+  "about.faq.title": "Questions fréquemment posées",
+  "about.faq.subtitle": "Votre question n'a pas de réponse ?",
+  "about.faq.contactPrompt": "Contactez-nous directement.",
+
+  "about.contact.title": "Entrez en contact",
+  "about.contact.subtitle": "Nous voulons avoir de vos nouvelles. Contactez-nous et nous vous répondrons le plus rapidement possible.",
+  "about.contact.form.city": "Ville ou municipalité",
+  "about.contact.form.name": "Nom",
+  "about.contact.form.email": "Adresse courriel",
+  "about.contact.form.message": "Votre message",
+  "about.contact.form.submit": "Soumettre",
+  "about.contact.form.error.city": "Veuillez inclure votre ville.",
+  "about.contact.form.error.name": "Veuillez inclure votre nom.",
+  "about.contact.form.error.email": "Veuillez inclure votre adresse courriel.",
+  "about.contact.form.error.emailInvalid": "Adresse courriel invalide",
+  "about.contact.form.error.message": "Veuillez inclure votre message.",
+
+  "getInvolved.page.title": "Aidez à changer votre communauté avec une journée de don extravagant",
+
+  "getInvolved.hero.subtitle": "Votre église et vos voisins ont besoin de vous. Aidez à changer votre communauté avec un cadeau gratuit. Inscrivez votre église pour le Big Give.",
+
+  "getInvolved.cta.button": "s'inscrire",
+
+  "getInvolved.resources.title": "Ressources du Big Give",
+  "getInvolved.resources.description": "Fichiers de logo, dépliants, diapositives PowerPoint, vidéos promotionnelles, lettres de prière… téléchargez toutes les ressources dont vous avez besoin pour organiser un événement Big Give réussi dans votre église.",
+
+  "getInvolved.resources.downloadEnglish": "télécharger le dossier de presse en anglais",
+  "getInvolved.resources.downloadFrench": "télécharger le dossier de presse en français",
+
+  "getInvolved.resources.english": "Ressources en anglais",
+  "getInvolved.resources.french": "Ressources en français",
+
+  "getInvolved.events.title": "Événements",
+  "getInvolved.events.description": "Il y a des événements régionaux qui précèdent le Big Give le premier samedi de juin. Trouvez des réunions de prière, des événements d'organisation et d'autres dates importantes dans votre région ici.",
+
+  "getInvolved.events.ottawa": "Ottawa, Vallée de l'Outaouais",
+  "getInvolved.events.gta": "RGT",
+  "getInvolved.events.quebec": "Québec",
+  "getInvolved.events.allOther": "Toutes les autres communautés",
+
+  "getInvolved.events.registerPrompt": "Pour inscrire un événement dans votre communauté, veuillez envoyer un courriel à",
+
+  "bigStories.page.title": "Grandes histoires",
+
+  "bigStories.hero.description": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le Big Give. Voici quelques-unes de nos histoires préférées des précédents Big Give. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
+
+  "bigStories.cta.button": "s'inscrire",
+
+  "bigStories.video.title": "Témoignages vidéo",
+  "bigStories.video.description": "Voyez certaines de nos personnes préférées et écoutez les histoires des événements Big Give passés.",
+
+  "champion.page.title": "Apportez le Big Give dans votre région",
+
+  "champion.hero.subtitle": "Rejoignez notre équipe et apportez le Big Give dans votre région.",
+
+  "champion.requirements.intro": "Voici ce qu'il faut pour être un champion régional :",
+
+  "champion.requirements.item1": "S'engager à l'idée du Big Give : Un mouvement en une journée où tout est gratuit sans conditions",
+
+  "champion.requirements.item2": "Lire et accepter notre",
+  "champion.requirements.item2Link": "déclaration de foi",
+
+  "champion.requirements.item3": "Assister aux réunions du comité du Big Give en personne ou en ligne",
+
+  "champion.requirements.item4": "Profitez de la connexion avec d'autres leaders d'église dans votre région. Nous aimerions discuter si vous êtes passionné de voir Dieu agir dans votre région, si vous aimez l'entraide et si vous êtes engagé à prier pour le Big Give.",
+
+  "champion.form.title": "Devenir un champion régional",
+  "champion.form.name": "Nom",
+  "champion.form.email": "Adresse courriel",
+  "champion.form.location": "Emplacement (ville / pays)",
+  "champion.form.submit": "Soumettre",
+
+
+  "agreement.page.title": "L'accord du Big Give",
+  "agreement.page.description": "Le Big Give est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
+
+  "agreement.section.title": "Accord d'église",
+
+  "agreement.item1.title": "1. Organisez votre événement Big Give le premier samedi de juin de chaque année",
+  "agreement.item1.content": "Pour que votre église/ministère puisse s'associer au Big Give et être répertorié sur notre site Web, vous devez organiser votre événement Big Give le premier samedi de juin. Cette initiative commune crée une sensibilisation et un engagement à l'échelle nationale. Elle génère également un sentiment de véritable communauté entre toutes nos églises partenaires.",
+
+  "agreement.item2.title": "2. Tous les biens et services sont GRATUITS",
+  "agreement.item2.content": "La mission du Big Give est de partager l'amour inconditionnel de Dieu à travers une générosité radicale sans conditions et sans rien demander en retour (pas de dons, de feuilles d'inscription, de promotions, etc.). Bien que votre église soit probablement impliquée dans de nombreuses grandes causes, nous vous demandons de préserver l'intégrité et la pureté du Big Give. Cela signifie pas de collecte de fonds, de promotion d'organisation ministérielle/caritative, de recrutement de ressources humaines ou de vente d'articles.",
+
+  "agreement.item3.title": "3. Motifs purs",
+  "agreement.item3.content": "Le but du Big Give est d'attirer l'attention de nos invités sur l'amour de Dieu pour eux. Nos événements ne sont pas des environnements pour prêcher, enseigner ou juger. Si nos invités ont des questions de foi, nous encourageons nos bénévoles à répondre en fonction des principes bibliques et à n'obtenir des coordonnées que si elles sont offertes par l'invité. Nous encourageons également nos églises participantes à avoir une zone de prière désignée et des tables offrant des Bibles gratuites. Nos événements Big Give sont avant tout des environnements pour montrer l'amour de Dieu à travers des actes pratiques et tangibles de gentillesse et de générosité.",
+
+  "agreement.item4.title": "4. Vous prenez les précautions juridiques appropriées",
+  "agreement.item4.content": "Votre partenariat avec le Big Give signifie que toute indemnisation que votre compagnie d'assurance peut exiger sera de votre responsabilité. Le Big Give, Love Ottawa, One Way Ministries ou tout tiers mentionné sur le site Web du Big Give ne sont pas responsables de tout dommage, y compris, mais sans s'y limiter, les dommages accidentels, consécutifs ou les blessures corporelles résultant de toute activité associée au Big Give.",
+
+  "agreement.item5.title": "5. La vie privée et la dignité de chacun sont respectées",
+  "agreement.item5.content": "Bien que nous vous encourageons à prendre des photos et des vidéos de votre événement Big Give, nous vous demandons d'obtenir la permission de toute personne apparaissant dans les médias que vous prévoyez d'utiliser dans un forum public ou sur les réseaux sociaux.",
+
+  "agreement.item6.title": "6. Frais d'inscription",
+  "agreement.item6.content": "Comme pour tout ministère, le Big Give ne peut exister sans financement. L'inscription est notre seule méthode pour pouvoir payer nos dépenses qui comprennent les mises à jour de communication sur le site Web, les bannières d'événements, les vidéos promotionnelles, les mises à jour de ressources, la traduction française, les déplacements et le matériel promotionnel. Nous payons également de petits frais d'administration à One Way Ministries qui héberge notre site d'inscription, apporte des améliorations au site Web et fournit des ressources humaines pour gérer les communications importantes avec nos partenaires d'église. De plus, un petit nombre d'églises ne peuvent pas se permettre les frais d'inscription, nous essayons donc de faciliter leur partenariat. En termes simples, sans vos frais d'inscription, le Big Give n'existerait pas.",
+
+  "statementOfFaith.page.title": "Déclaration de foi",
+  "statementOfFaith.page.description": "Le Big Give est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
+
+  "statementOfFaith.header.title": "Déclaration de foi",
+
+  "statementOfFaith.intro": "Le Big Give est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
+
+  "statementOfFaith.creed.title": "Le Credo des Apôtres",
+  "statementOfFaith.creed.line1": "Je crois en Dieu, le Père tout-puissant,",
+  "statementOfFaith.creed.line2": "créateur du ciel et de la terre.",
+  "statementOfFaith.creed.line3": "Je crois en Jésus-Christ, son Fils unique, notre Seigneur,",
+  "statementOfFaith.creed.line4": "qui a été conçu du Saint-Esprit,",
+  "statementOfFaith.creed.line5": "est né de la Vierge Marie,",
+  "statementOfFaith.creed.line6": "a souffert sous Ponce Pilate,",
+  "statementOfFaith.creed.line7": "a été crucifié, est mort et a été enseveli ;",
+  "statementOfFaith.creed.line8": "il est descendu aux enfers.",
+  "statementOfFaith.creed.line9": "Le troisième jour, il est ressuscité des morts ;",
+  "statementOfFaith.creed.line10": "il est monté au ciel,",
+  "statementOfFaith.creed.line11": "il est assis à la droite de Dieu le Père tout-puissant,",
+  "statementOfFaith.creed.line12": "d'où il viendra juger les vivants et les morts.",
+  "statementOfFaith.creed.line13": "Je crois en l'Esprit Saint,",
+  "statementOfFaith.creed.line14": "à la sainte Église catholique/universelle,",
+  "statementOfFaith.creed.line15": "à la communion des saints,",
+  "statementOfFaith.creed.line16": "à la rémission des péchés,",
+  "statementOfFaith.creed.line17": "à la résurrection de la chair,",
+  "statementOfFaith.creed.line18": "à la vie éternelle."
+}

@@ -15,8 +15,12 @@ import {
 } from "./StepsElements"
 
 import { BtnPrimaryExternal, BtnPrimary } from "../../../components/Buttons"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const Steps = ({ toggle, date }) => {
+
+  const {t} = useTranslation()
+
   //SCROLL ANIMATION
 
   const [imageOneVisible, setImageOneVisible] = useState(true)
@@ -73,15 +77,14 @@ const Steps = ({ toggle, date }) => {
           <Step id="step-1" ref={stepOneRef}>
             <TextContainer>
               <div>
-                <h2>Step 1</h2>
+                <h2>{t("step1.title")}</h2>
                 <p>
-                  Understand what the Big Give is by reading our{" "}
-                  <Link to="/the-big-give-agreement">church agreement</Link> and{" "}
-                  <Link to="/statement-of-faith">statement of faith</Link> and
-                  register your church.
+                  {t("step1.desc1")}{" "}
+                  <Link to="/the-big-give-agreement">{t("step1.desc2")}</Link> {t("step1.desc3")}{" "}
+                  <Link to="/statement-of-faith">{t("step1.desc4")}</Link> {t("step1.desc5")}
                 </p>
                 <BtnPrimaryExternal
-                  text={"register your church"}
+                  text={t("step1.cta")}
                   to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
                 />
@@ -100,10 +103,9 @@ const Steps = ({ toggle, date }) => {
           <Step id="step-2" ref={stepTwoRef}>
             <TextContainer>
               <div>
-                <h2>Step 2</h2>
+                <h2>{t("step2.title")}</h2>
                 <p>
-                  Gather a team at your church to dream and pray over your plans
-                  for {date}.{" "}
+                  {t("step2.desc")} {date}.{" "}
                 </p>
               </div>
             </TextContainer>
@@ -119,13 +121,13 @@ const Steps = ({ toggle, date }) => {
           <Step id="step-3" ref={stepThreeRef}>
             <TextContainer>
               <div>
-                <h2>Step 3</h2>
+                <h2>{t("step3.title")}</h2>
                 <p>
-                  Pray some more and prepare for the big day using our{" "}
-                  <Link to="/get-involved#resources">free resources</Link>.
+                  {t("step3.desc1")}{" "}
+                  <Link to="/get-involved#resources">{t("step3.desc2")}</Link>
                 </p>
                 <BtnPrimaryExternal
-                  text={"register your church"}
+                  text={t("step3.cta")}
                   to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
                 />
