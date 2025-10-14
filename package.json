@@ -18,7 +18,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby build",
     "develop": " NODE_TLS_REJECT_UNAUTHORIZED=0 gatsby develop --host 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
