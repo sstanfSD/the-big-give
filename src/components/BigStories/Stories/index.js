@@ -26,10 +26,13 @@ import {
   Location,
   Excerpt,
 } from "./StoriesElements"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const Stories = ({ stories, toggle }) => {
-  //LIST SELECTION LOGIC
+  
+  const { t } = useTranslation()
 
+  //LIST SELECTION LOGIC
   const options = [
     "Ottawa, Ottawa Valley",
     "GTA",
@@ -59,7 +62,7 @@ const Stories = ({ stories, toggle }) => {
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading>Stories by region</Heading>
+            <Heading>{t("stories.title")}</Heading>
 
             <BtnList>
               {options.map((option, i) => {
@@ -95,7 +98,7 @@ const Stories = ({ stories, toggle }) => {
               })}
               <BtnListItem>
                 <BtnPrimaryExternal
-                  text="register your church"
+                  text={t("step1.cta")}
                   to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
                 />

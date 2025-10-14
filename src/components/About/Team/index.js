@@ -15,19 +15,21 @@ import {
 import Card from "./Card"
 
 import { BtnPrimaryLink } from "../../Buttons"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const Team = ({ team }) => {
+
+  const { t } = useTranslation()
+
   return (
     <Section id="team">
       <Container>
         <TextContainer>
-          <Heading>The Big Give team</Heading>
+          <Heading>{t("about.team.title")}</Heading>
           <Body>
-            We’re a group of volunteers who have seen how much God can use our
-            free gifts to build bridges between our churches and the communities
-            they serve.
+            {t("about.team.subtitle")}
           </Body>
-          <BtnPrimaryLink to={"/about#contact"} text={"join the team"} large />
+          <BtnPrimaryLink to={"/about#contact"} text={t("about.cta")} large />
         </TextContainer>
         <TeamContainer>
           <TopContainer>

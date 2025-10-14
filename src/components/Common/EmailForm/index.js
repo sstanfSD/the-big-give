@@ -1,6 +1,7 @@
 import React from "react"
 import { useFormik } from "formik"
 import { FormElement, InputContainer, Input, Label, Btn } from "./FormElements"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const validate = values => {
   const errors = {}
@@ -19,6 +20,9 @@ const validate = values => {
 }
 
 const ContactForm = () => {
+
+  const {t} = useTranslation()
+
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
   const formik = useFormik({
@@ -53,7 +57,7 @@ const ContactForm = () => {
           value={formik.values.name}
           required
         />
-        <Label htmlFor="name">Name</Label>
+        <Label htmlFor="name">{t("champion.form.name")}</Label>
       </InputContainer>
 
       <InputContainer>
@@ -67,7 +71,7 @@ const ContactForm = () => {
           value={formik.values.email}
           required
         />
-        <Label htmlFor="email">Email Address</Label>
+        <Label htmlFor="email">{t("champion.form.email")}</Label>
       </InputContainer>
 
       <InputContainer>
@@ -81,7 +85,7 @@ const ContactForm = () => {
           value={formik.values.location}
           required
         />
-        <Label htmlFor="location">Location (city / country)</Label>
+        <Label htmlFor="location">{t("champion.form.location")}</Label>
       </InputContainer>
 
       {/* {formik.errors.message || formik.values.region === "" ? (
@@ -90,7 +94,7 @@ const ContactForm = () => {
         </Btn>
       ) : ( */}
       <Btn large type="submit">
-        Submit
+        {t("champion.form.submit")}
       </Btn>
       {/* )} */}
     </FormElement>

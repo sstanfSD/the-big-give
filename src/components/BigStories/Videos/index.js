@@ -14,11 +14,15 @@ import {
   VideoOverlay,
   VideoTitle,
 } from "./VideoElements"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 import Thumbnail from "./Thumbnail"
 import VideoModal from "./VideoModal"
 
 const Videos = ({ videos }) => {
+  
+  const {t} = useTranslation()
+
   //PLAY ACTIVE VIDEO
   const [activeVideo, setActiveVideo] = useState(-1)
   const playVideo = i => {
@@ -48,10 +52,9 @@ const Videos = ({ videos }) => {
     <Section id="videos">
       <Container height={videos.nodes.length}>
         <TextContainer>
-          <Heading>Video testimonials</Heading>
+          <Heading>{t("bigStories.video.title")}</Heading>
           <Body>
-            See some of our favourite people and hear the stories from past Big
-            Give events.
+            {t("bigStories.video.description")}
           </Body>
         </TextContainer>
         <VideoRef ref={videosRef} />

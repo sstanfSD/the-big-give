@@ -1,66 +1,67 @@
 import React, { useState } from "react"
-
+import { graphql } from "gatsby"
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
 import Modal from "../components/Common/Modal"
 import AltHeader from "../components/Common/AltHeader"
 import PlainText from "../components/Common/PlainText"
 
+import {useTranslation} from "gatsby-plugin-react-i18next"
+
 const StatementOfFaith = ({ data }) => {
+
+  const { t } = useTranslation()
+
   return (
     <>
       <PageHead
-        title={"Statement of faith"}
+        title={"Statement of Faith"}
         description={
           "The Big Give is organized by volunteers and groups from many different Christian traditions, but we’re inspired by a common profession of faith."
         }
       />
       <Layout>
-        <AltHeader heading={"Statement of Faith"} />
+        <AltHeader heading={t("statementOfFaith.page.title")} />
         <PlainText>
           <p>
-            The Big Give is organized by volunteers and groups from many
-            different Christian traditions, but we’re inspired by a common
-            profession of faith.
+            {t("statementOfFaith.page.description")}
             <br />
             <br />
-            <strong>The Apostles’ Creed</strong>
+            <strong>{t("statementOfFaith.creed.title")}</strong>
             <br />
-            I believe in God, the Father almighty,
+              {t("statementOfFaith.creed.line1")}
             <br />
-            creator of heaven and earth.
+              {t("statementOfFaith.creed.line2")}
             <br />
-            I believe in Jesus Christ, God’s only Son, our Lord,
+              {t("statementOfFaith.creed.line3")}
             <br />
-            who was conceived by the Holy Spirit,
+              {t("statementOfFaith.creed.line4")}
             <br />
-            born of the Virgin Mary,
+              {t("statementOfFaith.creed.line6")}
             <br />
-            suffered under Pontius Pilate,
+              {t("statementOfFaith.creed.line7")}
             <br />
-            was crucified, died, and was buried;
+              {t("statementOfFaith.creed.line8")}
             <br />
-            he descended to the dead.
+              {t("statementOfFaith.creed.line9")}
             <br />
-            On the third day he rose again;
+              {t("statementOfFaith.creed.line10")}
             <br />
-            he ascended into heaven,
+              {t("statementOfFaith.creed.line11")}
             <br />
-            he is seated at the right hand of the Father,
+              {t("statementOfFaith.creed.line12")}
             <br />
-            and he will come again to judge the living and the dead.
+              {t("statementOfFaith.creed.line13")}
             <br />
-            I believe in the Holy Spirit,
+              {t("statementOfFaith.creed.line14")}
             <br />
-            the holy catholic/universal church,
+              {t("statementOfFaith.creed.line15")}
             <br />
-            the communion of saints,
+              {t("statementOfFaith.creed.line16")}
             <br />
-            the forgiveness of sins,
+              {t("statementOfFaith.creed.line17")}
             <br />
-            the resurrection of the body,
-            <br />
-            and the life everlasting.
+              {t("statementOfFaith.creed.line18")}
           </p>
         </PlainText>
       </Layout>
@@ -69,3 +70,18 @@ const StatementOfFaith = ({ data }) => {
 }
 
 export default StatementOfFaith
+
+// 🟢 Add translation query here
+export const query = graphql`
+  query StatementOfFaithPageQuery($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

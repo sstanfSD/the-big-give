@@ -28,10 +28,13 @@ import {
 } from "./EventsElements"
 
 import Modal from "./Modal"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const EventList = ({ events }) => {
-  //MODAL LOGIC
+  
+  const { t } = useTranslation()
 
+  //MODAL LOGIC
   const [open, setOpen] = useState(false)
   const toggle = () => {
     setOpen(!open)
@@ -66,11 +69,9 @@ const EventList = ({ events }) => {
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading>Events</Heading>
+            <Heading>{t("getInvolved.events.title")}</Heading>
             <Body>
-              There are regional events leading up to The Big Give on the first
-              Saturday of June. Find prayer meetings, organizing events and
-              other important dates in your region here.
+              {t("getInvolved.events.description")}
             </Body>
             <BtnList>
               {options.map((option, i) => {
@@ -104,7 +105,7 @@ const EventList = ({ events }) => {
               })}
               <BtnListItem>
                 <Contact>
-                  To register an event in your community, please email{" "}
+                  {t("getInvolved.events.registerPrompt")}{" "}
                   <a href="mailto:janice@onewayministries.ca">
                     janice@onewayministries.ca
                   </a>

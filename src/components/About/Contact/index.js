@@ -13,17 +13,20 @@ import {
 } from "./ContactElements"
 
 import Form from "./Form"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Contact = () => {
+
+  const { t } = useTranslation()
+
   return (
     <Section id="contact">
       <Container>
         <FormContainer>
           <TextContainer>
-            <Heading>Get in touch</Heading>
+            <Heading>{t("about.contact.title")}</Heading>
             <Body>
-              We want to hear from you. Reach out to us and we’ll respond as
-              quickly as possible.
+              {t("about.contact.subtitle")}
             </Body>
           </TextContainer>
           <Form />

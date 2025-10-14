@@ -126,6 +126,7 @@
 
   "about.team.title": "L'équipe du Big Give",
   "about.team.subtitle": "Nous sommes un groupe de bénévoles qui ont vu combien Dieu peut utiliser nos cadeaux gratuits pour construire des ponts entre nos églises et les communautés qu'elles servent.",
+  "about.cta": "rejoignez l’équipe",
 
   "about.faq.title": "Questions fréquemment posées",
   "about.faq.subtitle": "Votre question n'a pas de réponse ?",
@@ -248,5 +249,10 @@
   "statementOfFaith.creed.line15": "à la communion des saints,",
   "statementOfFaith.creed.line16": "à la rémission des péchés,",
   "statementOfFaith.creed.line17": "à la résurrection de la chair,",
-  "statementOfFaith.creed.line18": "à la vie éternelle."
+  "statementOfFaith.creed.line18": "à la vie éternelle.",
+
+  "churches.title": "Églises participantes",
+  "stories.title": "Histoires par région"
+
+
 }

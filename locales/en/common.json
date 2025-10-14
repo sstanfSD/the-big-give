@@ -125,6 +125,7 @@
 
   "about.team.title": "The Big Give team",
   "about.team.subtitle": "We're a group of volunteers who have seen how much God can use our free gifts to build bridges between our churches and the communities they serve.",
+  "about.cta": "join the team",
 
   "about.faq.title": "Frequently asked questions",
   "about.faq.subtitle": "Is your question not answered?",
@@ -249,5 +250,11 @@
   "statementOfFaith.creed.line15": "the communion of saints,",
   "statementOfFaith.creed.line16": "the forgiveness of sins,",
   "statementOfFaith.creed.line17": "the resurrection of the body,",
-  "statementOfFaith.creed.line18": "and the life everlasting."
+  "statementOfFaith.creed.line18": "and the life everlasting.",
+
+
+
+  "churches.title": "Participating Churches",
+  "stories.title": "Stories by region"
+
 }

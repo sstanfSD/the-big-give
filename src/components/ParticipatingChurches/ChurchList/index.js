@@ -21,10 +21,13 @@ import {
 } from "./ChurchListElements"
 
 import { BtnPrimaryExternal } from "../../Buttons"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ChurchList = ({ churches, toggle }) => {
+  
+  const { t } = useTranslation()
+  
   //LIST SELECTION LOGIC
-
   const options = [
     "Ottawa, Ottawa Valley",
     "GTA",
@@ -74,7 +77,7 @@ const ChurchList = ({ churches, toggle }) => {
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading id="list">Participating Churches 2025</Heading>
+            <Heading id="list">{t("churches.title")} 2025</Heading>
             <BtnList>
               {options.map((option, i) => {
                 if (selected === option) {
@@ -112,7 +115,7 @@ const ChurchList = ({ churches, toggle }) => {
 
                 <BtnPrimaryExternal
                   to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
-                  text={"Register your church"}
+                  text={t("step1.cta")}
                   large
                 />
               </BtnListItem>
