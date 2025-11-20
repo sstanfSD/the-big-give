@@ -33,7 +33,7 @@ export const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  text-transform: uppercase;
+  ${'' /* text-transform: lowercase; */}
 
   margin-bottom: 10rem;
 

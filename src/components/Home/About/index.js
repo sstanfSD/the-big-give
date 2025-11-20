@@ -46,7 +46,7 @@ const About = ({ date }) => {
           <Body>
             {t("section.desc1")}
             <br />
-            <br /> {t("section.desc2")} {date} {t("section.desc3")}.
+            <br /> {t("section.desc2")} {t("section.desc3")}.
           </Body>
         </TextContainer>
       </Container>

@@ -1,5 +1,6 @@
 {
   "nav.about": "à propos",
+  "nav.home": "accueil",
   "nav.history": "histoire",
   "nav.team": "équipe",
   "nav.contact": "contact",
@@ -10,33 +11,27 @@
   "nav.stories": "grandes histoires",
   "nav.videos": "témoignages vidéo",
   "nav.register": "s'inscrire",
-
   "hero.title": "L’entraide devient simple lorsqu’elle commence par le don.",
   "hero.cta.explore": "Inscrivez-vous dès aujourd’hui",
-
+  "hero.date": "samedi le 6 juin, 2026",
   "section.title": "Rejoignez un mouvement national de générosité",
   "section.desc1": "Chaque année, des églises partout au Canada bénissent et aiment leurs quartiers lors d’une journée de don extraordinaire où TOUT EST GRATUIT !",
-  "section.desc2": "Le Big Give est animé par des bénévoles passionnés, motivés par l’amour de leur communauté et le désir de les rapprocher de Jésus. Rejoignez-nous le",
+  "section.desc2": "Le grand partage est animé par des bénévoles passionnés, motivés par l’amour de leur communauté et le désir de les rapprocher de Jésus. Rejoignez-nous le samedi le 6 juin, 2026,",
   "section.desc3": "et découvrez ce qui se passe dans votre ville.",
-
-
   "step1.title": "Étape 1",
-  "step1.desc1": "Comprenez ce qu’est The Big Give en lisant notre",
+  "step1.desc1": "Comprenez ce qu’est Le grand partage en lisant notre",
   "step1.desc2": "accord d’église",
   "step1.desc3": "et",
   "step1.desc4": "déclaration de foi",
   "step1.desc5": "et inscrivez votre église.",
   "step1.cta": "inscrivez votre église",
-
   "step2.title": "Étape 2",
-  "step2.desc": "Rassemblez une équipe dans votre église pour rêver et prier à propos de vos projets pour le samedi",
-
+  "step2.desc": "Rassemblez une équipe dans votre église pour rêver et prier à propos de vos projets pour le samedi le 6 juin, 2026",
   "step3.title": "Étape 3",
   "step3.desc1": "Priez encore et préparez-vous pour le grand jour en utilisant nos",
   "step3.desc2": "ressources gratuites.",
   "step3.cta": "inscrivez votre église",
-
-  "champion.title": "Connectez-vous avec un champion du Big Give dans votre région",
+  "champion.title": "Connectez-vous avec un champion du grand partage dans votre région",
   "champion.subtitle": "Cliquez sur votre communauté pour vous connecter avec votre champion régional. Vous ne voyez pas votre ville ? Cliquez ci-dessous pour en savoir plus sur comment devenir vous-même un champion régional.",
   "champion.cta": "devenez un champion",
   "champion.region.ottawa": "Ottawa",
@@ -45,20 +40,16 @@
   "champion.region.westIsland": "West Island, Montréal",
   "champion.region.westernOntario": "Ouest de l'Ontario",
   "champion.region.britishColumbia": "Colombie-Britannique",
-
   "faq.title1": "Foire",
   "faq.title2": "aux questions",
   "faq.subtitle": "Votre question n'a pas de réponse ?",
   "faq.contact": "Contactez-nous directement.",
-
   "bigStories.title": "Grandes histoires",
-  "bigStories.desc": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le Big Give. Voici quelques-unes de nos histoires préférées des précédents Big Give. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
+  "bigStories.desc": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le grand partage. Voici quelques-unes de nos histoires préférées des précédents grand partage. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
   "bigStories.cta": "lire les grandes histoires",
-
   "finalCta.thankYou": "Merci",
-  "finalCta.moreInfo": "Pour plus d'informations sur le Big Give, veuillez contacter la directrice,",
+  "finalCta.moreInfo": "Pour plus d'informations sur le grand partage, veuillez contacter la directrice,",
   "finalCta.registerNow": "inscrivez-vous maintenant",
-
   "footer.about": "à propos",
   "footer.churches": "églises participantes",
   "footer.history": "histoire",
@@ -68,70 +59,47 @@
   "footer.resources": "ressources",
   "footer.events": "événements",
   "footer.becomeChampion": "devenir un champion régional",
-  "footer.agreement": "l'accord du Big Give",
+  "footer.agreement": "l'accord du grand partage",
   "footer.statementOfFaith": "déclaration de foi",
   "footer.cta": "inscrivez votre église",
-
-  "about.page.title": "À propos du BIG Give",
-
+  "about.page.title": "À propos du grand partage",
   "about.hero.intro": "Chaque année, le premier samedi de juin, les églises de toutes les confessions à travers le Canada montrent à leurs voisins l'amour inconditionnel de Dieu en donnant gratuitement, sans rien demander en retour.",
-
   "about.testimonial.quote": "J'étais sur mon balcon, j'ai senti l'odeur du BBQ à l'église au bout de la rue, je suis allé chercher un hamburger gratuit et d'autres choses gratuites dont j'avais besoin. Je suis allé à l'église pour la première fois le lendemain matin, j'ai découvert qui était vraiment Jésus et combien il m'aimait. Ma vie a changé depuis.",
-
   "about.cta.text": "Rejoignez-nous cette année et voyez ce qui se passe dans le quartier de votre église.",
   "about.cta.button": "s'inscrire",
-
   "about.quote.highlight": "C'est le meilleur événement d'entraide auquel nous ayons jamais participé.",
-
   "about.description.paragraph1": "C'est incroyable comment un cadeau gratuit peut construire un pont vers votre communauté. Et c'est si simple. Nous avons vu des églises offrir des ventes de garage gratuites, des lave-autos, des BBQ, des films dans le parc, des promenades en poney et du maquillage pour enfants. Certaines églises ont même offert des coupes de cheveux gratuites et des châteaux gonflables pour les enfants. Quoi que vous fassiez, rendez-le gratuit.",
-
   "about.description.paragraph2": "Faites en sorte que votre église se joigne à des milliers d'autres chrétiens à travers le pays pour une journée unifiée de don extravagant le samedi 6 juin 2026.",
-
-  "about.timeline.title": "Histoire du Big Give",
+  "about.timeline.title": "Histoire du grand partage",
   "about.timeline.2015.title": "2015",
   "about.timeline.2015.desc": "55 églises participantes dans la région d'Ottawa",
-
   "about.timeline.2016.title": "2016",
   "about.timeline.2016.desc": "66 églises participantes dans la région d'Ottawa et les communautés environnantes",
-
   "about.timeline.2017.title": "2017",
   "about.timeline.2017.desc": "92 églises participantes à Ottawa, Arnprior, Toronto (RGT), Montréal, Brockville, Cornwall, Sidney BC, Simcoe et d'autres communautés !",
-
   "about.timeline.2018.title": "2018",
   "about.timeline.2018.desc": "130 églises participantes à Ottawa, Arnprior, Cobden, Pembroke, Toronto (RGT), Montréal, Brockville, Cornwall, Prescott, Morrisburg, Perth, Lindsay, Brantford, Brighton, Gatineau, Rockland, Pickering, Hamilton, St. Catharines, Sidney BC, Charlottetown IPÉ et de nombreuses autres communautés !",
-
   "about.timeline.2019.title": "2019",
   "about.timeline.2019.desc": "137 églises participantes à Ottawa, Arnprior, Cobden, Pembroke, Shawville, Lively, Toronto (RGT), Montréal, Brockville, Cornwall, Morrisburg, Perth, Almonte, Lindsay, Port Hope, Brantford, Burlington, Chatham, Brighton, Gatineau, Aylmer, Rockland, Pickering, Hamilton, St. Catharines, Sidney BC, Creston BC, Charlottetown IPÉ et de nombreuses autres communautés !",
-
   "about.timeline.2022.title": "2022",
   "about.timeline.2022.desc": "52 églises participantes à Ottawa, Arnprior, Carleton Place, Pembroke, Lively, Toronto (RGT), Brockville, Perth, Port Hope, Montréal QC, Shawville QC, Sidney BC, Truro NÉ, Amherst NÉ et de nombreuses autres communautés !",
-
   "about.timeline.2023.title": "2023",
   "about.timeline.2023.desc": "Avec la pandémie derrière nous, nous avons eu 70 églises participantes en 2023. Nous continuons à croître avec quelques nouvelles villes qui nous rejoignent cette année : Aylmer ON, Sarnia ON et Spencerville ON. Nous avions 42 sites dans la région d'Ottawa/Vallée de l'Outaouais, 6 sites dans la RGT, 10 sites au Québec et 12 sites dans d'autres communautés canadiennes.",
-
   "about.timeline.2024.title": "2024",
-  "about.timeline.2024.desc": "En 2024, il y avait 86 églises qui ont participé au Big Give, dont trois églises en Australie ! Une autre nouvelle ville était St. Stephen, Nouveau-Brunswick. Dans la région d'Ottawa/Vallée de l'Outaouais, nous avions 46 églises. Dans la région du Grand Toronto, nous avons 11 églises. Au Québec, nous avions 6 églises. Il y avait 23 églises dans les villes suivantes : Brockville ON, Port Hope ON, Sarnia ON, Truro NÉ, Lively ON, Sidney BC, Dutton ON, Spencerville ON, Prescott ON et Aylmer ON.",
-
+  "about.timeline.2024.desc": "En 2024, il y avait 86 églises qui ont participé au grand partage, dont trois églises en Australie ! Une autre nouvelle ville était St. Stephen, Nouveau-Brunswick. Dans la région d'Ottawa/Vallée de l'Outaouais, nous avions 46 églises. Dans la région du Grand Toronto, nous avons 11 églises. Au Québec, nous avions 6 églises. Il y avait 23 églises dans les villes suivantes : Brockville ON, Port Hope ON, Sarnia ON, Truro NÉ, Lively ON, Sidney BC, Dutton ON, Spencerville ON, Prescott ON et Aylmer ON.",
   "about.timeline.2025.title": "2025",
-  "about.timeline.2025.desc": "En 2025, il y avait 89 églises qui ont participé au Big Give, dont cinq églises en Australie ! Deux nouvelles villes nous ont rejoints cette année : Barrie, Ontario avec deux églises participantes et Wingham, ON avec une église à bord. Nous avons également eu notre première église qui nous a rejoints de Red Deer, Alberta. Dans la région d'Ottawa/Vallée de l'Outaouais, nous avions 46 églises. Dans la région du Grand Toronto, nous avons 9 églises. Au Québec, nous avions 9 églises. Il y avait 25 églises dans les villes suivantes : Brockville ON, Lyn ON, Johnston, ON, Dutton, ON, Port Hope ON, Barrie, ON, Wingham, ON, Lively ON, Sidney BC, Red Deer, AB, Dutton ON, Spencerville ON, Prescott ON et Aylmer ON et St. Stephen's, NB.",
-
-  "about.history.title": "Histoire du Big Give",
-  "about.history.paragraph1": "L'idée d'un \"Big Give\" à l'échelle de la ville remonte à 2009. Une église locale d'Ottawa venait de terminer Les 40 jours de communauté par Rick Warren. Le défi à la fin de l'étude du livre était de trouver un projet à l'échelle de l'église qui atteindrait la communauté d'une manière unique.",
-
-  "about.history.paragraph2": "Kathy Blakely s'est réveillée tôt un matin avec l'idée d'une vente de garage gratuite. C'était quelque chose de facile à faire et qui ne coûterait pas beaucoup d'argent à l'église. En partageant sa vision avec d'autres, il est devenu évident que c'était une \"idée de Dieu\". Le premier Big Give a eu lieu cette année-là, et Kathy avait le rêve de voir les églises partout dans la ville faire la même chose le même jour.",
-
+  "about.timeline.2025.desc": "En 2025, il y avait 89 églises qui ont participé au grand partage, dont cinq églises en Australie ! Deux nouvelles villes nous ont rejoints cette année : Barrie, Ontario avec deux églises participantes et Wingham, ON avec une église à bord. Nous avons également eu notre première église qui nous a rejoints de Red Deer, Alberta. Dans la région d'Ottawa/Vallée de l'Outaouais, nous avions 46 églises. Dans la région du Grand Toronto, nous avons 9 églises. Au Québec, nous avions 9 églises. Il y avait 25 églises dans les villes suivantes : Brockville ON, Lyn ON, Johnston, ON, Dutton, ON, Port Hope ON, Barrie, ON, Wingham, ON, Lively ON, Sidney BC, Red Deer, AB, Dutton ON, Spencerville ON, Prescott ON et Aylmer ON et St. Stephen's, NB.",
+  "about.history.title": "Histoire du grand partage",
+  "about.history.paragraph1": "L'idée d'un \"grand partage\" à l'échelle de la ville remonte à 2009. Une église locale d'Ottawa venait de terminer Les 40 jours de communauté par Rick Warren. Le défi à la fin de l'étude du livre était de trouver un projet à l'échelle de l'église qui atteindrait la communauté d'une manière unique.",
+  "about.history.paragraph2": "Kathy Blakely s'est réveillée tôt un matin avec l'idée d'une vente de garage gratuite. C'était quelque chose de facile à faire et qui ne coûterait pas beaucoup d'argent à l'église. En partageant sa vision avec d'autres, il est devenu évident que c'était une \"idée de Dieu\". Le premier grand partage a eu lieu cette année-là, et Kathy avait le rêve de voir les églises partout dans la ville faire la même chose le même jour.",
   "about.history.paragraph3": "En 2014, Richard Long de Love Ottawa a entendu parler de l'idée et a approché Kathy pour un partenariat. Un comité a été formé et, en juin 2015, 55 églises de la capitale nationale se sont réunies pour une journée unifiée de don radical.",
-
   "about.history.paragraph4": "Grâce au partenariat continu avec Love Ottawa et One Way Ministries, l'équipe espère que l'événement continuera à croître et sera une bénédiction incroyable pour les communautés d'Ottawa et à travers le pays.",
-
-  "about.team.title": "L'équipe du Big Give",
+  "about.team.title": "L'équipe du grand partage",
   "about.team.subtitle": "Nous sommes un groupe de bénévoles qui ont vu combien Dieu peut utiliser nos cadeaux gratuits pour construire des ponts entre nos églises et les communautés qu'elles servent.",
   "about.cta": "rejoignez l’équipe",
-
   "about.faq.title": "Questions fréquemment posées",
   "about.faq.subtitle": "Votre question n'a pas de réponse ?",
   "about.faq.contactPrompt": "Contactez-nous directement.",
-
   "about.contact.title": "Entrez en contact",
   "about.contact.subtitle": "Nous voulons avoir de vos nouvelles. Contactez-nous et nous vous répondrons le plus rapidement possible.",
   "about.contact.form.city": "Ville ou municipalité",
@@ -144,93 +112,59 @@
   "about.contact.form.error.email": "Veuillez inclure votre adresse courriel.",
   "about.contact.form.error.emailInvalid": "Adresse courriel invalide",
   "about.contact.form.error.message": "Veuillez inclure votre message.",
-
   "getInvolved.page.title": "Aidez à changer votre communauté avec une journée de don extravagant",
-
-  "getInvolved.hero.subtitle": "Votre église et vos voisins ont besoin de vous. Aidez à changer votre communauté avec un cadeau gratuit. Inscrivez votre église pour le Big Give.",
-
+  "getInvolved.hero.subtitle": "Votre église et vos voisins ont besoin de vous. Aidez à changer votre communauté avec un cadeau gratuit. Inscrivez votre église pour le grand partage.",
   "getInvolved.cta.button": "s'inscrire",
-
-  "getInvolved.resources.title": "Ressources du Big Give",
-  "getInvolved.resources.description": "Fichiers de logo, dépliants, diapositives PowerPoint, vidéos promotionnelles, lettres de prière… téléchargez toutes les ressources dont vous avez besoin pour organiser un événement Big Give réussi dans votre église.",
-
+  "getInvolved.resources.title": "Ressources du grand partage",
+  "getInvolved.resources.description": "Fichiers de logo, dépliants, diapositives PowerPoint, vidéos promotionnelles, lettres de prière… téléchargez toutes les ressources dont vous avez besoin pour organiser un événement grand partage réussi dans votre église.",
   "getInvolved.resources.downloadEnglish": "télécharger le dossier de presse en anglais",
   "getInvolved.resources.downloadFrench": "télécharger le dossier de presse en français",
-
   "getInvolved.resources.english": "Ressources en anglais",
   "getInvolved.resources.french": "Ressources en français",
-
   "getInvolved.events.title": "Événements",
-  "getInvolved.events.description": "Il y a des événements régionaux qui précèdent le Big Give le premier samedi de juin. Trouvez des réunions de prière, des événements d'organisation et d'autres dates importantes dans votre région ici.",
-
+  "getInvolved.events.description": "Il y a des événements régionaux qui précèdent le grand partage le premier samedi de juin. Trouvez des réunions de prière, des événements d'organisation et d'autres dates importantes dans votre région ici.",
   "getInvolved.events.ottawa": "Ottawa, Vallée de l'Outaouais",
   "getInvolved.events.gta": "RGT",
   "getInvolved.events.quebec": "Québec",
   "getInvolved.events.allOther": "Toutes les autres communautés",
-
   "getInvolved.events.registerPrompt": "Pour inscrire un événement dans votre communauté, veuillez envoyer un courriel à",
-
   "bigStories.page.title": "Grandes histoires",
-
-  "bigStories.hero.description": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le Big Give. Voici quelques-unes de nos histoires préférées des précédents Big Give. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
-
+  "bigStories.hero.description": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le grand partage. Voici quelques-unes de nos histoires préférées des précédents grand partage. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
   "bigStories.cta.button": "s'inscrire",
-
   "bigStories.video.title": "Témoignages vidéo",
-  "bigStories.video.description": "Voyez certaines de nos personnes préférées et écoutez les histoires des événements Big Give passés.",
-
-  "champion.page.title": "Apportez le Big Give dans votre région",
-
-  "champion.hero.subtitle": "Rejoignez notre équipe et apportez le Big Give dans votre région.",
-
+  "bigStories.video.description": "Voyez certaines de nos personnes préférées et écoutez les histoires des événements grand partage passés.",
+  "champion.page.title": "Apportez le grand partage dans votre région",
+  "champion.hero.subtitle": "Rejoignez notre équipe et apportez le grand partage dans votre région.",
   "champion.requirements.intro": "Voici ce qu'il faut pour être un champion régional :",
-
-  "champion.requirements.item1": "S'engager à l'idée du Big Give : Un mouvement en une journée où tout est gratuit sans conditions",
-
+  "champion.requirements.item1": "S'engager à l'idée du grand partage : Un mouvement en une journée où tout est gratuit sans conditions",
   "champion.requirements.item2": "Lire et accepter notre",
   "champion.requirements.item2Link": "déclaration de foi",
-
-  "champion.requirements.item3": "Assister aux réunions du comité du Big Give en personne ou en ligne",
-
-  "champion.requirements.item4": "Profitez de la connexion avec d'autres leaders d'église dans votre région. Nous aimerions discuter si vous êtes passionné de voir Dieu agir dans votre région, si vous aimez l'entraide et si vous êtes engagé à prier pour le Big Give.",
-
+  "champion.requirements.item3": "Assister aux réunions du comité du grand partage en personne ou en ligne",
+  "champion.requirements.item4": "Profitez de la connexion avec d'autres leaders d'église dans votre région. Nous aimerions discuter si vous êtes passionné de voir Dieu agir dans votre région, si vous aimez l'entraide et si vous êtes engagé à prier pour le grand partage.",
   "champion.form.title": "Devenir un champion régional",
   "champion.form.name": "Nom",
   "champion.form.email": "Adresse courriel",
   "champion.form.location": "Emplacement (ville / pays)",
   "champion.form.submit": "Soumettre",
-
-
-  "agreement.page.title": "L'accord du Big Give",
-  "agreement.page.description": "Le Big Give est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
-
+  "agreement.page.title": "L'accord du grand partage",
+  "agreement.page.description": "Le grand partage est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
   "agreement.section.title": "Accord d'église",
-
-  "agreement.item1.title": "1. Organisez votre événement Big Give le premier samedi de juin de chaque année",
-  "agreement.item1.content": "Pour que votre église/ministère puisse s'associer au Big Give et être répertorié sur notre site Web, vous devez organiser votre événement Big Give le premier samedi de juin. Cette initiative commune crée une sensibilisation et un engagement à l'échelle nationale. Elle génère également un sentiment de véritable communauté entre toutes nos églises partenaires.",
-
+  "agreement.item1.title": "1. Organisez votre événement grand partage le premier samedi de juin de chaque année",
+  "agreement.item1.content": "Pour que votre église/ministère puisse s'associer au grand partage et être répertorié sur notre site Web, vous devez organiser votre événement grand partage le premier samedi de juin. Cette initiative commune crée une sensibilisation et un engagement à l'échelle nationale. Elle génère également un sentiment de véritable communauté entre toutes nos églises partenaires.",
   "agreement.item2.title": "2. Tous les biens et services sont GRATUITS",
-  "agreement.item2.content": "La mission du Big Give est de partager l'amour inconditionnel de Dieu à travers une générosité radicale sans conditions et sans rien demander en retour (pas de dons, de feuilles d'inscription, de promotions, etc.). Bien que votre église soit probablement impliquée dans de nombreuses grandes causes, nous vous demandons de préserver l'intégrité et la pureté du Big Give. Cela signifie pas de collecte de fonds, de promotion d'organisation ministérielle/caritative, de recrutement de ressources humaines ou de vente d'articles.",
-
+  "agreement.item2.content": "La mission du grand partage est de partager l'amour inconditionnel de Dieu à travers une générosité radicale sans conditions et sans rien demander en retour (pas de dons, de feuilles d'inscription, de promotions, etc.). Bien que votre église soit probablement impliquée dans de nombreuses grandes causes, nous vous demandons de préserver l'intégrité et la pureté du grand partage. Cela signifie pas de collecte de fonds, de promotion d'organisation ministérielle/caritative, de recrutement de ressources humaines ou de vente d'articles.",
   "agreement.item3.title": "3. Motifs purs",
-  "agreement.item3.content": "Le but du Big Give est d'attirer l'attention de nos invités sur l'amour de Dieu pour eux. Nos événements ne sont pas des environnements pour prêcher, enseigner ou juger. Si nos invités ont des questions de foi, nous encourageons nos bénévoles à répondre en fonction des principes bibliques et à n'obtenir des coordonnées que si elles sont offertes par l'invité. Nous encourageons également nos églises participantes à avoir une zone de prière désignée et des tables offrant des Bibles gratuites. Nos événements Big Give sont avant tout des environnements pour montrer l'amour de Dieu à travers des actes pratiques et tangibles de gentillesse et de générosité.",
-
+  "agreement.item3.content": "Le but du grand partage est d'attirer l'attention de nos invités sur l'amour de Dieu pour eux. Nos événements ne sont pas des environnements pour prêcher, enseigner ou juger. Si nos invités ont des questions de foi, nous encourageons nos bénévoles à répondre en fonction des principes bibliques et à n'obtenir des coordonnées que si elles sont offertes par l'invité. Nous encourageons également nos églises participantes à avoir une zone de prière désignée et des tables offrant des Bibles gratuites. Nos événements grand partage sont avant tout des environnements pour montrer l'amour de Dieu à travers des actes pratiques et tangibles de gentillesse et de générosité.",
   "agreement.item4.title": "4. Vous prenez les précautions juridiques appropriées",
-  "agreement.item4.content": "Votre partenariat avec le Big Give signifie que toute indemnisation que votre compagnie d'assurance peut exiger sera de votre responsabilité. Le Big Give, Love Ottawa, One Way Ministries ou tout tiers mentionné sur le site Web du Big Give ne sont pas responsables de tout dommage, y compris, mais sans s'y limiter, les dommages accidentels, consécutifs ou les blessures corporelles résultant de toute activité associée au Big Give.",
-
+  "agreement.item4.content": "Votre partenariat avec le grand partage signifie que toute indemnisation que votre compagnie d'assurance peut exiger sera de votre responsabilité. Le grand partage, Love Ottawa, One Way Ministries ou tout tiers mentionné sur le site Web du grand partage ne sont pas responsables de tout dommage, y compris, mais sans s'y limiter, les dommages accidentels, consécutifs ou les blessures corporelles résultant de toute activité associée au grand partage.",
   "agreement.item5.title": "5. La vie privée et la dignité de chacun sont respectées",
-  "agreement.item5.content": "Bien que nous vous encourageons à prendre des photos et des vidéos de votre événement Big Give, nous vous demandons d'obtenir la permission de toute personne apparaissant dans les médias que vous prévoyez d'utiliser dans un forum public ou sur les réseaux sociaux.",
-
+  "agreement.item5.content": "Bien que nous vous encourageons à prendre des photos et des vidéos de votre événement grand partage, nous vous demandons d'obtenir la permission de toute personne apparaissant dans les médias que vous prévoyez d'utiliser dans un forum public ou sur les réseaux sociaux.",
   "agreement.item6.title": "6. Frais d'inscription",
-  "agreement.item6.content": "Comme pour tout ministère, le Big Give ne peut exister sans financement. L'inscription est notre seule méthode pour pouvoir payer nos dépenses qui comprennent les mises à jour de communication sur le site Web, les bannières d'événements, les vidéos promotionnelles, les mises à jour de ressources, la traduction française, les déplacements et le matériel promotionnel. Nous payons également de petits frais d'administration à One Way Ministries qui héberge notre site d'inscription, apporte des améliorations au site Web et fournit des ressources humaines pour gérer les communications importantes avec nos partenaires d'église. De plus, un petit nombre d'églises ne peuvent pas se permettre les frais d'inscription, nous essayons donc de faciliter leur partenariat. En termes simples, sans vos frais d'inscription, le Big Give n'existerait pas.",
-
+  "agreement.item6.content": "Comme pour tout ministère, le grand partage ne peut exister sans financement. L'inscription est notre seule méthode pour pouvoir payer nos dépenses qui comprennent les mises à jour de communication sur le site Web, les bannières d'événements, les vidéos promotionnelles, les mises à jour de ressources, la traduction française, les déplacements et le matériel promotionnel. Nous payons également de petits frais d'administration à One Way Ministries qui héberge notre site d'inscription, apporte des améliorations au site Web et fournit des ressources humaines pour gérer les communications importantes avec nos partenaires d'église. De plus, un petit nombre d'églises ne peuvent pas se permettre les frais d'inscription, nous essayons donc de faciliter leur partenariat. En termes simples, sans vos frais d'inscription, le grand partage n'existerait pas.",
   "statementOfFaith.page.title": "Déclaration de foi",
-  "statementOfFaith.page.description": "Le Big Give est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
-
+  "statementOfFaith.page.description": "Le grand partage est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
   "statementOfFaith.header.title": "Déclaration de foi",
-
-  "statementOfFaith.intro": "Le Big Give est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
-
+  "statementOfFaith.intro": "Le grand partage est organisé par des bénévoles et des groupes de différentes traditions chrétiennes, mais nous sommes inspirés par une profession de foi commune.",
   "statementOfFaith.creed.title": "Le Credo des Apôtres",
   "statementOfFaith.creed.line1": "Je crois en Dieu, le Père tout-puissant,",
   "statementOfFaith.creed.line2": "créateur du ciel et de la terre.",
@@ -250,9 +184,67 @@
   "statementOfFaith.creed.line16": "à la rémission des péchés,",
   "statementOfFaith.creed.line17": "à la résurrection de la chair,",
   "statementOfFaith.creed.line18": "à la vie éternelle.",
-
   "churches.title": "Églises participantes",
-  "stories.title": "Histoires par région"
-
+  "stories.title": "Histoires par région",
+  "faq.question1": "Que peut faire mon église pour le grand partage ?",
+  "faq.answer1.intro": "C’est à vous de décider ! Voici quelques idées :",
+  "faq.answer1.item1": "distribution gratuite d’articles ménagers",
+  "faq.answer1.item2": "distribution gratuite de vêtements",
+  "faq.answer1.item3": "livraison gratuite pour les gros articles",
+  "faq.answer1.item4": "journée de fête gratuite (kermesse)",
+  "faq.answer1.item5": "barbecue gratuit (tenez compte des différentes cultures)",
+  "faq.answer1.item6": "stand gratuit de collations ou de pâtisseries",
+  "faq.answer1.item7": "lavage de voitures et/ou vidange gratuits",
+  "faq.answer1.item8": "concert gratuit en plein air",
+  "faq.answer1.item9": "coupes de cheveux, maquillage pour enfants ou manucures simples gratuits",
+  "faq.answer1.item10": "réparations gratuites de vélos",
+  "faq.answer1.item11": "déjeuners emballés gratuits",
+  "faq.answer1.item12": "petit-déjeuner gratuit",
+  "faq.answer1.item13": "ballons gratuits pour les enfants",
+  "faq.answer1.item14": "coin “bal de promo” gratuit",
+  "faq.answer1.item15": "cirage de chaussures gratuit",
+  "faq.answer1.item16": "stand de prière, Bibles ou visites de l’église gratuits",
+  "faq.answer1.item17": "distribution gratuite de livres (faites attention au contenu)",
+  "faq.answer1.item18": "cours de guitare gratuits",
+  "faq.answer1.item19": "couture/réparation de boutons gratuits",
+  "faq.answer1.item20": "projection gratuite d’un film dans le parc avec du popcorn gratuit",
+  "faq.answer1.item21": "serviettes de plage et jouets de sable gratuits pour les enfants",
+  "faq.answer1.item22": "tirages gratuits pour des lots spéciaux comme des billets pour un match ou un événement",
+  "faq.answer1.item23": "balades à poney ou mini-ferme gratuites",
+  "faq.question2": "Combien cela coûtera-t-il à notre église en plus des frais d’inscription ?",
+  "faq.answer2": "Cela dépend de ce que vous prévoyez pour la journée et des articles ou services que vos bénévoles peuvent offrir.",
+  "faq.question3": "Combien de personnes faudra-t-il pour coordonner cela dans mon église ?",
+  "faq.answer3": "Une personne clé est nécessaire pour diriger une équipe de bénévoles, dont la taille dépendra de l’ampleur de l’événement.",
+  "faq.question4": "Quand devrais-je commencer à planifier ?",
+  "faq.answer4": "Nous pouvons vous aider dès votre inscription. Idéalement, les églises devraient s’inscrire dès que possible, car certains aspects de l’événement bénéficient d’un temps de préparation supplémentaire.",
+  "faq.question5": "Et s’il pleut ?",
+  "faq.answer5": "Le grand partage a lieu beau temps, mauvais temps ! Nous recommandons à chaque église de prévoir un emplacement intérieur en cas d’intempéries.",
+  "faq.question6": "Si nous organisons un vide-grenier gratuit, devons-nous limiter ce que chaque personne prend ?",
+  "faq.answer6": "Ce n’est pas encouragé, car la plupart des gens ne prendront que ce qu’ils peuvent porter ou transporter dans leur voiture.",
+  "faq.question7": "Où allons-nous trouver tous les « objets » si nous choisissons d’organiser un vide-grenier gratuit ?",
+  "faq.answer7": "Ils peuvent venir de partout ! Le plus simple est de demander à votre congrégation et de les inviter à solliciter leurs amis et voisins.",
+  "faq.question8": "Comment et quand devons-nous commencer à recueillir les articles ?",
+  "faq.answer8": "Vous pouvez commencer à recueillir les articles dès que possible selon vos capacités d’entreposage. Pour la plupart des églises, nous recommandons environ deux semaines avant l’événement afin de ne pas perturber les activités régulières. Une équipe devra trier les dons pour s’assurer qu’ils conviennent à la distribution.",
+  "faq.question9": "Que faisons-nous des articles restants après l’événement ?",
+  "faq.answer9": "Plusieurs options existent : L’Armée du Salut, Bibles for Missions, ou d’autres friperies et organismes à but non lucratif locaux qui acceptent vos types d’articles. Les déchets et le matériel électronique doivent être éliminés correctement. Les vêtements/chaussures/articles légers restants peuvent être donnés à Mission Thrift, St Vincent de Paul, ou à des ministères appropriés. Les ordinateurs et appareils électroniques devraient être apportés à des entreprises locales qui les recyclent ou les réparent. Il est recommandé qu’un membre de l’équipe identifie ces endroits avant la journée et organise le transport.",
+  "faq.question10": "Devons-nous prévoir d’aider à transporter les gros articles ?",
+  "faq.answer10": "Si possible, il serait utile d’avoir des bénévoles avec des camionnettes ou des camions pour aider à livrer les gros articles chez les gens.",
+  "faq.question11": "Pouvons-nous faire la publicité de nos programmes d’église ?",
+  "faq.answer11": "Vous pouvez mettre à disposition des ressources gratuites sur votre église ou vos ministères si quelqu’un le demande, mais souvenez-vous que le but de la journée n’est pas d’encourager les gens à assister à vos cultes ou programmes.",
+  "faq.question12": "Comment notre église bénéficie-t-elle de sa participation ?",
+  "faq.answer12": "La Bible nous enseigne qu’il y a plus de bonheur à donner qu’à recevoir. Votre église contribuera à répondre à des besoins concrets dans votre quartier, et les gens pourraient vous demander pourquoi vous organisez un tel événement. Vous rejoindrez également symboliquement d’autres églises et ministères dans tout le pays dans un acte d’unité et d’amour radical.",
+  "faq.question13": "Un soutien sera-t-il disponible pendant la préparation ?",
+  "faq.answer13": "Bien sûr ! Notre équipe vous fournira les ressources et l’accompagnement nécessaires pour réussir votre événement. Nous sommes là pour aider à la planification, favoriser l’échange d’idées entre églises et fournir des vidéos et supports promotionnels attrayants.",
+  "faq.question14": "Pouvons-nous prier avec les gens ?",
+  "faq.answer14": "Oui, mais uniquement si un participant le demande. Certaines églises choisissent d’installer une tente ou un espace de prière pour faciliter cette démarche.",
+  "faq.question15": "Que ne sommes-nous pas autorisés à distribuer ?",
+  "faq.answer15": "Veuillez consulter le lien suivant pour connaître les articles interdits : https://www.canada.ca/fr/sante-canada/services/securite-produits-consommation/rapports-publications/education-consommateurs/information-intention-vendeurs-ventes-garage.html",
+  "video.text": "voir la vidéo",
+  "video.link": "https://www.youtube.com/embed/ztNlacXC6sA",
+  "Director": "Directeur",
+  "Administrative Assistant": "Adjointe administrative",
+  "nav.church": "églises participantes 2025",
+  "mobile.church": "inscrivez votre église",
+  "mobile.church.text": "l'inscription sera disponible à l'automne 2025."
 
 }

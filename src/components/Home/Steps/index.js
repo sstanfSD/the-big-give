@@ -105,7 +105,7 @@ const Steps = ({ toggle, date }) => {
               <div>
                 <h2>{t("step2.title")}</h2>
                 <p>
-                  {t("step2.desc")} {date}.{" "}
+                  {t("step2.desc")}.{" "}
                 </p>
               </div>
             </TextContainer>

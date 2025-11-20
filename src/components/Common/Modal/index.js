@@ -9,8 +9,12 @@ import {
   BtnWhite,
   CloseBtn,
 } from "./ModalElements"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Modal = ({ openModal, toggleModal }) => {
+
+  const {t} = useTranslation()
+
   return (
     <ModalContainer open={openModal}>
       <ModalScroll>
@@ -19,7 +23,7 @@ const Modal = ({ openModal, toggleModal }) => {
         <ModalMain>
           <TextContainer>
             <Heading>
-              Registration will be available in the Fall of 2025.
+              {t("mobile.church.text")}
             </Heading>
             {/* <BtnWhite
               large

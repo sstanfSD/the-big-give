@@ -63,7 +63,7 @@ const Header = ({ date, toggleModal }) => {
               />
             </DateBg> */}
 
-            <Date>{date}</Date>
+            <Date>{t("hero.date")}</Date>
           </DateContainer>
 
           <BtnPrimaryExternal
