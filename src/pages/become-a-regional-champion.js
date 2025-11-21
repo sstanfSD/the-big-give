@@ -8,6 +8,7 @@ import PlainText from "../components/Common/PlainText"
 import EmailForm from "../components/Common/EmailForm"
 import styled from "styled-components"
 import { useTranslation } from "gatsby-plugin-react-i18next"
+import ContactForm from "../components/Common/EmailForm"
 
 const BecomeAChampion = ({ data }) => {
   const { t } = useTranslation()
@@ -52,7 +53,7 @@ const BecomeAChampion = ({ data }) => {
         <FormWrapper>
           <FormContainer>
             <FormHeading>{t("champion.form.title")}</FormHeading>
-            <EmailForm />
+            <ContactForm />
           </FormContainer>
         </FormWrapper>
       </Layout>

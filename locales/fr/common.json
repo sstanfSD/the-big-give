@@ -245,6 +245,9 @@
   "Administrative Assistant": "Adjointe administrative",
   "nav.church": "églises participantes 2025",
   "mobile.church": "inscrivez votre église",
-  "mobile.church.text": "l'inscription sera disponible à l'automne 2025."
+  "mobile.church.text": "l'inscription sera disponible à l'automne 2025.",
 
+  "thankyou.title": "Merci !",
+  "thankyou.description": "Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.",
+  "thankyou.cta": "Cliquez ici pour revenir à l’accueil."
 }

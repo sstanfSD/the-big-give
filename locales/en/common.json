@@ -335,6 +335,9 @@
 
   "nav.church": "Participating Churches 2025",
   "mobile.church": "register your church",
-  "mobile.church.text": "Registration will be available in the Fall of 2025."
+  "mobile.church.text": "Registration will be available in the Fall of 2025.",
 
+  "thankyou.title": "Thank You!",
+  "thankyou.description": "Thank you for reaching out to us. We will get back to you as quickly as possible.",
+  "thankyou.cta": "Click here to go back to home."
 }
