@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import PageHead from "../components/PageHead"
 import Modal from "../components/Common/Modal"
@@ -10,14 +11,16 @@ import ChurchList from "../components/ParticipatingChurches/ChurchList"
 
 const ParticipatingChurches = ({ data }) => {
   const [openModal, setOpenModal] = useState(false)
+  const { t } = useTranslation()
+  
   const toggleModal = () => {
     setOpenModal(!openModal)
   }
 
-  const SEO = data.wpPage.seo
-  const header = data.wpPage.common_header
-  const churches = data.allWpParticipatingChurch
-  const markers = data.wpPage.mapMarkers
+  const SEO = data.wpPage?.seo || {}
+  const header = data.wpPage?.common_header || {}
+  const churches = data.allWpParticipatingChurch || { nodes: [] }
+  const markers = data.wpPage?.mapMarkers || {}
 
   console.log(markers)
 
@@ -37,7 +40,16 @@ const ParticipatingChurches = ({ data }) => {
 export default ParticipatingChurches
 
 export const query = graphql`
-  query ChurchesQuery {
+  query ChurchesQuery($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     wpPage(uri: { eq: "/participating-churches/" }) {
       id
       seo {
@@ -74,7 +86,7 @@ export const query = graphql`
         }
       }
     }
-    allWpParticipatingChurch(sort: { fields: title, order: ASC }) {
+    allWpParticipatingChurch(sort: { title: ASC }) {
       nodes {
         title
         participatingChurch {

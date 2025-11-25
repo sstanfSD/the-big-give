@@ -10,74 +10,78 @@ import {
 } from "./MobileMenuElements"
 
 import { BtnPrimary } from "../../Buttons"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
+
+  const {t} = useTranslation()
+    
   return (
     <Nav openMobile={openMobile}>
       <List>
         <Item>
           <InternalLink to="/" onClick={toggle}>
-            home
+            {t("nav.home")}
           </InternalLink>
         </Item>
         <Item>
           <InternalLink to="/about" onClick={toggle}>
-            about
+            {t("nav.about")}
           </InternalLink>
           <SecondaryList>
             <SecondaryItem>
               <InternalLink to="/about#history" onClick={toggle}>
-                history
+                {t("nav.history")}
               </InternalLink>
             </SecondaryItem>
             <SecondaryItem>
               <InternalLink to="/about#team" onClick={toggle}>
-                team
+                {t("nav.team")}
               </InternalLink>
             </SecondaryItem>
             <SecondaryItem>
               <InternalLink to="/about#contact" onClick={toggle}>
-                contact
+                {t("nav.contact")}
               </InternalLink>
             </SecondaryItem>
           </SecondaryList>
         </Item>
         <Item>
           <InternalLink to="/participating-churches" onClick={toggle}>
-            participating churches
+            {t("nav.churches")}
           </InternalLink>
         </Item>
         <Item>
           <InternalLink to="/get-involved" onClick={toggle}>
-            get involved
+            {t("nav.getInvolved")}
           </InternalLink>
           <SecondaryList>
             <SecondaryItem>
               <InternalLink to="/get-involved#resources" onClick={toggle}>
-                resources
+                {t("nav.resources")}
               </InternalLink>
             </SecondaryItem>
             <SecondaryItem>
               <InternalLink to="/get-involved#events" onClick={toggle}>
-                events
+                {t("nav.events")}
               </InternalLink>
             </SecondaryItem>
           </SecondaryList>
         </Item>
         <Item>
           <InternalLink to="/big-stories" onClick={toggle}>
-            big stories
+            {t("nav.stories")}
           </InternalLink>
           <SecondaryList>
             <SecondaryItem>
               <InternalLink to="/big-stories#videos" onClick={toggle}>
-                video testimonials
+                {t("nav.videos")}
               </InternalLink>
             </SecondaryItem>
           </SecondaryList>
         </Item>
         <Item>
-          <BtnPrimary text="register your church" toggle={toggleModal} />
+          <BtnPrimary text={t("mobile.church")} toggle={toggleModal} />
         </Item>
       </List>
     </Nav>

@@ -16,15 +16,19 @@ import {
 } from "./ThankYouElements"
 
 import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ThankYou = ({ thankyou, toggle }) => {
+
+  const {t} = useTranslation()
+
   return (
     <Section>
       <Container>
         <TextContainer>
-          <Heading>Thank You</Heading>
+          <Heading>{t("finalCta.thankYou")}</Heading>
           <Body>
-            For more information on The Big Give, please contact Director,{" "}
+            {t("finalCta.moreInfo")}{" "}
             <a href="mailto:kathy@thebiggive.ca ">Kathy Blakely</a>.
           </Body>
           <List>
@@ -40,7 +44,7 @@ const ThankYou = ({ thankyou, toggle }) => {
           </List>
 
           <BtnPrimaryExternal
-            text={"register now"}
+            text={t("finalCta.registerNow")}
             to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
             large
           />

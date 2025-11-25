@@ -2,6 +2,17 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import { media } from "../../../../media"
 
+export const ActionsRight = styled.div`
+  display: none;
+  align-items: center;
+  gap: 12px;
+
+  @media (max-width: 900px) {
+    display: flex;
+    margin-left: auto; /* pushes this group to the far right */
+  }
+`;
+
 export const Nav = styled.nav`
   background-color: var(--color-white);
   width: 100%;
@@ -79,14 +90,27 @@ export const List = styled.ul`
 `
 export const Item = styled.li`
   position: relative;
-
+  list-style: none;
+  display: inline-block;
   font-size: 1.6rem;
   font-weight: bold;
 
-  &:hover ${Dropdown} {
-    display: flex;
+  &.lang-mobile {
+    display: none; /* hidden by default on large screens */
+  }
+
+  @media (max-width: 768px) {
+    &.lang-mobile {
+      display: block; /* show only on mobile */
+      float: right;
+    }
+
+    &.lang-desktop {
+      display: none; /* hide the desktop version */
+    }
   }
 `
+
 export const InternalLink = styled(Link)`
   text-decoration: none;
   color: var(--color-black);

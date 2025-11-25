@@ -23,9 +23,12 @@ import {
 import Dropdown from "./Dropdown"
 
 import downloadIcon from "../../../assets/icons/download.svg"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Resources = ({ resources, englishKit, frenchKit }) => {
   //DROPDOWN LOGIC
+
+  const { t } = useTranslation()
 
   const [open, setOpen] = useState(false)
   const toggle = () => {
@@ -41,11 +44,9 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading>Big Give Resources</Heading>
+            <Heading>{t("getInvolved.resources.title")}</Heading>
             <Body>
-              Logo files, flyers, PowerPoint slides, promotional videos, prayer
-              letters… download all the resources you need to run a successful
-              Big Give event at your church.
+              {t("getInvolved.resources.description")}
             </Body>
             <BtnList>
               <BtnListItem>
@@ -54,7 +55,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                   target={"_blank"}
                   href={englishKit.registrationResource.file?.mediaItemUrl}
                 >
-                  download English press kit
+                  {t("getInvolved.resources.downloadEnglish")}
                 </BtnWhite>
               </BtnListItem>
               <BtnListItem>
@@ -63,7 +64,7 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                   large
                   href={frenchKit.registrationResource.file?.mediaItemUrl}
                 >
-                  download French press kit
+                  {t("getInvolved.resources.downloadFrench")}
                 </BtnWhite>
               </BtnListItem>
             </BtnList>

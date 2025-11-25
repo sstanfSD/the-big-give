@@ -16,8 +16,12 @@ import {
 import { BtnPrimaryLink } from "../../Buttons"
 
 import bg from "../../../assets/images/about/header/text-bg-png.png"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Header = ({ header, toggle }) => {
+
+  const {t} = useTranslation()
+
   return (
     <Section>
       <Container>
@@ -49,18 +53,15 @@ const Header = ({ header, toggle }) => {
             <img src={bg} alt="white background image" />
           </TextBg>
           <TextContent>
-            <Heading>Big Stories</Heading>
+            <Heading>{t("bigStories.title")}</Heading>
             <Body>
               <p>
-                Testimonies are what fuel the volunteers who run The Big Give.
-                Here are some of our favourite stories from previous Big Gives.
-                Register your church today and create your own testimonies of
-                God’s goodness in your community.
+                {t("bigStories.desc")}
               </p>
             </Body>
 
             <BtnPrimaryLink
-              text={"Read big stories"}
+              text={t("bigStories.cta")}
               to={"/big-stories#stories"}
             />
           </TextContent>

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
@@ -13,14 +14,16 @@ import Contact from "../components/About/Contact"
 
 const About = ({ data }) => {
   const [openModal, setOpenModal] = useState(false)
+  const { t } = useTranslation()
+  
   const toggleModal = () => {
     setOpenModal(!openModal)
   }
 
-  const SEO = data.wpPage.seo
-  const header = data.wpPage.common_header
-  const team = data.allWpTeamMembers
-  const FAQs = data.allWpFaq
+  const SEO = data.wpPage?.seo || {}
+  const header = data.wpPage?.common_header || {}
+  const team = data.allWpTeamMembers || { nodes: [] }
+  const FAQs = data.allWpFaq || { nodes: [] }
 
   return (
     <>
@@ -41,7 +44,16 @@ const About = ({ data }) => {
 export default About
 
 export const query = graphql`
-  query FaqQuery {
+  query FaqQuery($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
     wpPage(uri: { eq: "/about/" }) {
       id
       seo {

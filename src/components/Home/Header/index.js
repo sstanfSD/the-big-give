@@ -22,8 +22,12 @@ import Video from "./Video/index"
 import headingBg from "../../../assets/images/home/HeadingBgWhite.png"
 import dateBg from "../../../assets/images/home/HeadingBgBlack.png"
 
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
 const Header = ({ date, toggleModal }) => {
   const [offset, setOffset] = useState(0)
+
+  const {t} = useTranslation()
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset)
@@ -48,7 +52,7 @@ const Header = ({ date, toggleModal }) => {
                 objectFit="fill"
               />
             </HeadingBg> */}
-            <Heading>Outreach is easy when it starts with GIVING</Heading>
+            <Heading>{t("hero.title")}</Heading>
           </HeadingContainer>
           <DateContainer>
             {/* <DateBg>
@@ -59,12 +63,12 @@ const Header = ({ date, toggleModal }) => {
               />
             </DateBg> */}
 
-            <Date>{date}</Date>
+            <Date>{t("hero.date")}</Date>
           </DateContainer>
 
           <BtnPrimaryExternal
             // toggle={toggleModal}
-            text="REGISTER TODAY"
+            text={t("hero.cta.explore")}
             to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
             large
           />

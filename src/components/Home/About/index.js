@@ -15,8 +15,12 @@ import {
 } from "./AboutElements"
 
 import bg from "../../../assets/images/home-about/about-bg.jpg"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const About = ({ date }) => {
+
+  const {t} = useTranslation()
+
   return (
     <Section>
       <Container>
@@ -38,15 +42,11 @@ const About = ({ date }) => {
         </ImageContainer>
         <ImageFilter />
         <TextContainer>
-          <Heading>Join a national movement of generosity</Heading>
+          <Heading>{t("section.title")}</Heading>
           <Body>
-            Each year, churches across Canada bless and love their
-            neighbourhoods through a day of giving extravagantly where
-            EVERYTHING IS FREE!
+            {t("section.desc1")}
             <br />
-            <br /> The Big Give is run by volunteers who are fueled by a passion
-            to love their communities and draw them into relationship with
-            Jesus. Join us on {date} and see what happens in your town.
+            <br /> {t("section.desc2")} {t("section.desc3")}.
           </Body>
         </TextContainer>
       </Container>

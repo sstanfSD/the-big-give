@@ -14,10 +14,14 @@ import {
 } from "./FooterElements"
 
 import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons/"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 import logowhite from "../../../assets/logos/logo-white.png"
 
 const Footer = ({ toggleModal }) => {
+
+  const {t} = useTranslation()
+
   return (
     <FooterElement>
       <Container>
@@ -34,54 +38,54 @@ const Footer = ({ toggleModal }) => {
         <Column>
           <List>
             <Item>
-              <ListHeading to={"/about"}>about</ListHeading>
+              <ListHeading to={"/about"}>{t('footer.about')}</ListHeading>
             </Item>
             <Item>
               <ListLink to={"/participating-churches"}>
-                participating churches
+                {t("footer.churches")}
               </ListLink>
             </Item>
             <Item>
-              <ListLink to={"/about#history"}>history</ListLink>
+              <ListLink to={"/about#history"}>{t("footer.history")}</ListLink>
             </Item>
             <Item>
-              <ListLink to={"/about#team"}>team</ListLink>
+              <ListLink to={"/about#team"}>{t("footer.team")}</ListLink>
             </Item>
             <Item>
-              <ListLink to={"/big-stories"}>big stories</ListLink>
+              <ListLink to={"/big-stories"}>{t("footer.bigStories")}</ListLink>
             </Item>
           </List>
         </Column>
         <Column>
           <List>
             <Item>
-              <ListHeading to={"/get-involved"}>get involved</ListHeading>
+              <ListHeading to={"/get-involved"}>{t("footer.getInvolved")}</ListHeading>
             </Item>
             <Item>
-              <ListLink to={"/get-involved#resources"}>resources</ListLink>
+              <ListLink to={"/get-involved#resources"}>{t("footer.resources")}</ListLink>
             </Item>
             <Item>
-              <ListLink to={"/about#events"}>events</ListLink>
+              <ListLink to={"/about#events"}>{t("footer.events")}</ListLink>
             </Item>
             <Item>
               <ListLink to={"/become-a-regional-champion"}>
-                become a regional champion
+                {t("footer.becomeChampion")}
               </ListLink>
             </Item>
             <Item>
               <ListLink to={"/the-big-give-agreement"}>
-                the big give agreement
+                {t("footer.agreement")}
               </ListLink>
             </Item>
             <Item>
-              <ListLink to={"/statement-of-faith"}>statement of faith</ListLink>
+              <ListLink to={"/statement-of-faith"}>{t("footer.statementOfFaith")}</ListLink>
             </Item>
           </List>
         </Column>
         <Column>
           <List>
             <Item>
-              <ListHeading to={"/about#contact"}>contact</ListHeading>
+              <ListHeading to={"/about#contact"}>{t("nav.contact")}</ListHeading>
             </Item>
             <Item>
               <p>Kathy Blakely</p>
@@ -98,7 +102,7 @@ const Footer = ({ toggleModal }) => {
           {/* <BtnPrimary text={"register your church"} toggle={toggleModal} /> */}
 
           <BtnPrimaryExternal
-            text={"register your church"}
+            text={t('footer.cta')}
             to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
           />
         </Column>

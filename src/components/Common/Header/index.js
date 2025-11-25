@@ -16,8 +16,12 @@ import {
 import { BtnPrimaryExternal, BtnPrimaryBlue, BtnPrimary } from "../../Buttons"
 
 import bg from "../../../assets/images/about/header/text-bg-png.png"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const Header = ({ header, toggle }) => {
+
+  const {t} = useTranslation()
+
   return (
     <Section>
       <Container>
@@ -26,8 +30,13 @@ const Header = ({ header, toggle }) => {
             <img src={bg} alt="white background image" />
           </TextBg>
           <TextContent>
-            <Heading>{header.heading}</Heading>
-            <Body dangerouslySetInnerHTML={{ __html: header.body }} />
+            <Heading>{t("about.page.title")}</Heading>
+            {/* <Body dangerouslySetInnerHTML={{ __html: header.body }} /> */}
+            <Body>
+              <p>{t("about.hero.intro")}</p>
+              <p>{t("about.testimonial.quote")}</p>
+              <p>{t("about.cta.text")}</p>
+            </Body>
 
             {/* <div style={{ marginBottom: "2rem" }}>
               {header.redButton && (
@@ -35,7 +44,7 @@ const Header = ({ header, toggle }) => {
               )}
             </div> */}
             <BtnPrimaryExternal
-              text={"register"}
+              text={t("about.cta.button")}
               to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
               minWidth={true}
             />

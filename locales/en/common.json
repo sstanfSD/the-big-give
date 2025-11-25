@@ -1,0 +1,343 @@
+{
+  "nav.about": "about",
+  "nav.home": "home",
+  "nav.history": "history",
+  "nav.team": "team",
+  "nav.contact": "contact",
+  "nav.churches": "participating churches",
+  "nav.getInvolved": "get involved",
+  "nav.resources": "resources",
+  "nav.events": "events",
+  "nav.stories": "big stories",
+  "nav.videos": "video testimonials",
+  "nav.register": "Register",
+
+  "hero.title": "Outreach is easy when it starts with GIVING",
+  "hero.cta.explore": "Register Today",
+  "hero.date": "SATURDAY JUNE 6, 2026",
+
+  "section.title": "Join a national movement of generosity",
+  "section.desc1": "Each year, churches across Canada bless and love their neighbourhoods through a day of giving extravagantly where EVERYTHING IS FREE!",
+  "section.desc2": "The Big Give is run by volunteers who are fueled by a passion to love their communities and draw them into relationship with Jesus. Join us on Saturday June 6, 2026,",
+  "section.desc3": "and see what happens in your town.",
+
+  "step1.title": "Step 1",
+  "step1.desc1": "Understand what The Big Give is by reading our",
+  "step1.desc2": "church agreement",
+  "step1.desc3": "and",
+  "step1.desc4": "statement of faith",
+  "step1.desc5": "and register your church.",
+  "step1.cta": "Register your church",
+
+  "step2.title": "Step 2",
+  "step2.desc": "Gather a team at your church to dream and pray over your plans for, Saturday June 6, 2026",
+
+  "step3.title": "Step 3",
+  "step3.desc1": "Pray some more and prepare for the big day using our",
+  "step3.desc2": "free resources.",
+  "step3.cta": "Register your church",
+
+  "champion.title": "Connect with a big give champion in your area",
+  "champion.subtitle": "Click on your community to connect with your regional champion. Don't see your town? Click below to learn more about becoming a regional champion yourself.",
+  "champion.cta":"become a champion",
+  "champion.region.ottawa": "Ottawa",
+  "champion.region.ottawaValley": "Ottawa Valley",
+  "champion.region.toronto": "Toronto & GTA",
+  "champion.region.westIsland": "West Island, Montreal",
+  "champion.region.westernOntario": "Western Ontario",
+  "champion.region.britishColumbia": "British Columbia",
+
+  "faq.title1": "Frequently" ,
+  "faq.title2":"asked questions",
+  "faq.subtitle": "Is your question not answered?",
+  "faq.contact": "Contact us directly.",
+
+  "bigStories.title": "Big Stories",
+  "bigStories.desc": "Testimonies are what fuel the volunteers who run The Big Give. Here are some of our favourite stories from previous Big Gives. Register your church today and create your own testimonies of God's goodness in your community.",
+  "bigStories.cta": "read big stories",
+
+  "finalCta.thankYou": "Thank You",
+  "finalCta.moreInfo": "For more information on The Big Give, please contact Director,",
+  "finalCta.registerNow": "register now",
+
+  "footer.about": "about",
+  "footer.churches": "participating churches",
+  "footer.history": "history",
+  "footer.team": "team",
+  "footer.bigStories": "big stories",
+  "footer.getInvolved": "get involved",
+  "footer.resources": "resources",
+  "footer.events": "events",
+  "footer.becomeChampion": "become a regional champion",
+  "footer.agreement": "the big give agreement",
+  "footer.statementOfFaith": "statement of faith",
+  "footer.cta": "register your church",
+
+  "about.page.title": "About the BIG Give",
+
+  "about.hero.intro": "Every year on the first Saturday of June, churches across Canada of all denominations show their neighbours the unconditional love of God by giving, for free, asking nothing in return.",
+
+  "about.testimonial.quote": "I was on my deck, smelled the BBQ at the church down the street, went over and got a free burger and some other free things I needed. I went to the church for the first time the next morning, found out who Jesus really was and how much he loved me. My life has been changed ever since.",
+
+  "about.cta.text": "Join us this year and see what happens in your church neighbourhood.",
+  "about.cta.button": "register",
+
+  "about.quote.highlight": "It's the best outreach event we've ever been a part of.",
+
+  "about.description.paragraph1": "It's amazing how a free gift can build a bridge into your community. And it's so simple. We've seen churches offer free garage sales, car washes, BBQs, movies in the park, pony rides and face painting. Some churches even provided free haircuts and bouncy castles for kids. Whatever you do, make it free.",
+
+  "about.description.paragraph2": "Get your church to join with thousands of other Christians across the country for a unified day of giving extravagantly on Saturday, June 6, 2026.",
+
+  "about.timeline.title": "History of the Big Give",
+  "about.timeline.2015.title": "2015",
+  "about.timeline.2015.desc": "55 participating Churches in the Ottawa area",
+
+  "about.timeline.2016.title": "2016",
+  "about.timeline.2016.desc": "66 participating Churches in the Ottawa area and the surrounding communities",
+
+  "about.timeline.2017.title": "2017",
+  "about.timeline.2017.desc": "92 participating Churches in Ottawa, Arnprior, Toronto (GTA), Montreal, Brockville, Cornwall, Sidney BC, Simcoe and other communities!",
+
+  "about.timeline.2018.title": "2018",
+  "about.timeline.2018.desc": "130 participating Churches in Ottawa, Arnprior, Cobden, Pembroke, Toronto (GTA), Montreal, Brockville, Cornwall, Prescott, Morrisburg, Perth, Lindsay, Brantford, Brighton, Gatineau, Rockland, Pickering, Hamilton, St. Catharines, Sidney BC, Charlottetown PEI and many other communities!",
+
+  "about.timeline.2019.title": "2019",
+  "about.timeline.2019.desc": "137 participating Churches in Ottawa, Arnprior, Cobden, Pembroke, Shawville, Lively, Toronto (GTA), Montreal, Brockville, Cornwall, Morrisburg, Perth, Almonte, Lindsay, Port Hope, Brantford, Burlington, Chatham, Brighton, Gatineau, Alymer, Rockland, Pickering, Hamilton, St. Catharines, Sidney BC, Creston BC, Charlottetown PEI and many other communities!",
+
+  "about.timeline.2022.title": "2022",
+  "about.timeline.2022.desc": "52 participating Churches in Ottawa, Arnprior, Carleton Place, Pembroke, Lively, Toronto (GTA), Brockville, Perth, Port Hope, Montreal QC, Shawville QC, Sidney BC, Truro NS, Amherst NS and many other communities!",
+
+  "about.timeline.2023.title": "2023",
+  "about.timeline.2023.desc": "With the pandemic behind us, we had 70 churches participate in 2023. We continue to grow with a few new cities joining us this year: Aylmer ON, Sarnia ON and Spencerville ON. We had 42 sites in the Ottawa/Ottawa Valley, 6 sites in the GTA, 10 sties in Quebec and 12 sites in other Canadian communities.",
+
+  "about.timeline.2024.title": "2024",
+  "about.timeline.2024.desc": "In 2024 there were 86 churches who participated in the Big Give including three churches in Australia! Another new city was St. Stephen, New Brunswick. In the Ottawa/Ottawa Valley we had 46 churches. In the Greater Toronto Area we have 11 churches. In Quebec we had 6 churches. There were 23 churches in the following cities: Brockville ON, Port Hope ON, Sarnia ON, Truro NS, Lively ON, Sidney BC, Dutton ON, Spencerville ON, Prescott ON, and Aylmer ON.",
+
+  "about.timeline.2025.title": "2025",
+  "about.timeline.2025.desc": "In 2025 there were 89 churches who participated in the Big Give including five churches in Australia! Two new cities joined us this year: Barrie, Ontario with two churches participating and Wingham, ON with one church coming on board. We also had our first church join us from Red Deer, Alberta. In the Ottawa/Ottawa Valley we had 46 churches. In the Greater Toronto Area we have 9 churches. In Quebec we had 9 churches. There were 25 churches in the following cities: Brockville ON, Lyn ON, Johnston, ON, Dutton, ON, Port Hope ON, Barrie, ON, Wingham, ON, Lively ON, Sidney BC, Red Deer, AB, Dutton ON, Spencerville ON, Prescott ON, and Aylmer ON and St. Stephen's, NB.",
+
+  "about.history.title": "History of the Big Give",
+  "about.history.paragraph1": "The idea of a citywide \"Big Give\" dates back to 2009. A local church in Ottawa had just completed The 40 Days of Community by Rick Warren. The challenge at the end of the book study was to find a church-wide project that would reach the community in a unique way.",
+
+  "about.history.paragraph2": "Kathy Blakely woke up early one morning with the idea of a free garage sale. It was something that was easy to do and wouldn't cost the church a lot of money. As she shared her vision with others, it became evident that this was a \"God idea.\" The first Big Give was held that year, and Kathy had a dream to see churches all over the city do the same thing on the same day.",
+
+  "about.history.paragraph3": "In 2014, Richard Long of Love Ottawa heard of the idea and approached Kathy about partnering together. A committee was formed, and in June of 2015, 55 churches across the nation's capital joined together for a unified day of radical giving.",
+
+  "about.history.paragraph4": "Through the ongoing partnership with Love Ottawa and One Way Ministries, the team hopes the event will continue to grow and be an incredible blessing to communities in Ottawa and across the country.",
+
+  "about.team.title": "The Big Give team",
+  "about.team.subtitle": "We're a group of volunteers who have seen how much God can use our free gifts to build bridges between our churches and the communities they serve.",
+  "about.cta": "join the team",
+
+  "about.faq.title": "Frequently asked questions",
+  "about.faq.subtitle": "Is your question not answered?",
+  "about.faq.contactPrompt": "Contact us directly.",
+
+  "about.contact.title": "Get in touch",
+  "about.contact.subtitle": "We want to hear from you. Reach out to us and we'll respond as quickly as possible.",
+  "about.contact.form.city": "City or Town",
+  "about.contact.form.name": "Name",
+  "about.contact.form.email": "Email Address",
+  "about.contact.form.message": "Your message",
+  "about.contact.form.submit": "Submit",
+  "about.contact.form.error.city": "Please include your city.",
+  "about.contact.form.error.name": "Please include your name.",
+  "about.contact.form.error.email": "Please include your email address.",
+  "about.contact.form.error.emailInvalid": "Invalid email address",
+  "about.contact.form.error.message": "Please include your message.",
+
+  "getInvolved.page.title": "Help change your community with a day of extravagant giving",
+
+  "getInvolved.hero.subtitle": "Your church and your neighbours need you. Help change your community with a free gift. Register your church for The Big Give.",
+
+  "getInvolved.cta.button": "register",
+
+  "getInvolved.resources.title": "Big Give Resources",
+  "getInvolved.resources.description": "Logo files, flyers, PowerPoint slides, promotional videos, prayer letters… download all the resources you need to run a successful Big Give event at your church.",
+
+  "getInvolved.resources.downloadEnglish": "download English press kit",
+  "getInvolved.resources.downloadFrench": "download French press kit",
+
+  "getInvolved.resources.english": "English Resources",
+  "getInvolved.resources.french": "French Resources",
+
+  "getInvolved.events.title": "Events",
+  "getInvolved.events.description": "There are regional events leading up to The Big Give on the first Saturday of June. Find prayer meetings, organizing events and other important dates in your region here.",
+
+  "getInvolved.events.ottawa": "Ottawa, Ottawa Valley",
+  "getInvolved.events.gta": "GTA",
+  "getInvolved.events.quebec": "Quebec",
+  "getInvolved.events.allOther": "All Other Communities",
+
+  "getInvolved.events.registerPrompt": "To register an event in your community, please email",
+
+  "bigStories.page.title": "Big stories",
+
+  "bigStories.hero.description": "Testimonies are what fuel the volunteers who run The Big Give. Here are some of our favourite stories from previous Big Gives. Register your church today and create your own testimonies of God's goodness in your community.",
+
+  "bigStories.cta.button": "register",
+
+  "bigStories.video.title": "Video testimonials",
+  "bigStories.video.description": "See some of our favourite people and hear the stories from past Big Give events.",
+
+
+  "champion.page.title": "Bring The Big Give to your area",
+
+  "champion.hero.subtitle": "Join our team and bring The Big Give to your region.",
+
+  "champion.requirements.intro": "Here's what it takes to be a regional champion:",
+
+  "champion.requirements.item1": "Commit to The Big Give idea: One movement on one day where everything is free with no strings attached",
+
+  "champion.requirements.item2": "Read and agree with our",
+  "champion.requirements.item2Link": "statement of faith",
+
+  "champion.requirements.item3": "Attend Big Give committee meetings either in person or online",
+
+  "champion.requirements.item4": "Enjoy connecting with other church leaders in your area We would love to chat if you're passionate about seeing God move in your region, love outreach, and are committed to praying for The Big Give.",
+
+  "champion.form.title": "Become a regional champion",
+  "champion.form.name": "Name",
+  "champion.form.email": "Email Address",
+  "champion.form.location": "Location (city / country)",
+  "champion.form.submit": "Submit",
+
+
+  "agreement.page.title": "The Big Give Agreement",
+  "agreement.page.description": "The Big Give is organized by volunteers and groups from many different Christian traditions, but we're inspired by a common profession of faith.",
+
+  "agreement.section.title": "Church Agreement",
+
+  "agreement.item1.title": "1. Host your Big Give event on the first Saturday of June each year",
+  "agreement.item1.content": "In order for your church/ministry to partner with The Big Give and be listed on our website you must host your Big Give event on the first Saturday of June. This joint initiative creates awareness and engagement on a national scale. It also generates a sense of real community between all our partnering churches.",
+
+  "agreement.item2.title": "2. All goods and services are FREE",
+  "agreement.item2.content": "The Big Give's mission is to share the unconditional love of God through radical generosity with no strings attached and asking nothing in return (no donations, sign-up sheets, promotions etc.) While your church is likely involved with many great causes, we ask that you keep the integrity and purity of The Big Give in tact. This means no fundraising, ministry/charitable organization promotion, human resource recruitment or sale of any items.",
+
+  "agreement.item3.title": "3. Pure Motives",
+  "agreement.item3.content": "The Big Give's purpose is to draw our guests attention to God's love for them. Our events are not environments for preaching, teaching or judging. If our guests have faith questions we encourage our volunteers to respond based on biblical principles and only obtain contact information if offered by the guest. We also encourage our participating churches to have a designated prayer area and tables offering free Bibles. Our Big Give events are first and foremost environments for showing God's love through practical and tangible acts of kindness and generosity.",
+
+  "agreement.item4.title": "4. You take the proper legal precautions",
+  "agreement.item4.content": "Your partnership with The Big Give means that any indemnification that your insurance company may require will be your responsibility. The Big Give, Love Ottawa, One Way Ministries or any third parties mentioned on The Big Give website are not liable for any damages including but not limited to accidental, consequential damages or personal injury resulting from any activities associated with The Big Give.",
+
+  "agreement.item5.title": "5. Everyone's privacy and dignity is respected",
+  "agreement.item5.content": "While we encourage you to take pictures and video of your Big Give event, we ask that you obtain permission of anyone appearing in media you plan to use in a public or social media forum.",
+
+  "agreement.item6.title": "6. Registration Fee",
+  "agreement.item6.content": "As with any ministry, The Big Give cannot exist without some funding. Registration is our only method of being able to pay for our expenses which include communication updates to the website, event banners, promo videos, resource updates, French translation, travel and promotional material. We also pay a small administration fee to One Way Ministries who host our registration site, make website improvements and provide human resources to handle important communication with our church partners. In addition, a small number of churches cannot afford the registration fee so we try to facilitate their partnership. Simply stated – without your registration fee The Big Give would not exist.",
+
+
+  "statementOfFaith.page.title": "Statement of faith",
+  "statementOfFaith.page.description": "The Big Give is organized by volunteers and groups from many different Christian traditions, but we're inspired by a common profession of faith.",
+
+  "statementOfFaith.header.title": "Statement of Faith",
+
+  "statementOfFaith.intro": "The Big Give is organized by volunteers and groups from many different Christian traditions, but we're inspired by a common profession of faith.",
+
+  "statementOfFaith.creed.title": "The Apostles' Creed",
+  "statementOfFaith.creed.line1": "I believe in God, the Father almighty,",
+  "statementOfFaith.creed.line2": "creator of heaven and earth.",
+  "statementOfFaith.creed.line3": "I believe in Jesus Christ, God's only Son, our Lord,",
+  "statementOfFaith.creed.line4": "who was conceived by the Holy Spirit,",
+  "statementOfFaith.creed.line5": "born of the Virgin Mary,",
+  "statementOfFaith.creed.line6": "suffered under Pontius Pilate,",
+  "statementOfFaith.creed.line7": "was crucified, died, and was buried;",
+  "statementOfFaith.creed.line8": "he descended to the dead.",
+  "statementOfFaith.creed.line9": "On the third day he rose again;",
+  "statementOfFaith.creed.line10": "he ascended into heaven,",
+  "statementOfFaith.creed.line11": "he is seated at the right hand of the Father,",
+  "statementOfFaith.creed.line12": "and he will come again to judge the living and the dead.",
+  "statementOfFaith.creed.line13": "I believe in the Holy Spirit,",
+  "statementOfFaith.creed.line14": "the holy catholic/universal church,",
+  "statementOfFaith.creed.line15": "the communion of saints,",
+  "statementOfFaith.creed.line16": "the forgiveness of sins,",
+  "statementOfFaith.creed.line17": "the resurrection of the body,",
+  "statementOfFaith.creed.line18": "and the life everlasting.",
+
+  
+  "churches.title": "Participating Churches",
+  "stories.title": "Stories by region",
+
+
+  "faq.question1": "What can my church do for The Big Give?",
+  "faq.answer1.intro": "That's up to you! Ideas include:",
+  "faq.answer1.item1": "free household items give away",
+  "faq.answer1.item2": "free clothing give away",
+  "faq.answer1.item3": "free delivery for large items",
+  "faq.answer1.item4": "a free fun day (carnival)",
+  "faq.answer1.item5": "a free BBQ (be mindful of cultures)",
+  "faq.answer1.item6": "a free concession or baked goods table",
+  "faq.answer1.item7": "a free car wash and/or oil changes",
+  "faq.answer1.item8": "a free outdoor concert",
+  "faq.answer1.item9": "free haircuts, face painting or simple manicures",
+  "faq.answer1.item10": "free bike repairs",
+  "faq.answer1.item11": "free bagged lunches",
+  "faq.answer1.item12": "free breakfast",
+  "faq.answer1.item13": "free balloons for kids",
+  "faq.answer1.item14": "free \"prom\" station",
+  "faq.answer1.item15": "free shoe shinning",
+  "faq.answer1.item16": "free prayer booth, Bibles or church tours",
+  "faq.answer1.item17": "free book give away (be mindful of content)",
+  "faq.answer1.item18": "free Guitar lessons",
+  "faq.answer1.item19": "free button sewing/mending",
+  "faq.answer1.item20": "free movie in the park with free popcorn",
+  "faq.answer1.item21": "free beach towels and sand toys for kids",
+  "faq.answer1.item22": "free draws for special things like tickets to a game or event",
+  "faq.answer1.item23": "free pony rides or animal farm",
+  
+  "faq.question2": "How much will it cost our church over and above the sign-up fee?",
+  "faq.answer2": "That depends on what you plan for the day and what items and services your volunteers are able to donate.",
+  
+  "faq.question3": "How many people will it take to coordinate this at my church?",
+  "faq.answer3": "It will take one key person who can then gather a volunteer team dependent on the size of the event.",
+  
+  "faq.question4": "When should I start planning?",
+  "faq.answer4": "We can help you get started as soon as you sign up. Ideally, churches will sign up as soon as possible since there are some aspects of the event that can benefit from additional lead time.",
+  
+  "faq.question5": "What if it rains?",
+  "faq.answer5": "The Big Give happens rain or shine! We recommend that every event plan includes a rain location in case of inclement weather.",
+  
+  "faq.question6": "If we go with a free garage sale, should we limit how much each person takes?",
+  "faq.answer6": "It's not encouraged, as most people will only take as much as they can carry or as much as their car can hold.",
+  
+  "faq.question7": "Where will we get all the \"stuff\" if we choose to host a free garage sale?",
+  "faq.answer7": "It will come from anywhere and everywhere! The easiest start will be to ask your congregation and have them ask their friends and neighbours.",
+  
+  "faq.question8": "How and when do we begin to collect the items?",
+  "faq.answer8": "You can begin collecting items as early as you can accommodate them. For most churches, we recommend collecting about two weeks before the event as not to interfere with regular church programs. You will need a team to go through all the donations to ensure they're appropriate to give away.",
+  
+  "faq.question9": "What do we do with anything left over after the event?",
+  "faq.answer9": "There are several places to give away what is left: The Salvation Army, Bibles for Missions, and any of your local second-hand stores or non-profit organizations that accept the type of items you have. Garbage and e-waste will also need to be disposed of appropriately. It is suggested that leftover clothing/shoes/small items be brought to Mission thrift, St Vincent de Paul, Salvation Army thrift stores, or suitable ministries in your area. Leftover computer/electronics should be brought to local businesses that accept for disposal or refurbishing. A team member should take a little time to determine where these businesses are in your local area before the big day, and have someone designated to transport these items.",
+  
+  "faq.question10": "Should we plan to help transport larger items?",
+  "faq.answer10": "If possible, it would be great to have volunteers with vans or trucks to help transport larger items to people's homes.",
+  
+  "faq.question11": "Can we advertise our church programs?",
+  "faq.answer11": "While you are welcome to have some free resources about your church or ministry programs if anyone asks, please be mindful that the goal of the day is not to convince people to attend your church or programs.",
+  
+  "faq.question12": "How does our church benefit from becoming involved?",
+  "faq.answer12": "The Bible tells us that it is more blessed to give than to receive. Your church will be part of meeting some very practical needs in your neighbourhood, and people may ask you to explain why you would hold this type of event. You will also be symbolically joining with other churches and ministries in your city and across the country in a radical act of unity and love.",
+  
+  "faq.question13": "Will help be available during the planning process?",
+  "faq.answer13": "Of course! Our team will provide you with the resources and support to make your event a success. We're here to help with planning, to foster idea sharing between churches, and to supply compelling advertising videos and materials.",
+  
+  "faq.question14": "Can we pray with people?",
+  "faq.answer14": "Yes, but only if asked by an event attendee. Some churches will choose to have a prayer tent or station as a way of opening that conversation.",
+  
+  "faq.question15": "What are we as a church not permitted to give away?",
+  "faq.answer15": "Please see the following link for details regarding items that are restricted: http://www.hc-sc.gc.ca/cps-spc/pubs/cons/garage-eng.php",
+
+  "video.text": "See Full Video",
+  "video.link":"https://www.youtube.com/embed/prLc2d1yK4I",
+  
+  "Director": "Director",
+  "Administrative Assistant": "Administrative Assistant",
+
+  "nav.church": "Participating Churches 2025",
+  "mobile.church": "register your church",
+  "mobile.church.text": "Registration will be available in the Fall of 2025.",
+
+  "thankyou.title": "Thank You!",
+  "thankyou.description": "Thank you for reaching out to us. We will get back to you as quickly as possible.",
+  "thankyou.cta": "Click here to go back to home."
+}

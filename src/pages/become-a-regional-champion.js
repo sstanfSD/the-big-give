@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import PageHead from "../components/PageHead"
 import Layout from "../components/Layout/index"
 import Modal from "../components/Common/Modal"
@@ -7,46 +7,44 @@ import AltHeader from "../components/Common/AltHeader"
 import PlainText from "../components/Common/PlainText"
 import EmailForm from "../components/Common/EmailForm"
 import styled from "styled-components"
+import { useTranslation } from "gatsby-plugin-react-i18next"
+import ContactForm from "../components/Common/EmailForm"
 
 const BecomeAChampion = ({ data }) => {
+  const { t } = useTranslation()
+
   return (
     <>
       <PageHead
         title={"Thank You - The Big Give"}
         description={
-          "  Thank you for reaching out to us. We will get back to you as quickly as possible."
+          "Thank you for reaching out to us. We will get back to you as quickly as possible."
         }
       />
       <Layout>
-        <AltHeader heading={"Bring The Big Give to your area"} />
+        <AltHeader heading={t("champion.page.title")} />
         <PlainText>
           <p style={{ marginBottom: "1rem" }}>
             <strong>
-              Join our team and bring The Big Give to your region.
+              {t("champion.hero.subtitle")}
             </strong>
           </p>
           <br />
           <p>
-            Here’s what it takes to be a regional champion:
+            {t("champion.requirements.intro")}
             <ul>
               <li>
-                1. Commit to The Big Give idea: One movement on one day where
-                everything is free with no strings attached
+                1. {t("champion.requirements.item1")}
               </li>
               <li>
-                2. Read and agree with our{" "}
-                <Link to={"/statement-of-faith"}>statement of faith</Link>
+                2. {t("champion.requirements.item2")}{" "}
+                <Link to={"/statement-of-faith"}>{t("champion.requirements.item2Link")}</Link>
               </li>
               <li>
-                {" "}
-                3. Attend Big Give committee meetings either in person or online
+                3. {t("champion.requirements.item3")}
               </li>
               <li>
-                {" "}
-                4. Enjoy connecting with other church leaders in your area We
-                would love to chat if you’re passionate about seeing God move in
-                your region, love outreach, and are committed to praying for The
-                Big Give.
+                4. {t("champion.requirements.item4")}
               </li>
             </ul>
           </p>
@@ -54,8 +52,8 @@ const BecomeAChampion = ({ data }) => {
 
         <FormWrapper>
           <FormContainer>
-            <FormHeading>Become a regional champion</FormHeading>
-            <EmailForm />
+            <FormHeading>{t("champion.form.title")}</FormHeading>
+            <ContactForm />
           </FormContainer>
         </FormWrapper>
       </Layout>
@@ -75,7 +73,6 @@ const FormHeading = styled.span`
   font-size: var(--font-size-bodyM);
   text-align: center;
   width: 100%;
-
   margin-bottom: 2rem;
 `
 
@@ -86,3 +83,18 @@ const FormContainer = styled.div`
 `
 
 export default BecomeAChampion
+
+// 🟢 Add this translation query at the bottom
+export const query = graphql`
+  query BecomeAChampionQuery($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

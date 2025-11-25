@@ -17,29 +17,27 @@ import {
 } from "./AboutRegionalElements"
 
 import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const AboutRegional = ({ toggle }) => {
+
+  const {t} = useTranslation()
+
   return (
     <Section>
       <Container>
         <TextContainer>
           <Heading>
-            “It’s the best outreach event we’ve ever been a part of.”
+            {t("about.quote.highlight")}
           </Heading>
           <Body>
-            It’s amazing how a free gift can build a bridge into your community.
-            And it’s so simple. We’ve seen churches offer free garage sales, car
-            washes, BBQs, movies in the park, pony rides and face painting. Some
-            churches even provided free haircuts and bouncy castles for kids.
-            Whatever you do, make it free.
+            {t("about.description.paragraph1")}
             <br />
-            <br /> Get your church to join with thousands of other Christians
-            across the country for a unified day of giving extravagantly on
-            Saturday, June 6, 2026.
+            <br /> {t("about.description.paragraph2")}
           </Body>
           <BtnContainer>
             <BtnPrimaryExternal
-              text="Register your church"
+              text={t("footer.cta")}
               to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
               large
             />

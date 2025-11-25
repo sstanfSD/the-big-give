@@ -14,6 +14,7 @@ import {
 } from "./FormElements"
 
 import DownArrow from "../../../../assets/icons/down-arrow.svg"
+import {useTranslation} from "gatsby-plugin-react-i18next"
 
 const validate = values => {
   const errors = {}
@@ -40,6 +41,9 @@ const validate = values => {
 }
 
 const ContactForm = () => {
+
+  const {t} = useTranslation()
+
   // Pass the useFormik() hook initial form values and a submit function that will
   // be called when the form is submitted
   const formik = useFormik({
@@ -73,7 +77,7 @@ const ContactForm = () => {
           value={formik.values.city}
           required
         />
-        <Label htmlFor="city">City or Town</Label>
+        <Label htmlFor="city">{t("about.contact.form.city")}</Label>
       </InputContainer>
 
       <InputContainer>
@@ -87,7 +91,7 @@ const ContactForm = () => {
           value={formik.values.name}
           required
         />
-        <Label htmlFor="name">Name</Label>
+        <Label htmlFor="name">{t("about.contact.form.name")}</Label>
       </InputContainer>
 
       <InputContainer>
@@ -101,7 +105,7 @@ const ContactForm = () => {
           value={formik.values.email}
           required
         />
-        <Label htmlFor="email">Email Address</Label>
+        <Label htmlFor="email">{t("about.contact.form.email")}</Label>
       </InputContainer>
 
       <InputContainer>
@@ -116,7 +120,7 @@ const ContactForm = () => {
           rows="5"
           required
         />
-        <Label htmlFor="message">Your message</Label>
+        <Label htmlFor="message">{t("about.contact.form.message")}</Label>
       </InputContainer>
 
       {/* {formik.errors.message || formik.values.region === "" ? (
@@ -125,7 +129,7 @@ const ContactForm = () => {
         </Btn>
       ) : ( */}
       <Btn large type="submit">
-        Submit
+        {t("about.contact.form.submit")}
       </Btn>
       {/* )} */}
     </FormElement>

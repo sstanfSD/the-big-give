@@ -8,9 +8,13 @@ import {
 } from "./VideoElements"
 
 import BtnBg from "../../../SVG/BtnBg"
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
 
 const Video = () => {
   const [playFullVideo, setPlayFullVideo] = useState(false)
+  const {t} = useTranslation()
+  
   const toggle = () => {
     setPlayFullVideo(true)
   }
@@ -30,11 +34,11 @@ const Video = () => {
       />
       <BtnContainer onClick={toggle} playFullVideo={playFullVideo}>
         <BtnBg />
-        <BtnText>See Full Video</BtnText>
+        <BtnText>{t("video.text")}</BtnText>
       </BtnContainer>
       <VideoIframe
         loading="lazy"
-        src="https://www.youtube.com/embed/prLc2d1yK4I"
+        src={t("video.link")}
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
