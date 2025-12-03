@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link, navigate } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { useI18next } from "gatsby-plugin-react-i18next"
 
 import { BtnPrimaryExternal, BtnPrimary } from "../../Buttons"
 
@@ -31,6 +32,7 @@ import {useTranslation} from "gatsby-plugin-react-i18next"
 const Stories = ({ stories, toggle }) => {
   
   const { t } = useTranslation()
+  const { language } = useI18next()  // Add this to get current language
 
   //LIST SELECTION LOGIC
   const options = [
@@ -74,7 +76,9 @@ const Stories = ({ stories, toggle }) => {
                         large
                         onClick={e => {
                           handleSelection(option)
-                          navigate("/big-stories#stories")
+                          // Navigate with language prefix
+                          const path = language === 'en' ? '/big-stories#stories' : `/${language}/big-stories#stories`
+                          navigate(path)
                         }}
                       >
                         {option}
@@ -88,7 +92,9 @@ const Stories = ({ stories, toggle }) => {
                         large
                         onClick={e => {
                           handleSelection(option)
-                          navigate("/big-stories#stories")
+                          // Navigate with language prefix
+                          const path = language === 'en' ? '/big-stories#stories' : `/${language}/big-stories#stories`
+                          navigate(path)
                         }}
                       >
                         {option}
@@ -102,7 +108,6 @@ const Stories = ({ stories, toggle }) => {
                   to="http://weblink.donorperfect.com/Registration_TheBigGive_2025"
                   large
                 />
-                {/* <BtnPrimary text="register your church" toggle={toggle} large /> */}
               </BtnListItem>
             </BtnList>
           </ContentContainer>
