@@ -12,7 +12,7 @@ import ChurchList from "../components/ParticipatingChurches/ChurchList"
 const ParticipatingChurches = ({ data }) => {
   const [openModal, setOpenModal] = useState(false)
   const { t } = useTranslation()
-  
+
   const toggleModal = () => {
     setOpenModal(!openModal)
   }
@@ -21,8 +21,6 @@ const ParticipatingChurches = ({ data }) => {
   const header = data.wpPage?.common_header || {}
   const churches = data.allWpParticipatingChurch || { nodes: [] }
   const markers = data.wpPage?.mapMarkers || {}
-
-  console.log(markers)
 
   return (
     <>
