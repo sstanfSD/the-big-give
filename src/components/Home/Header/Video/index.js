@@ -39,7 +39,7 @@ const Video = () => {
       <VideoIframe
         loading="lazy"
         src={t("video.link")}
-        title="YouTube video player"
+        title="Vimeo video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen

@@ -3,6 +3,7 @@ import { media } from "../../../../../media"
 
 export const VideoContainer = styled.div`
   border: solid 1rem var(--color-blue-light);
+  background-color: var(--color-blue-light);
   position: relative;
   width: 100%;
 
