@@ -77,7 +77,7 @@ const ChurchList = ({ churches, toggle }) => {
       <Container>
         <Sidebar>
           <ContentContainer>
-            <Heading id="list">{t("churches.title")} 2025</Heading>
+            <Heading id="list">{t("churches.title")} 2026</Heading>
             <BtnList>
               {options.map((option, i) => {
                 if (selected === option) {
