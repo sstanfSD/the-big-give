@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       <Wrapper>
         <Modal openModal={openModal} toggleModal={toggleModal} />
         <StickyHeader>
-          <AnnouncementBar />
+          {/* <AnnouncementBar /> */}
           <Navbar toggleModal={toggleModal} />
         </StickyHeader>
         <Main>{children}</Main>
