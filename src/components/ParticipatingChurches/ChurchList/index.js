@@ -22,8 +22,9 @@ import {
 
 import { BtnPrimaryExternal } from "../../Buttons"
 import { useTranslation } from "gatsby-plugin-react-i18next"
+import { SLUG_TO_REGION } from "../../../constants/regions"
 
-const ChurchList = ({ churches, toggle }) => {
+const ChurchList = ({ churches, toggle, location }) => {
   
   const { t } = useTranslation()
   
@@ -32,6 +33,7 @@ const ChurchList = ({ churches, toggle }) => {
     "Ottawa, Ottawa Valley",
     "GTA",
     "Quebec",
+    "International",
     "all other communities",
   ]
 
@@ -45,8 +47,10 @@ const ChurchList = ({ churches, toggle }) => {
       setSelected(options[1])
     } else if (option === "Quebec") {
       setSelected(options[2])
-    } else if (option === "all other communities") {
+    } else if (option === "International") {
       setSelected(options[3])
+    } else if (option === "all other communities") {
+      setSelected(options[4])
     } else return
 
     // Scroll to list on mobile
@@ -70,7 +74,13 @@ const ChurchList = ({ churches, toggle }) => {
     }
   }
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    const params = new URLSearchParams(location?.search || "")
+    const regionSlug = params.get("region")
+    if (regionSlug && SLUG_TO_REGION[regionSlug]) {
+      setSelected(SLUG_TO_REGION[regionSlug])
+    }
+  }, [location?.search])
 
   return (
     <Section>
@@ -178,6 +188,23 @@ const ChurchList = ({ churches, toggle }) => {
               }
 
               if (selected === options[3]) {
+                if (church.participatingChurch.region === "International") {
+                  return (
+                    <ChurchListItem key={i}>
+                      <Name>{church.participatingChurch.churchName}</Name>
+                      <Address>
+                        {church.participatingChurch.churchAddress}
+                      </Address>
+                      <Time>{church.participatingChurch.eventTime}</Time>
+                      <Details>
+                        {church.participatingChurch.eventDetails}
+                      </Details>
+                    </ChurchListItem>
+                  )
+                }
+              }
+
+              if (selected === options[4]) {
                 if (church.participatingChurch.region === "Other") {
                   return (
                     <ChurchListItem key={i}>

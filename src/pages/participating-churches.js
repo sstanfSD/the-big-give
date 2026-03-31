@@ -9,7 +9,7 @@ import Header from "../components/Common/Header"
 import MapSection from "../components/ParticipatingChurches/MapSection"
 import ChurchList from "../components/ParticipatingChurches/ChurchList"
 
-const ParticipatingChurches = ({ data }) => {
+const ParticipatingChurches = ({ data, location }) => {
   const [openModal, setOpenModal] = useState(false)
   const { t } = useTranslation()
 
@@ -28,7 +28,7 @@ const ParticipatingChurches = ({ data }) => {
       <Layout>
         <Modal openModal={openModal} toggleModal={toggleModal} />
         {/* <Header header={header} toggle={toggleModal} /> */}
-        <ChurchList churches={churches} toggle={toggleModal} />
+        <ChurchList churches={churches} toggle={toggleModal} location={location} />
         <MapSection markers={markers} />
       </Layout>
     </>

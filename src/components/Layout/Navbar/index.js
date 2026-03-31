@@ -7,6 +7,7 @@ import {
 import { BtnPrimaryExternal } from "../../Buttons";
 import MobileMenu from "../MobileMenu";
 import { Link, useTranslation, useI18next } from "gatsby-plugin-react-i18next";
+import { REGIONS } from "../../../constants/regions";
 
 const Navbar = ({ toggleModal }) => {
   const [openMobile, setOpenMobile] = React.useState(false);
@@ -45,6 +46,15 @@ const Navbar = ({ toggleModal }) => {
 
           <Item>
             <InternalLink as={Link} to="/participating-churches">{t("nav.churches")}</InternalLink>
+            <Dropdown>
+              {REGIONS.map(({ slug, name }) => (
+                <DropdownItem key={slug}>
+                  <InternalLink as={Link} to={`/participating-churches?region=${slug}`}>
+                    {name}
+                  </InternalLink>
+                </DropdownItem>
+              ))}
+            </Dropdown>
           </Item>
 
           <Item>

@@ -94,6 +94,11 @@ export const Item = styled.li`
   display: inline-block;
   font-size: 1.6rem;
   font-weight: bold;
+  padding-bottom: 0.5rem;
+
+  &:hover > ul {
+    display: flex;
+  }
 
   &.lang-mobile {
     display: none; /* hidden by default on large screens */

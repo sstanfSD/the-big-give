@@ -11,6 +11,7 @@ import {
 
 import { BtnPrimary } from "../../Buttons"
 import {useTranslation} from "gatsby-plugin-react-i18next"
+import { REGIONS } from "../../../constants/regions"
 
 const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
 
@@ -50,6 +51,15 @@ const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
           <InternalLink to="/participating-churches" onClick={toggle}>
             {t("nav.churches")}
           </InternalLink>
+          <SecondaryList>
+            {REGIONS.map(({ slug, name }) => (
+              <SecondaryItem key={slug}>
+                <InternalLink to={`/participating-churches?region=${slug}`} onClick={toggle}>
+                  {name}
+                </InternalLink>
+              </SecondaryItem>
+            ))}
+          </SecondaryList>
         </Item>
         <Item>
           <InternalLink to="/get-involved" onClick={toggle}>

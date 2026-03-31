@@ -22,11 +22,11 @@ export const Nav = styled.nav`
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
+  justify-content: flex-start;
 
-  padding: 0 5rem;
+  padding: 6rem 5rem 2rem;
 
-  overflow: hidden;
+  overflow-y: auto;
 `
 export const List = styled.ul`
   list-style: none;
