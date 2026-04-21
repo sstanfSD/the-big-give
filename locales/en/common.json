@@ -56,6 +56,10 @@
   "bigStories.desc": "Testimonies are what fuel the volunteers who run The Big Give. Here are some of our favourite stories from previous Big Gives. Register your church today and create your own testimonies of God's goodness in your community.",
   "bigStories.cta": "read big stories",
 
+  "merch.title": "Rep The Big Give",
+  "merch.description": "Show your support and spark conversations in your community with official Big Give merchandise.",
+  "merch.cta": "shop now",
+
   "finalCta.thankYou": "Thank You",
   "finalCta.moreInfo": "For more information on The Big Give, please contact Director,",
   "finalCta.registerNow": "register now",
@@ -157,6 +161,9 @@
 
   "getInvolved.resources.downloadEnglish": "download English press kit",
   "getInvolved.resources.downloadFrench": "download French press kit",
+
+  "getInvolved.resources.merch": "Get official Big Give merch",
+  "getInvolved.resources.merchLink": "Shop merchandise",
 
   "getInvolved.resources.english": "English Resources",
   "getInvolved.resources.french": "French Resources",

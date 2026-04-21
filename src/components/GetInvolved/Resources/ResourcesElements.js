@@ -54,6 +54,16 @@ export const Body = styled.p`
   margin-bottom: 5rem;
 `
 
+export const MerchLink = styled.p`
+  margin-bottom: 3rem;
+
+  & a {
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+`
+
 export const BtnList = styled.ul`
   list-style: none;
 `

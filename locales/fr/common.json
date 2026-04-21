@@ -47,6 +47,11 @@
   "bigStories.title": "Grandes histoires",
   "bigStories.desc": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le grand partage. Voici quelques-unes de nos histoires préférées des précédents grand partage. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
   "bigStories.cta": "lire les grandes histoires",
+
+  "merch.title": "Portez les couleurs du Big Give",
+  "merch.description": "Montrez votre soutien et suscitez des conversations dans votre communauté avec les articles officiels du Big Give.",
+  "merch.cta": "magasiner",
+
   "finalCta.thankYou": "Merci",
   "finalCta.moreInfo": "Pour plus d'informations sur le grand partage, veuillez contacter la directrice,",
   "finalCta.registerNow": "inscrivez-vous maintenant",
@@ -119,6 +124,9 @@
   "getInvolved.resources.description": "Fichiers de logo, dépliants, diapositives PowerPoint, vidéos promotionnelles, lettres de prière… téléchargez toutes les ressources dont vous avez besoin pour organiser un événement grand partage réussi dans votre église.",
   "getInvolved.resources.downloadEnglish": "télécharger le dossier de presse en anglais",
   "getInvolved.resources.downloadFrench": "télécharger le dossier de presse en français",
+  "getInvolved.resources.merch": "Procurez-vous des articles officiels du Big Give",
+  "getInvolved.resources.merchLink": "Magasiner les articles",
+
   "getInvolved.resources.english": "Ressources en anglais",
   "getInvolved.resources.french": "Ressources en français",
   "getInvolved.events.title": "Événements",

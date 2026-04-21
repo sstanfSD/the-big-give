@@ -18,6 +18,7 @@ import {
   LinkContainer,
   Icon,
   Link,
+  MerchLink,
 } from "./ResourcesElements"
 
 import Dropdown from "./Dropdown"
@@ -68,6 +69,16 @@ const Resources = ({ resources, englishKit, frenchKit }) => {
                 </BtnWhite>
               </BtnListItem>
             </BtnList>
+            <MerchLink>
+              {t("getInvolved.resources.merch")}{" "}
+              <a
+                href="https://gilkssportspromo.square.site/shop/big-give/VEOY6PHL2QPIM6RRC2NQQWGR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("getInvolved.resources.merchLink")}
+              </a>
+            </MerchLink>
           </ContentContainer>
         </Sidebar>
         <ListContainer>

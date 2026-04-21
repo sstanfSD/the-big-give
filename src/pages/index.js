@@ -13,6 +13,7 @@ import FAQ from "../components/Common/FAQ";
 import SocialMedia from "../components/Home/SocialMedia";
 import BigStories from "../components/Home/BigStories";
 import ThankYou from "../components/Home/ThankYou";
+import Merch from "../components/Home/Merch";
 
 const Home = ({ data }) => {
   const [openModal, setOpenModal] = useState(false);
@@ -49,7 +50,9 @@ const Home = ({ data }) => {
         <Steps toggle={toggleModal} date={capitalizeFirstLetterOfEachWord(date)} />
         <RegionalChampions champions={champions} />
         <FAQ FAQs={FAQs} />
+        <Merch />
         <BigStories />
+     
         {thankyou && <ThankYou thankyou={thankyou} toggle={toggleModal} />}
         <SocialMedia />
       </Layout>
