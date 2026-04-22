@@ -66,6 +66,9 @@ const Navbar = ({ toggleModal }) => {
               <DropdownItem>
                 <InternalLink as={Link} to="/get-involved#events">{t("nav.events")}</InternalLink>
               </DropdownItem>
+              <DropdownItem>
+                <InternalLink as="a" href="https://gilkssportspromo.square.site/shop/big-give/VEOY6PHL2QPIM6RRC2NQQWGR" target="_blank" rel="noopener noreferrer">{t("nav.merchandise")}</InternalLink>
+              </DropdownItem>
             </Dropdown>
           </Item>
 

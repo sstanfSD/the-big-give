@@ -9,7 +9,7 @@ import {
   SecondaryItem,
 } from "./MobileMenuElements"
 
-import { BtnPrimary } from "../../Buttons"
+import { BtnPrimaryExternal } from "../../Buttons"
 import {useTranslation} from "gatsby-plugin-react-i18next"
 import { REGIONS } from "../../../constants/regions"
 
@@ -76,6 +76,11 @@ const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
                 {t("nav.events")}
               </InternalLink>
             </SecondaryItem>
+            <SecondaryItem>
+              <InternalLink as="a" href="https://gilkssportspromo.square.site/shop/big-give/VEOY6PHL2QPIM6RRC2NQQWGR" target="_blank" rel="noopener noreferrer">
+                {t("nav.merchandise")}
+              </InternalLink>
+            </SecondaryItem>
           </SecondaryList>
         </Item>
         <Item>
@@ -91,7 +96,7 @@ const MobileMenu = ({ openMobile, toggle, toggleModal }) => {
           </SecondaryList>
         </Item>
         <Item>
-          <BtnPrimary text={t("mobile.church")} toggle={toggleModal} />
+          <BtnPrimaryExternal text={t("mobile.church")} to="https://wl.donorperfect.net/weblink/weblink.aspx?name=E343462QE&id=182" />
         </Item>
       </List>
     </Nav>

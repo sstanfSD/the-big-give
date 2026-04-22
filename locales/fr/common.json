@@ -11,6 +11,7 @@
   "nav.stories": "grandes histoires",
   "nav.videos": "témoignages vidéo",
   "nav.register": "s'inscrire",
+  "nav.merchandise": "marchandise",
   "hero.title": "L’entraide devient simple lorsqu’elle commence par le don.",
   "hero.cta.explore": "Inscrivez-vous dès aujourd’hui",
   "hero.date": "samedi le 6 juin, 2026",
@@ -48,7 +49,7 @@
   "bigStories.desc": "Les témoignages sont ce qui alimente les bénévoles qui gèrent le grand partage. Voici quelques-unes de nos histoires préférées des précédents grand partage. Inscrivez votre église dès aujourd'hui et créez vos propres témoignages de la bonté de Dieu dans votre communauté.",
   "bigStories.cta": "lire les grandes histoires",
 
-  "merch.title": "Portez les couleurs du Big Give",
+  "merch.title": "GET MERCH",
   "merch.description": "Montrez votre soutien et suscitez des conversations dans votre communauté avec les articles officiels du Big Give.",
   "merch.cta": "magasiner",
 
