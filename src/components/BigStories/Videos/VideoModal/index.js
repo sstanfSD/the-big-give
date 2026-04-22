@@ -17,7 +17,7 @@ const VideoModal = ({ video, activeVideo, index, closeVideo }) => {
             <VideoContainer>
               <VideoIframe
                 loading="lazy"
-                src={`https://www.youtube.com/embed/${videoId}&enablejsapi=1&origin=https%3A%2F%2Fthebiggive.ca`}
+                src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=https%3A%2F%2Fthebiggive.ca`}
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
