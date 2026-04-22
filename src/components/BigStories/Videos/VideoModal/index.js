@@ -16,11 +16,12 @@ const VideoModal = ({ video, activeVideo, index, closeVideo }) => {
             <VideoContainer>
               <VideoIframe
                 loading="lazy"
-                src={`https://www.youtube-nocookie.com/embed/${video}?rel=0`}
+                src={`https://www.youtube-nocookie.com/embed/${video.split(/[?&#]/)[0]}?rel=0`}
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin"
                 index={index}
                 activeVideo={activeVideo}
               />

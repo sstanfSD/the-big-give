@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebFetch(domain:andrewd122.sg-host.com)",
+      "Bash(curl -s -X POST -H \"Content-Type: application/json\" -d '{\"\"\"\"query\"\"\"\":\"\"\"\"{ allWpVideoTestimonial\\(sort: {date: DESC}\\) { nodes { title video { videoEmbedCode } } } }\"\"\"\"}' https://andrewd122.sg-host.com/graphql)",
+      "Bash(curl -s -X POST -H \"Content-Type: application/json\" -d '{\"\"\"\"query\"\"\"\":\"\"\"\"{ videoTestimonials { nodes { title video { videoEmbedCode } } } }\"\"\"\"}' https://andrewd122.sg-host.com/graphql)",
+      "WebFetch(domain:stackoverflow.com)",
+      "WebSearch"
     ]
   }
 }
