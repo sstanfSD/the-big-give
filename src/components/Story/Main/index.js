@@ -10,8 +10,10 @@ import {
 } from "./MainElements"
 
 import Slider from "../Slider"
+import { extractYouTubeId } from "../../../utils/youtube"
 
 const Main = ({ content, images, video }) => {
+  const videoId = video ? extractYouTubeId(video) : ""
   return (
     <Section>
       <Container>
@@ -23,15 +25,15 @@ const Main = ({ content, images, video }) => {
           </SliderContainer>
         )}
 
-        {video && (
+        {videoId && (
           <VideoContainer>
             <Video
               loading="lazy"
-              src={`https://www.youtube.com/embed/${video}`}
+              src={`https://www.youtube.com/embed/${videoId}`}
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             />
           </VideoContainer>
         )}

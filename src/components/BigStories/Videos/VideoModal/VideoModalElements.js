@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { media } from "../../../../../media"
 
 export const Container = styled.div`
-  display: ${props => (props.activeVideo === props.index ? "flex" : "none")};
+  display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 500;
   width: 100%;
@@ -12,10 +12,6 @@ export const Container = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-
-  & iframe {
-    display: ${props => (props.activeVideo === props.index ? "flex" : "none")};
-  }
 `
 
 export const VideoWrapper = styled.div`
@@ -34,7 +30,6 @@ export const VideoContainer = styled.div`
   position: relative;
 `
 export const VideoIframe = styled.iframe`
-  display: ${props => (props.activeVideo === props.index ? "flex" : "none")};
   height: 100%;
   width: 100%;
   position: absolute;
