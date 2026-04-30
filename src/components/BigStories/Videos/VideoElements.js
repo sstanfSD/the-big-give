@@ -36,7 +36,7 @@ export const Body = styled.p``
 export const VideosWrapper = styled.div`
   overflow: hidden;
   position: sticky;
-  top: 5rem;
+  top: 12rem;
 
   width: 100%;
 `
