@@ -90,6 +90,25 @@ export const Heading = styled.h1`
   `}
 `
 
+export const SubHeading = styled.p`
+  margin: 2.5rem auto 1.5rem;
+  max-width: 80rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-bodyL);
+  line-height: 1.4;
+  color: var(--color-black);
+
+  ${media.laptopsmall`
+    max-width: 60rem;
+    font-size: var(--font-size-bodyM);
+  `}
+
+  ${media.phone`
+    margin: 2rem auto 1rem;
+  `}
+`
+
 export const DateContainer = styled.div`
   position: relative;
   max-width: 60rem;

@@ -8,6 +8,7 @@ import {
   HeadingContainer,
   HeadingBg,
   Heading,
+  SubHeading,
   DateContainer,
   DateBg,
   Date,
@@ -54,6 +55,7 @@ const Header = ({ date, toggleModal }) => {
             </HeadingBg> */}
             <Heading>{t("hero.title")}</Heading>
           </HeadingContainer>
+          <SubHeading>{t("hero.thanks")}</SubHeading>
           <DateContainer>
             {/* <DateBg>
               <StaticImage

@@ -22,7 +22,7 @@ const Home = ({ data }) => {
   const { t } = useTranslation();
 
   // Handle cases where WordPress data might not be available
-  const date = data.wpPage?.homeheader?.eventDate || "May 3, 2025";
+  const date = data.wpPage?.homeheader?.eventDate || "June 5, 2027";
   const FAQs = data.allWpFaq || { nodes: [] };
   const champions = data.allWpRegionalChampion || { nodes: [] };
   const thankyou = data.wpPage?.thankyou || null;
